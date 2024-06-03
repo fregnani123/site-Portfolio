@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Mudança de Cor no Scroll</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+QErYjtdG7wVcZjJe17J7Jp3EJ70FWS+Jmxy4X6b4Qvq4kk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header id="menu">
+        <nav>
+            <ul>
+                <li class="li-logo"><img class="img-logo" src="../img/logo.png" alt="Logo"></li>
+                <li><a href="#" class="lang pt">Início</a><a href="#" class="lang en" style="display: none;">Home</a>
+                </li>
+                <li><a href="#" class="lang pt">Sobre</a><a href="#" class="lang en" style="display: none;">About</a>
+                </li>
+                <li><a href="#" class="lang pt">Portfólio</a><a href="#" class="lang en"
+                        style="display: none;">Portfolio</a></li>
+                <li class="li-contato"><a id="a-contato" href="#" class="lang pt">Contato</a><a id="a-contato" href="#" class="lang en" style="display: none;">Contact
+                        me</a></li>
+                <li class="language-select">
+                    <a href="#" onclick="changeLanguage('pt')"><img class="img-En"  src="../img/brazil_flags_flag_16979.ico"></a>
+                    <a href="#" onclick="changeLanguage('en')"><img class="img-En" src="../img/united_kingdom_flags_flag_17079.ico"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="background-video">
+            <video src="../video/notbook.mp4" autoplay loop muted></video>
+            <div class="content">
+                <h1 class="title">
+                    <span class="lang pt">Desenvolvedor Full-stack</span>
+                    <span class="lang en" style="display: none;">Full-stack Developer</span>
+                    <p class="slogan">
+                        <span class="lang pt">Construindo sonhos, linha por linha.</span>
+                        <span class="lang en" style="display: none;">Building dreams, line by line.</span>
+                    </p>
+                    <button id="img-flexa"><img class="img-flexa" src="../img/pontas-de-flechas-finas-apontando-para-baixo.png" alt="Role a página e descubra"></button> 
+                </h1>
+            </div>
+        </section>
+        <section class="extra-content">
+            <!-- Adicione mais conteúdo aqui para permitir o scroll -->
+            <div style="height: 2000px;"></div>
+        </section>
+    </main>
+
+    <script src="../src/script.js"></script>
+</body>
+
+</html>
