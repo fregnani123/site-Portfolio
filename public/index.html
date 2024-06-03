@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com Mudança de Cor no Scroll</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+QErYjtdG7wVcZjJe17J7Jp3EJ70FWS+Jmxy4X6b4Qvq4kk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="../styles/about.css">
 
 </head>
 
@@ -48,10 +48,46 @@
                 </h1>
             </div>
         </section>
-        <section class="extra-content">
-            <!-- Adicione mais conteúdo aqui para permitir o scroll -->
-            <div style="height: 2000px;"></div>
+
+        <section class="section-about">
+            <h1 class="about">Sobre</h1>
+          <div class="div-about">
+            <span class="span-text">
+            <h2 class="titulo-about">Desenvolvedor Full-stack</h2>
+            <p class="text-about">
+            <!-- "Construindo sonhos, linha por linha".<br> -->
+            Olá! Sou Fabiano Fregnani, um desenvolvedor full-stack apaixonado por transformar ideias em soluções digitais. Estudo
+            programação há dois anos e meio, e minha missão é criar aplicações eficientes, intuitivas e visualmente atraentes.
+            
+            Minhas habilidades incluem:
+            
+            Front-end: Utilizando <span class="span-destacar">HTML, CSS, JavaScript, React, e Electron.js</span> , eu construo interfaces de usuário responsivas e dinâmicas
+            que garantem uma experiência agradável para todos.
+            Back-end: Com conhecimentos em <span class="span-destacar">Node.js, Express, C#, .Net, e bancos de dados como MongoDB e MySql.</span>
+            Minha abordagem é centrada em resolver problemas de forma criativa e eficiente. Sempre buscando aprender e aprimorar
+            minhas habilidades, contribuo para projetos de código aberto e participo de comunidades de desenvolvedores.
+            
+            Vamos construir algo incrível juntos? Confira alguns dos meus projetos abaixo e entre em contato para discutirmos como
+            posso ajudar a transformar suas ideias em realidade.
+</p></span>
+          </div>
         </section>
+
+    <section class="section-carousel">
+    <h1 class="title-portfolio">Alguns Projetos do Meu Portfólio</h1>
+        <div class="carousel">
+        <button class="carousel-prev"><img class="seta_esquerda" src="../img/seta_esquerda.png" alt="Anterior"></button>
+        <div class="carousel-inner">
+            <div id="squad-1" class="carousel-item active"><div class="background-print"></div><img class="print-GL" src="../img/print-GL.png" alt=""></div>
+            <div id="squad-2" class="carousel-item"></div>
+            <div id="squad-3" class="carousel-item"></div>
+            <div id="squad-4" class="carousel-item"></div>
+            <div id="squad-5" class="carousel-item"></div>
+        </div>
+        <button class="carousel-next"><img class="seta_direita" src="../img/seta_direita.png" alt="Próximo"></button>
+    </div>
+    </section>
+
     </main>
 
     <script src="../src/script.js"></script>
