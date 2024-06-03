@@ -1,37 +1,58 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgba(16, 16, 24, 0.767);
+    --text-color: white;
+    --link-hover-color: rgba(128, 128, 128, 0.192);
+    --header-bg-color: #33333300;
+    --header-scrolled-bg-color: #000000;
+}
+
 body,
 html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-   
 }
-body{
-background: rgb(0, 0, 0);
+
+body {
+    background: var(--primary-color);
 }
-.background-video{
-    background-color: rgba(16, 16, 24, 0.767);
+
+.background-video {
+    background-color: var(--secondary-color);
 }
+
 .container {
-    width: 100%; 
+    width: 100%;
 }
-.img-logo{
+
+.img-logo {
+    width: 330px;
+    transition: width 0.3s;
+}
+
+.img-logo.scrolled {
     width: 300px;
 }
-.li-logo{
+
+.li-logo {
     position: fixed;
     left: 20px;
 }
 
-.title{
+.title {
     font-size: 60px;
     font-weight: no;
     margin-top: 0px;
     font-family: Roboto, Arial, sans-serif;
+    color: var(--text-color);
 }
-.slogan{
+
+.slogan {
     margin-top: 0px;
     font-size: 30px;
+    color: var(--text-color);
 }
 
 .background-video {
@@ -55,7 +76,7 @@ background: rgb(0, 0, 0);
 .background-video .content {
     position: relative;
     z-index: 1;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     padding-top: 40vh;
 }
@@ -65,14 +86,13 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #33333300;
-    color: white;
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
     transition: background-color 0.3s;
     z-index: 999;
-    
 }
+
 nav ul {
-    
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -84,40 +104,44 @@ nav ul {
     transition: height 0.5s;
 }
 
-nav ul li { 
+nav ul li {
     margin: 0 15px;
     height: 20px;
     margin-right: 50px;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:hover{
-    border-bottom: 1px solid white;
+a:hover {
+    border-bottom: 1px solid var(--text-color);
+    color: var(--link-hover-color);
 }
 
-.li-contato{
-    border: 1px solid white;
+.li-contato {
+    border: 1px solid var(--text-color);
     padding-bottom: 10px;
     padding-top: 5px;
     padding-right: 15px;
     padding-left: 15px;
     cursor: pointer;
 }
-.li-contato:hover{
- background: rgba(128, 128, 128, 0.192);
+
+.li-contato:hover {
+    background: var(--link-hover-color);
 }
 
 header.scrolled nav ul {
     height: 100px;
-    background-color: #000000;
+    background-color: var(--header-scrolled-bg-color);
 }
+
+  
 
 .extra-content {
     margin-top: 70px;
@@ -130,26 +154,30 @@ header.scrolled nav ul {
 .content .lang.active {
     display: block;
 }
-.language-select{
+
+.language-select {
     display: flex;
     box-sizing: border-box;
     gap: 5px;
 }
-.img-En, .img-Pt{
+
+.img-En,
+.img-Pt {
     width: 15px;
     display: block;
-  
 }
-.img-flexa{
+
+.img-flexa {
     width: 40px;
     margin-top: 100px;
     cursor: pointer;
-    
 }
-#img-flexa{
- background-color: transparent;
- border: none;
+
+#img-flexa {
+    background-color: transparent;
+    border: none;
 }
-#a-contato{
+
+#a-contato {
     border-bottom: none;
 }

@@ -1,11 +1,14 @@
-const imgFlexa = document.getElementById('img-flexa')
+const imgFlexa = document.getElementById('img-flexa');
+const imgLogo = document.querySelector('.img-logo');
 
 document.addEventListener('scroll', function () {
     const header = document.getElementById('menu');
     if (window.scrollY > 0) {
         header.classList.add('scrolled');
+        imgLogo.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
+        imgLogo.classList.remove('scrolled');
     }
 });
 
