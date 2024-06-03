@@ -29,7 +29,7 @@ body {
 
 .img-logo {
     width: 330px;
-    transition: width 0.3s;
+    transition: width 0.5s;
 }
 
 .img-logo.scrolled {
