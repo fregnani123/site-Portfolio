@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Mudança de Cor no Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav>
+            <ul>
+                <li class="li-logo"><img class="img-logo" src="./logo.png" alt=""></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="background-video">
+            <video src="./notbook.mp4" autoplay loop muted></video>
+            <div class="content">
+                <h1 class="title">Full-stack Developer<p
+                    class="slogan">Building dreams, line by line.</p></h1>
+            </div>
+        </section>
+        <section class="extra-content">
+            <!-- Adicione mais conteúdo aqui para permitir o scroll -->
+            <div style="height: 2000px;"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
