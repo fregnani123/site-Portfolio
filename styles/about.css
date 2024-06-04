@@ -14,27 +14,40 @@
     justify-content: center;
 }
 .span-text{
-width: 500px;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-padding: 20px 30px;
+width: 600px;
+height: 570px;
+overflow: auto;
+color: rgb(255, 255, 255);
+padding: 0px 30px;
 font-weight: 300;
-border-radius: 2px;
+/* border-right: 1px solid rgb(255, 255, 255); */
+
 }
 
 .text-about{
 font-size: 20px;
+color: white;
 }
 
 .span-destacar{
-    font-weight: bold;
+    font-weight: 300;
+    color: rgb(255, 244, 194);
 }
 .about{
     font-weight: 300;
     font-size: 30px;
     margin-top: 100px;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.hard-skills {
+    font-size: 35px;
+    font: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid rgb(255, 244, 194);
 }
