@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu com Mudança de Cor no Scroll</title>
+    <title>Fabiano Fregnani Desenvolvedor full-stack</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/carousel.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
+
 <body>
     <header id="menu">
         <nav>
@@ -54,59 +55,100 @@
         </section>
 
         <section class="section-about">
-            <h1 class="about">Sobre</h1>
+            <h1 class="about">
+                <span class="lang pt">Sobre</span>
+                <span class="lang en" style="display: none;">About</span>
+            </h1>
             <div class="div-about">
                 <div class="span-text">
-                    <h2 class="titulo-about"><span class="span-destacar">Desenvolvedor Full-stack</span></h2>
-                    <p class="text-about">
-                        <!-- "Construindo sonhos, linha por linha".<br> -->
+                    <h2 class="titulo-about">
+                        <span class="span-destacar lang pt">Desenvolvedor Full-stack</span>
+                        <span class="span-destacar lang en" style="display: none;">Full-stack Developer</span>
+                    </h2>
+                    <p class="text-about lang pt">
                         Olá! Sou Fabiano Fregnani, um desenvolvedor full-stack apaixonado por transformar ideias em
-                        soluções digitais. Estudo
-                        programação há dois anos e meio, e minha missão é criar aplicações eficientes, intuitivas e
-                        visualmente atraentes.
+                        soluções
+                        digitais. Estudo programação há dois anos e meio, e minha missão é criar aplicações eficientes,
+                        intuitivas e visualmente atraentes.
 
                         Minhas habilidades incluem:
 
                         Front-end: Utilizando <span class="span-destacar">HTML, CSS, JavaScript, React, e
-                            Electron.js</span> , eu construo interfaces de usuário responsivas e dinâmicas
-                        que garantem uma experiência agradável para todos.
+                            Electron.js</span>, eu
+                        construo interfaces de usuário responsivas e dinâmicas que garantem uma experiência agradável
+                        para
+                        todos.
                         Back-end: Com conhecimentos em <span class="span-destacar">Node.js, Express, C#, .Net, e bancos
-                            de dados como MongoDB e MySql, Oracle.</span>
-                        Minha abordagem é centrada em resolver problemas de forma criativa e eficiente. Sempre buscando
-                        aprender e aprimorar
-                        minhas habilidades, contribuo para projetos de código aberto e participo de comunidades de
-                        desenvolvedores.
+                            de dados
+                            como MongoDB, MySQL, Oracle</span>, minha abordagem é centrada em resolver problemas de
+                        forma
+                        criativa e eficiente. Sempre buscando aprender e aprimorar minhas habilidades, contribuo para
+                        projetos
+                        de código aberto e participo de comunidades de desenvolvedores.
 
-                        Vamos construir algo incrível juntos? Confira alguns dos meus projetos abaixo e entre em contato
-                        para discutirmos como
-                        posso ajudar a transformar suas ideias em realidade.
+                        Vamos construir algo incrível juntos! Confira alguns dos meus projetos abaixo e entre em contato
+                        para
+                        discutirmos como posso ajudar a transformar suas ideias em realidade.
                     </p>
-                    <h3 class="hard-skills"><span class="span-destacar">Hard Skills</span</h3>
-                    </div>
-                    </div>
-                    <div class="carousel">
-                        
-                        <button class="carousel-prev"><img class="seta_esquerda" src="./img/seta_esquerda.png" alt="Anterior"></button>
-                        <div class="carousel-inner">
-                       
-                            <div class="carousel-item active">
-                                <img class="img" src="./img/stack.png" alt="">
-                            </div>
-                            <div  class="carousel-item">
-                                <img class="img" src="../img/stack2.png" alt="">
-                            </div>
-                            <div  class="carousel-item">
-                                <img class="img" src="../img/stack3.png" alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-next"><img class="seta_direita" src="./img/seta_direita.png" alt="Próximo"></button>
-                    </div>
-        </section>
+                    <p class="text-about lang en" style="display: none;">
+                        Hello! I am Fabiano Fregnani, a passionate full-stack developer transforming ideas into digital
+                        solutions. I've been studying programming for two and a half years, and my mission is to create
+                        efficient, intuitive, and visually appealing applications.
 
+                        My skills include:
+
+                        Front-end: Using <span class="span-destacar">HTML, CSS, JavaScript, React, and
+                            Electron.js</span>, I
+                        build responsive and dynamic user interfaces that ensure a pleasant experience for all.
+                        Back-end: With knowledge in <span class="span-destacar">Node.js, Express, C#, .Net, and
+                            databases such
+                            as MongoDB, MySQL, Oracle</span>, I approach problem-solving creatively and efficiently.
+                        Always
+                        striving to learn and improve my skills, I contribute to open-source projects and participate in
+                        developer communities.
+
+                        Let's build something amazing together! Check out some of my projects below and get in touch to
+                        discuss
+                        how I can help turn your ideas into reality.
+                    </p>
+                    <h3 class="hard-skills">
+                        <span class="span-destacar lang pt">Hard Skills</span>
+                        <span class="span-destacar lang en" style="display: none;">Hard Skills</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="carousel">
+
+                <button class="carousel-prev"><img class="seta_esquerda" src="./img/seta_esquerda.png"
+                        alt="Anterior"></button>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="img" src="./img/stack.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img" src="../img/stack2.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img" src="../img/stack3.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-next"><img class="seta_direita" src="./img/seta_direita.png"
+                        alt="Próximo"></button>
+            </div>
+        </section>
         <section class="section-portfolio">
-        <h1 class="title-portfolio">Alguns Projetos do Meu Portfólio</h1>
-        </section>
+            <section class="section-portfolio">
+                <h1 class="title-portfolio">
+                    <span class="lang pt">Alguns projetos do meu Portfólio</span>
+                    <span class="lang en" style="display: none;">Some Projects from My Portfolio</span>
+                </h1>
+            </section>
 
+        </section>
+        <section class="">
+
+        </section>
     </main>
 
     <script src="./src/script.js"></script>
