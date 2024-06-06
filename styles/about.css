@@ -14,19 +14,19 @@
     justify-content: center;
 }
 .span-text{
-width: 600px;
+width: 800px;
 height: 570px;
 overflow: auto;
 color: rgb(255, 255, 255);
 padding: 0px 30px;
 font-weight: 300;
-/* border-right: 1px solid rgb(255, 255, 255); */
-
 }
 
-.text-about{
-font-size: 20px;
-color: white;
+.text-about {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.08em;
+    /* Ajusta o espaçamento entre as letras */
 }
 
 .span-destacar{
@@ -41,6 +41,7 @@ color: white;
     width: 100%;
     display: flex;
     justify-content: center;
+    letter-spacing: 0.05em;
 }
 
 .hard-skills {

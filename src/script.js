@@ -1,6 +1,11 @@
 const imgFlexa = document.getElementById('img-flexa');
 const imgLogo = document.querySelector('.img-logo');
 
+function alteraDisplay(variavel){
+    variavel.style.display = 'block'
+};
+
+
 document.addEventListener('scroll', function () {
     const header = document.getElementById('menu');
     if (window.scrollY > 0) {

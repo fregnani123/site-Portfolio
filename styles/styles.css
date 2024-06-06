@@ -5,6 +5,7 @@
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --header-bg-color: #33333300;
     --header-scrolled-bg-color: #000000;
+    --footer: rgb(66, 66, 66);
 }
 
 body,
@@ -143,8 +144,6 @@ header.scrolled nav ul {
     background-color: var(--header-scrolled-bg-color);
 }
 
-  
-
 .extra-content {
     margin-top: 70px;
 }
@@ -170,16 +169,33 @@ header.scrolled nav ul {
 }
 
 .img-flexa {
+    display: block;
     width: 40px;
     margin-top: 100px;
     cursor: pointer;
+    transition: padding 0.5s; 
+}
+.img-flexa:hover {
+    padding-top: 20px;
 }
 
 #img-flexa {
     background-color: transparent;
     border: none;
 }
+.span-flecha {
+    color: rgba(128, 128, 128, 0.753);
+    font-size: 15px;
+    font-weight: 300;
+    display: none;
+}
 
 #a-contato {
     border-bottom: none;
+}
+
+footer{
+width: 100%;
+height: 400px;
+background-color: var(--footer);
 }
