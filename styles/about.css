@@ -24,19 +24,19 @@ font-weight: 300;
 
 .text-about {
     font-size: 16px;
-    color: white;
+    color: var(--color-text-about);
     letter-spacing: 0.08em;
     /* Ajusta o espaçamento entre as letras */
 }
 
 .span-destacar{
     font-weight: 300;
-    color: rgb(255, 244, 194);
+    color: var(--span-letra-destacar);
 }
 .about{
     font-weight: 300;
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 50px;
     color: rgb(255, 255, 255);
     width: 100%;
     display: flex;

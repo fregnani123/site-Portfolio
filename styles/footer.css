@@ -1,0 +1,45 @@
+footer{
+    align-items: center;
+    width: 100%;
+    /* height: 400px; */
+    background-color: var(--footer);
+}
+.copy{
+    background-color: var(--footer);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.contatos{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.squad-1, .squad-2, .squad-3, .squad-4{
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+.squad-1:hover, .a-squad:hover{
+    border-bottom: none;
+    background: rgb(0, 119, 181);}
+.squad-2:hover, .a-squad:hover{
+   background: rgb(24, 23, 23);
+}
+.squad-3:hover, .a-squad:hover{
+
+}
+.squad-4:hover, .a-squad:hover{
+
+}

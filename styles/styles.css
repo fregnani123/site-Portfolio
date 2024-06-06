@@ -1,11 +1,19 @@
 :root {
-    --primary-color: rgb(0, 0, 0);
-    --secondary-color: rgba(16, 16, 24, 0.767);
-    --text-color: white;
+    --primary-color: rgb(252, 252, 252);
+    --secondary-color: rgba(255, 255, 255, 0.589);
+    --text-color: rgb(80, 80, 32);
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --header-bg-color: #33333300;
-    --header-scrolled-bg-color: #000000;
-    --footer: rgb(66, 66, 66);
+    --header-scrolled-bg-color: #ffffff;
+    --footer: rgb(124, 124, 124);
+    --color-text-about:rgb(0, 0, 0);
+    --span-letra-destacar:rgb(80, 80, 32);
+    --carousel-color:rgb(255, 255, 255);
+}
+
+:root {
+    --carousel-item-width: 500px;
+    --carousel-item-height: 200px;
 }
 
 body,
@@ -194,8 +202,3 @@ header.scrolled nav ul {
     border-bottom: none;
 }
 
-footer{
-width: 100%;
-height: 400px;
-background-color: var(--footer);
-}

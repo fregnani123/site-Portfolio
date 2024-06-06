@@ -1,6 +1,7 @@
 const imgFlexa = document.getElementById('img-flexa');
 const imgLogo = document.querySelector('.img-logo');
 
+
 function alteraDisplay(variavel){
     variavel.style.display = 'block'
 };

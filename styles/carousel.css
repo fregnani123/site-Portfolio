@@ -1,11 +1,7 @@
-:root {
-    --carousel-item-width: 600px;
-    --carousel-item-height: 250px;
-}
 
 .carousel{
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--carousel-color);
     justify-content: center;
     margin-top: -180px;
     position: relative;
@@ -63,7 +59,7 @@ height: 100vh;
 }
 
 .print-GL{
-    width: 100%;
+    width: 00%;
     height: 100%;
     border-radius: 5px;
     z-index: -1;
