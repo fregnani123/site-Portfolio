@@ -3,7 +3,7 @@
     height: 100vh;
 }
 .title-portfolio {
-    margin-top: 100px;
-    /* background-color: red; */
+    margin-top: 50px;
+    color: var(--text-color);
 }
 
