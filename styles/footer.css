@@ -28,18 +28,25 @@ footer{
     width: 100px;
     height: 100px;
     border-radius: 3px;
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
 }
 .squad-1:hover, .a-squad:hover{
     border-bottom: none;
+    border-radius: 3px;
     background: rgb(0, 119, 181);}
 .squad-2:hover, .a-squad:hover{
-   background: rgb(24, 23, 23);
+    background: rgb(24, 23, 23);
+    border-radius: 3px;
+    border-bottom: none;
 }
 .squad-3:hover, .a-squad:hover{
-
+    background: rgb(24, 23, 23);
+    border-radius: 3px;
+    border-bottom: none;
 }
 .squad-4:hover, .a-squad:hover{
-
+    background: rgb(24, 23, 23);
+    border-bottom: none;
+    border-radius: 3px;
 }
