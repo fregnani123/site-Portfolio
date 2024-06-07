@@ -16,6 +16,7 @@
 }
 
 .loading {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -27,7 +28,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    background-color:var(--carousel-color);
+    background-color: var(--carousel-color);
     font-size: 24px;
 }
 
@@ -52,7 +53,7 @@
     box-sizing: border-box;
 }
 
-.aviso{
+.aviso {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -257,10 +258,11 @@ header.scrolled nav ul {
     position: relative;
     overflow: hidden;
 }
-.img-carousel{
-display: flex;
-justify-content: center;
-margin-top: -15px;
+
+.img-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
 }
 
 
@@ -343,6 +345,7 @@ footer {
     gap: 5px;
     padding-bottom: 100px;
 }
+
 .contact {
     font-weight: 300;
     font-size: 35px;
@@ -378,14 +381,16 @@ footer {
 .squad-1:hover {
     background: rgb(0, 119, 181);
 }
+
 .squad-3:hover {
     background: rgb(0, 0, 0);
 }
+
 .squad-4:hover {
     background: #3b5998;
 }
 
-.img-squad{
+.img-squad {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -450,26 +455,28 @@ footer {
     height: 100vh;
 }
 
-.span-whatsap{
-position: fixed;
-bottom: 10px;
-right: 10px;
-z-index: 1000;
-cursor: pointer;
-display: none;
+.span-whatsap {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
 }
 
 
-.img-whatsap{
-width: 50px;
-height: 50px;
-border-radius: 5px;
-transition: width 0.5s ease, height 0.5s ease;
+.img-whatsap {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    transition: width 0.5s ease, height 0.5s ease;
 }
-.img-whatsap:hover{
-width: 70px;
-height: 70px;
+
+.img-whatsap:hover {
+    width: 70px;
+    height: 70px;
 }
+
 .email-contact {
     margin-top: 20px;
     text-align: center;
