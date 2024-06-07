@@ -2,9 +2,23 @@ const imgFlexa = document.getElementById('img-flexa');
 const imgLogo = document.querySelector('.img-logo');
 
 
-function alteraDisplay(variavel){
-    variavel.style.display = 'block'
-};
+setTimeout(() => {
+    const imgWhatsap = document.querySelector('.span-whatsap');
+    imgWhatsap.style.display = 'block'
+}, 8000)
+
+setTimeout(() => {
+    const loadingPage = document.querySelector('.loading');
+    const body = document.querySelector('body');
+
+    if (loadingPage) {
+        loadingPage.style.display = 'none';
+    }
+
+    if (body) {
+        body.style.overflowY = 'scroll';
+    }
+}, 3000);
 
 
 document.addEventListener('scroll', function () {
