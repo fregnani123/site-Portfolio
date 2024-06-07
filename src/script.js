@@ -18,7 +18,7 @@ setTimeout(() => {
     if (body) {
         body.style.overflowY = 'scroll';
     }
-}, 3000);
+}, 5000);
 
 
 document.addEventListener('scroll', function () {
