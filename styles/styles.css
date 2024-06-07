@@ -15,6 +15,12 @@
     --carousel-item-height: 200px;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .aviso{
     width: 100%;
     display: flex;
@@ -27,6 +33,7 @@ html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
+    width: 100%;
     position: relative;
 }
 
@@ -41,6 +48,8 @@ body {
 
 .container {
     width: 100%;
+    min-height: calc(100vh - 100px);
+    /* Ensure the container takes up at least the full viewport height minus the footer height */
 }
 
 .img-logo {
@@ -143,8 +152,11 @@ nav ul li a:hover {
 
 .li-contato {
     border: 1px solid var(--text-color);
-    padding: 5px 15px 10px 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    transition: background 0.3s;
 }
 
 .li-contato:hover {
