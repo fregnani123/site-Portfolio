@@ -16,7 +16,6 @@
 }
 
 .loading {
-    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -253,12 +252,15 @@ header.scrolled nav ul {
 }
 
 .carousel {
-    display: flex;
     background-color: var(--carousel-color);
-    justify-content: center;
-    margin-top: -180px;
+    margin-top: -200px;
     position: relative;
     overflow: hidden;
+}
+.img-carousel{
+display: flex;
+justify-content: center;
+margin-top: -15px;
 }
 
 
@@ -405,8 +407,8 @@ footer {
 }
 
 .span-text {
-    width: 800px;
-    height: 570px;
+    width: 1000px;
+    height: auto;
     overflow: auto;
     color: white;
     padding: 0 30px;
@@ -427,7 +429,7 @@ footer {
 .about {
     font-weight: 300;
     font-size: 35px;
-    margin-top: 50px;
+    margin-top: 100px;
     color: var(--text-color);
     width: 100%;
     display: flex;
@@ -441,7 +443,6 @@ footer {
     font-weight: 300;
     text-align: center;
     color: white;
-    border-bottom: 1px solid var(--span-letra-destacar);
 }
 
 .section-portfolio {
