@@ -7,11 +7,11 @@
     --header-bg-color: #33333300;
     --header-scrolled-bg-color: rgb(252, 252, 252);
     --footer-bg-color: rgb(59, 59, 59);
-    --color-text-about: rgb(0, 0, 0);
+    --color-text-about: rgb(56, 56, 56);
     --span-letra-destacar: rgb(80, 80, 32);
     --carousel-color: rgb(252, 252, 252);
     --highlight-color: rgb(255, 244, 194);
-    --carousel-item-width: 500px;
+    --carousel-item-width: 400px;
     --carousel-item-height: 200px;
 }
 
@@ -170,7 +170,7 @@ nav ul li {
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1px solid transparent;
@@ -263,6 +263,7 @@ header.scrolled nav ul {
     display: flex;
     justify-content: center;
     margin-top: -15px;
+    align-items: center;
 }
 
 
@@ -279,6 +280,9 @@ header.scrolled nav ul {
     border-radius: 5px;
     width: var(--carousel-item-width);
     height: var(--carousel-item-height);
+}
+.img-res {
+  display: none;
 }
 
 .carousel-item {
@@ -398,13 +402,13 @@ footer {
 
 .section-about {
     width: 100%;
-    height: 100vh;
+    height: auto;
     color: var(--color-text-about);
 }
 
 .div-about {
     width: 100%;
-    height: 530px;
+    height: auto;
     padding: 0 20px 20px 20px;
     border-radius: 5px;
     display: flex;
@@ -413,15 +417,17 @@ footer {
 
 .span-text {
     width: 1000px;
-    height: auto;
-    overflow: auto;
+    height:auto;
+    overflow: hidden;
     color: white;
     padding: 0 30px;
     font-weight: 300;
 }
 
 .text-about {
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: inherit;
     color: var(--color-text-about);
     letter-spacing: 0.08em;
 }

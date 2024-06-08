@@ -1,0 +1,137 @@
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .slogan {
+        font-size: 25px;
+    }
+
+    .img-logo {
+        width: 250px;
+    }
+
+    nav ul {
+        height: 100px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .contact {
+        font-size: 30px;
+    }
+
+    .text-about {
+        font-size: 17px;
+    }
+
+    .span-text {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .carousel-item {
+        width: calc(100% - 40px);
+    }
+
+    .img{display: none;}
+
+    .img-res {
+        border-radius: 5px;
+        width: 200px;
+        height: auto;
+        display: flex
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .img-logo {
+        width: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .contact {
+        font-size: 25px;
+    }
+
+    .text-about {
+        font-size: 15px;
+    }
+
+    .span-text {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .carousel-item {
+        width: calc(100% - 20px);
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        height: 50px;
+    }
+
+    .img {
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+    .email-contact a {
+        font-size: 12px;
+    }
+
+    .copy {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .contatos {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .span-whatsap {
+        display: block;
+    }
+          .img {
+              display: none;
+          }
+    
+          .img-res {
+              border-radius: 5px;
+              width: 200px;
+              height: auto;
+              display: flex
+          }
+}
