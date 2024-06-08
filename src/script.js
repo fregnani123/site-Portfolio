@@ -39,6 +39,47 @@ imgFlexa.addEventListener('click', function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    function scrollToSection(event, targetId) {
+        event.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    const sobreLink = document.querySelectorAll('a[href="#sobre"]');
+    sobreLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'about');
+        });
+    });
+
+    const portfolioLink = document.querySelectorAll('a[href="#portfolio"]');
+    portfolioLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'portfolio');
+        });
+    });
+    const inicioLink = document.querySelectorAll('a[href="#inicio"]');
+    inicioLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'inicio');
+        });
+    });
+    const contatoLink = document.querySelectorAll('a[href="#contato"]');
+    contatoLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'contato');
+        });
+    });
+
+});
+
+
 function changeLanguage(lang) {
     const ptElements = document.querySelectorAll('.lang.pt');
     const enElements = document.querySelectorAll('.lang.en');

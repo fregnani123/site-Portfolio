@@ -9,8 +9,8 @@
     content="Fabiano Fregnani, Full-stack Developer, HTML, CSS, JavaScript, React, Node.js, Express, C#, .Net, MongoDB, MySQL, Oracle">
 <link rel="stylesheet" href="./styles/styles.css">
 <link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
-<link rel="alternate" hreflang="en" href="https://www.seusite.com/en">
-<link rel="alternate" hreflang="pt" href="https://www.seusite.com/pt">
+<link rel="alternate" hreflang="en" href="https://www.fabianofregnani.com/en">
+<link rel="alternate" hreflang="pt" href="https://www.fabianofregnani/pt">
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -29,6 +29,7 @@
 
 <body>
     <div class="loading hidden"><img class="img-lobo" src="./img_loading.png" alt="Carregando...."></div>
+    <span id="inicio"></span>
     <header id="menu">
         <nav>
             <ul><span class="span-whatsap"><a
@@ -37,18 +38,20 @@
                             alt="Entre em contato pelo WhatsApp"></a></span>
                 <li class="li-logo"><img src="./img/img-assets/logo.png" class="img-logo" alt="Logo de Fabiano Fregnani"
                         loading="lazy"></li>
-                <li><a href="#" class="lang pt">Início</a><a href="#" class="lang en" style="display: none;">Home</a>
+                <li><a href="#inicio" class="lang pt">Início</a><a href="#inicio" class="lang en"
+                        style="display: none;">Home</a>
                 </li>
-                <li><a href="#" class="lang pt">Sobre</a><a href="#" class="lang en" style="display: none;">About</a>
+                <li><a href="#sobre" class="lang pt">Sobre</a><a href="#sobre" class="lang en"
+                        style="display: none;">About</a>
                 </li>
                 </li>
-                <li><a href="#" class="lang pt">Serviços</a><a href="#" class="lang en"
+                <li><a href="#portfolio" class="lang pt">Portfólio</a><a href="#portfolio" class="lang en"
+                        style="display: none;">Portfolio</a></li>
+                <li><a href="#service" class="lang pt">Serviços</a><a href="#service" class="lang en"
                         style="display: none;">Service</a>
                 </li>
-                <li><a href="#" class="lang pt">Portfólio</a><a href="#" class="lang en"
-                        style="display: none;">Portfolio</a></li>
-                <li class="li-contato"><a id="a-contato" href="#" class="lang pt">Contato</a><a id="a-contato" href="#"
-                        class="lang en" style="display: none;">Contact me</a></li>
+                <li class="li-contato"><a id="a-contato" href="#contato" class="lang pt">Contato</a><a id="a-contato"
+                        href="#contato" class="lang en" style="display: none;">Contact me</a></li>
                 <li class="language-select">
                     <a href="#" onclick="changeLanguage('pt')"><img class="img-En"
                             src="./img/img-assets/brazil_flags_flag_16979.ico" alt="Português" loading="lazy"></a>
@@ -75,7 +78,7 @@
                 </h1>
             </div>
         </section>
-
+        <span id="about"></span>
         <section class="section-about">
             <h2 class="about">
                 <span class="lang pt">Sobre</span>
@@ -114,25 +117,35 @@
                         contato para discutirmos como posso ajudar a transformar suas ideias em realidade.
                     </p>
                     <p class="text-about lang en">
-                        Hello! I'm Fabiano Fregnani, a full-stack developer passionate about turning ideas into digital solutions.
-                        Currently, I'm in the 4th semester of the Analysis and Systems Development course, where I have the opportunity to
+                        Hello! I'm Fabiano Fregnani, a full-stack developer passionate about turning ideas into digital
+                        solutions.
+                        Currently, I'm in the 4th semester of the Analysis and Systems Development course, where I have
+                        the opportunity to
                         deepen my theoretical and practical knowledge in programming.
-                    
-                        Additionally, over my two and a half years of study, I've dedicated myself to various free courses in the field,
-                        enhancing my skills in different development technologies and methodologies. I'm always seeking new knowledge and
-                        challenges to improve my skills and offer increasingly efficient and innovative digital solutions.
-                    
+
+                        Additionally, over my two and a half years of study, I've dedicated myself to various free
+                        courses in the field,
+                        enhancing my skills in different development technologies and methodologies. I'm always seeking
+                        new knowledge and
+                        challenges to improve my skills and offer increasingly efficient and innovative digital
+                        solutions.
+
                         My skills include:
-                    
-                        Front-end: Using <span class="span-destacar">HTML, CSS, JavaScript, React, and Electron.js</span>, I build
+
+                        Front-end: Using <span class="span-destacar">HTML, CSS, JavaScript, React, and
+                            Electron.js</span>, I build
                         responsive and dynamic user interfaces that ensure a pleasant experience for all users.
-                        Back-end: With expertise in <span class="span-destacar">Node.js, Express, C#, .Net, and databases like MongoDB,
-                            MySQL, and Oracle</span>, my approach is centered on creatively and efficiently solving problems.
-                    
-                        I'm constantly contributing to open-source projects and participating in developer communities, where I can share
+                        Back-end: With expertise in <span class="span-destacar">Node.js, Express, C#, .Net, and
+                            databases like MongoDB,
+                            MySQL, and Oracle</span>, my approach is centered on creatively and efficiently solving
+                        problems.
+
+                        I'm constantly contributing to open-source projects and participating in developer communities,
+                        where I can share
                         knowledge and learn from other professionals.
-                    
-                        Let's build something amazing together! Check out some of my projects below and get in touch to discuss how I can
+
+                        Let's build something amazing together! Check out some of my projects below and get in touch to
+                        discuss how I can
                         help turn your ideas into reality.
                     </p>
 
@@ -144,24 +157,25 @@
                     <span class="span-destacar lang en" style="display: none;">Hard Skills</span>
                 </h3>
                 <div class="img-carousel">
-                <button class="carousel-prev"><img class="seta_esquerda" src="./img/img-assets/seta_esquerda.png"
-                        alt="Anterior"></button>
-                <div class="carousel-inner">
+                    <button class="carousel-prev"><img class="seta_esquerda" src="./img/img-assets/seta_esquerda.png"
+                            alt="Anterior"></button>
+                    <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <img class="img" src="./img/img-carousel/stack.png" alt="">
+                        <div class="carousel-item active">
+                            <img class="img" src="./img/img-carousel/stack.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img" src="./img/img-carousel/stack2.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img" src="./img/img-carousel/stack3.png" alt="">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="img" src="./img/img-carousel/stack2.png" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="img" src="./img/img-carousel/stack3.png" alt="">
-                    </div>
+                    <button class="carousel-next"><img class="seta_direita" src="./img/img-assets/seta_direita.png"
+                            alt="Próximo"></button>
                 </div>
-                <button class="carousel-next"><img class="seta_direita" src="./img/img-assets/seta_direita.png"
-                        alt="Próximo"></button>
-                    </div>
             </div>
+            <span id="portfolio"></span>
         </section>
         <section class="section-portfolio">
             <section class="section-portfolio">
@@ -173,6 +187,7 @@
             </section>
         </section>
     </main>
+    <span id="contato"></span>
     <footer>
         <h2 class="contact">
             <span class="lang pt">Entre em contato através das mídias sociais</span>
