@@ -280,8 +280,8 @@ header.scrolled nav ul {
 
 #img {
     border-radius: 5px;
-    width: var(--carousel-item-width);
-    height: var(--carousel-item-height);
+    width: 450px;
+    height: auto;
 }
 #img-res {
   display: none;
