@@ -27,11 +27,11 @@
     }
 
     header {
-        height: 150px;
+        height: 200px;
     }
 
     header.scrolled {
-        height: 150px;
+        height: 200px;
         background-color: var(--primary-color);
     }
 
