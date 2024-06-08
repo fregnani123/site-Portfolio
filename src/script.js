@@ -4,8 +4,10 @@ const imgLogo = document.querySelector('.img-logo');
 
 setTimeout(() => {
     const imgWhatsap = document.querySelector('.span-whatsap');
-    imgWhatsap.style.display = 'block'
-}, 8000)
+    if (window.innerWidth > 768) {
+        imgWhatsap.style.display = 'block';
+    }
+}, 8000);
 
 setTimeout(() => {
     const loadingPage = document.querySelector('.loading');
