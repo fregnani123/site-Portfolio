@@ -364,6 +364,7 @@ footer {
     letter-spacing: 0.05em;
 }
 
+
 .squad-1,
 .squad-2,
 .squad-3,
@@ -913,6 +914,9 @@ header.scrolled nav ul {
 .img-Pt {
     width: 15px;
     display: block;
+}
+.idioma {
+ display: none;
 }
 
 .img-flexa {
