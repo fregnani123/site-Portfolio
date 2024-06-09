@@ -1,7 +1,7 @@
 @media (max-width: 700px) {
-    header.scrolled nav ul {
-        height: 140px;
-        background-color: var(--header-bg-color);
+   
+    nav{
+        height: 210px;
     }
 
     .img-logo {
@@ -15,7 +15,6 @@
     .li-contato {
         transition: border-bottom 0.5s ease, background-color 0.5s ease;
         border-bottom: 1px solid transparent;
-        /* Define o estado inicial */
         border-top: none;
         padding: 0;
         display: block;
@@ -26,10 +25,11 @@
         background-color: var(--header-bg-color);
         padding: 0;
         border-bottom: 1px solid var(--text-color);
-        /* Estado final da borda */
     }
 
     .idioma {
+        padding-top: 20px;
+        font-size: 15px;
         margin-top: 5px;
     }
 

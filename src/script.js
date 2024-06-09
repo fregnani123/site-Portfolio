@@ -25,9 +25,16 @@ setTimeout(() => {
 
 document.addEventListener('scroll', function () {
     const header = document.getElementById('menu');
-    if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-        imgLogo.classList.add('scrolled');
+    const imgLogo = document.querySelector('.img-logo');
+
+    if (window.innerWidth > 700) { // Verifica se a largura da tela é maior que 700px
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+            imgLogo.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+            imgLogo.classList.remove('scrolled');
+        }
     } else {
         header.classList.remove('scrolled');
         imgLogo.classList.remove('scrolled');
