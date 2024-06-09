@@ -22,6 +22,15 @@ setTimeout(() => {
     }
 }, 5000);
 
+const btn = document.getElementById('btn-mobile')
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    const nav = document.querySelector('.nav');
+    const ulMobile = document.querySelector('ul-header');
+    nav.classList.toggle('active')
+    ulMobile.classList.toggle('active')
+})
 
 document.addEventListener('scroll', function () {
     const header = document.getElementById('menu');
