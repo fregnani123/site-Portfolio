@@ -135,11 +135,15 @@
     }
 
     .idioma {
+        align-items: center;
         display: flex;
         justify-content: center;
-        padding-top: 5px;
-        background-color: rgb(240, 240, 240);
+        height: 30px;
     }
+   
+   .lang{
+    margin-right: 5px;
+   }
 
     .contatos {
         display: flex;
