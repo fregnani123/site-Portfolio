@@ -66,11 +66,10 @@ html {
     font-family: Arial, sans-serif;
 }
 
+
 body {
-    position: relative;
     background: var(--primary-color);
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .background-video {
@@ -457,7 +456,6 @@ footer {
     letter-spacing: 0.05em;
 }
 
-
 .hard-skills {
     font-size: 25px;
     font-weight: 300;
@@ -477,6 +475,7 @@ footer {
     z-index: 1000;
     cursor: pointer;
     display: none;
+    margin-bottom: 0px;
 }
 
 
