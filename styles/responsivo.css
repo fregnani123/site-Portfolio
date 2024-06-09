@@ -71,6 +71,10 @@
 
     .text-about {
         font-size: 17px;
+    } 
+
+    .container{
+        display: block;
     }
 
     .span-text {
