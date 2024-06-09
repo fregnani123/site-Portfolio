@@ -66,10 +66,12 @@ html {
     font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
-    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
+    position: relative;
     background: var(--primary-color);
     overflow-x: hidden;
     overflow-y: hidden;
