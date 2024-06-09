@@ -1,12 +1,20 @@
 @media (max-width: 700px) {
    
-    nav{
-        height: 210px;
+    .nav{
+        height: 0px;
+        overflow: hidden;
+        transition: height 1s ease;
     }
+   .nav {
+       transition: height 0.5s ease;
+       height: 0;
+       overflow: hidden;
+   }
 
-    .img-logo {
-        width: 250px;
-    }
+   .nav.active {
+       height: 250px;
+       overflow: visible;
+   }
 
     .img-logo.scrolled {
         width: 250px;
@@ -16,14 +24,20 @@
         transition: border-bottom 0.5s ease, background-color 0.5s ease;
         border-bottom: 1px solid transparent;
         border-top: none;
-        padding: 0;
-        display: block;
+        border-left: none;
+        border-right: none;
+        padding: 13px;
     }
+    #a-contato{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+  
 
     .li-contato:hover {
         cursor: pointer;
         background-color: var(--header-bg-color);
-        padding: 0;
         border-bottom: 1px solid var(--text-color);
     }
 
@@ -44,4 +58,9 @@
         width: 225px;
         display: block;
     }
+    .ul-header{
+        text-align: center;
+        display: block;
+    }
+
 }

@@ -92,10 +92,8 @@ body {
 }
 
 .logo {
-    position: fixed;
-    left: 20px;
-    display: flex;
-    align-items: center;
+width: 100%;
+height: auto;
 }
 
 .title {
@@ -509,123 +507,4 @@ footer {
 
 .email-contact a:hover {
     text-decoration: underline;
-}:root {
-    --primary-color: rgb(252, 252, 252);
-    --secondary-color: rgba(255, 255, 255, 0.589);
-    --text-color: rgb(80, 80, 32);
-    --link-hover-color: rgba(128, 128, 128, 0.192);
-    --title-contact: white;
-    --header-bg-color: #33333300;
-    --header-scrolled-bg-color: rgb(252, 252, 252);
-    --footer-bg-color: rgb(59, 59, 59);
-    --color-text-about: rgb(56, 56, 56);
-    --span-letra-destacar: rgb(80, 80, 32);
-    --carousel-color: rgb(252, 252, 252);
-    --highlight-color: rgb(255, 244, 194);
-    --carousel-item-width: 500px;
-    --carousel-item-height: 200px;
 }
-
-/* Estilos gerais aqui... */
-
-/* Estilos para tablets */
-@media (max-width: 768px) {
-    .title {
-        font-size: 40px;
-    }
-
-    .slogan {
-        font-size: 25px;
-    }
-
-    .logo {
-        margin-left: -20px;
-        width: 100%;
-        justify-content: center;
-        position: absolute;
-        top: -25px;
-        margin-bottom: 30px;
-    }
-
-    .img-logo {
-        width: 250px;
-        height: auto;
-    }
-
-    .img-logo.scrolled {
-        width: 250px;
-        height: auto;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    header {
-        height: 150px;
-    }
-
-    header.scrolled {
-        height: 150px;
-        background-color: var(--primary-color);
-    }
-
-    nav {
-        display: flex;
-        justify-content: left;
-        text-align: right;
-        background-color: var(--primary-color);
-    }
-
-    .ul-header {
-        position: relative;
-        display: block;
-        height: 140px;
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .li-contato {
-        border: none;
-        cursor: pointer;
-        justify-content: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin-right: 20px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    .contact {
-        font-size: 30px;
-    }
-
-    .text-about {
-        font-size: 17px;
-    }
-
-    .span-text {
-        width: auto;
-        padding: 0 15px;
-    }
-
-    .carousel-item {
-        width: calc(100% - 40px);
-    }
-
-    .img {
-        display: none;
-    }
-
-    .img-res {
-        border-radius: 5px;
-        width: 200px;
-        height: auto;
-        display: flex;
-    }
-}
-
