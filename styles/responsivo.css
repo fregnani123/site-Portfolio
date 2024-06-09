@@ -1,0 +1,30 @@
+@media (max-width: 700px){
+header.scrolled nav ul {
+       height: 140px;background-color: var(--header-bg-color);
+    }
+.img-logo{
+    width: 250px;
+}
+.img-logo.scrolled{
+    width: 250px;
+}
+.li-contato{
+    border: none;
+    padding: 0;
+}
+.idioma{
+    margin-top: 5px;
+}
+#img-skill {
+    border-radius: 5px;
+    width: 450px;
+    display: none;
+    height: auto;
+}
+
+#img-res {
+    width: 225px;
+    display: block;
+}
+
+}
