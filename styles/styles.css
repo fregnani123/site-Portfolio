@@ -342,12 +342,19 @@ footer {
 }
 
 .contatos {
+    display: flex;
     width: 100%;
     height: 50px;
-    display: flex;
+    list-style: none;
     justify-content: center;
     gap: 5px;
     padding-bottom: 100px;
+}
+#li-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .contact {
