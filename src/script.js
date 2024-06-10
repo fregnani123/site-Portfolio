@@ -33,7 +33,7 @@ btn.addEventListener('click', (e) => {
 })
 
 document.addEventListener('scroll', function () {
-    const header = document.getElementById('menu');
+    const header = document.querySelector('.header');
     const imgLogo = document.querySelector('.img-logo');
 
     if (window.innerWidth > 700) { // Verifica se a largura da tela é maior que 700px
@@ -69,6 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    const inicioLink = document.querySelectorAll('a[href="#inicio"]');
+    inicioLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'inicio');
+        });
+    });
+
     const sobreLink = document.querySelectorAll('a[href="#sobre"]');
     sobreLink.forEach(link => {
         link.addEventListener('click', function (event) {
@@ -82,12 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollToSection(event, 'portfolio');
         });
     });
-    const inicioLink = document.querySelectorAll('a[href="#inicio"]');
-    inicioLink.forEach(link => {
+    const serviceLink = document.querySelectorAll('a[href="#service"]');
+    serviceLink.forEach(link => {
         link.addEventListener('click', function (event) {
-            scrollToSection(event, 'inicio');
+            scrollToSection(event, 'contato');
         });
     });
+   
     const contatoLink = document.querySelectorAll('a[href="#contato"]');
     contatoLink.forEach(link => {
         link.addEventListener('click', function (event) {

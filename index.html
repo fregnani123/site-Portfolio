@@ -9,6 +9,7 @@
     content="Fabiano Fregnani, Full-stack Developer, HTML, CSS, JavaScript, React, Node.js, Express, C#, .Net, MongoDB, MySQL, Oracle">
 <link rel="stylesheet" href="./styles/styles.css">
 <link rel="stylesheet" href="./styles/responsivo.css">
+<link rel="stylesheet" href="./styles/styleMenu.css">
 <link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
 <link rel="alternate" hreflang="en" href="https://www.fabianofregnani.com/en">
 <link rel="alternate" hreflang="pt" href="https://www.fabianofregnani/pt">
@@ -27,18 +28,22 @@
     }
     </script>
 </head>
+
 <body>
-    <div class="loading hidden"><img class="img-lobo" src="./img_loading.png" alt="Carregando...."></div>
     <span id="inicio"></span>
-    <header id="menu">
-        <nav class="nav">
-            <ul class="ul-header">
-                <span class="span-whatsap"><a
-                        href="https://wa.me/5548996607600?text=Ol%C3%A1%2C+sou+Fabiano+Desenvolvedor+Full-stack."
-                        target="_blank"><img class="img-whatsap" src="./img/img-contato/whatsap.png"
-                            alt="Entre em contato pelo WhatsApp"></a></span>
-                <li  class="logo"><img src="./img/img-assets/logo.png" class="img-logo" alt="Logo de Fabiano Fregnani"
-                        loading="lazy"></li>
+    <header class="header">
+        <span class="span-whatsap"><a
+                href="https://wa.me/5548996607600?text=Ol%C3%A1%2C+sou+Fabiano+Desenvolvedor+Full-stack."
+                target="_blank"><img class="img-whatsap" src="./img/img-contato/whatsap.png"
+                    alt="Entre em contato pelo WhatsApp"></a></span>
+
+        <img id="logo" src="./img/img-assets/logo.png" class="img-logo" alt="Logo de Fabiano Fregnani"
+                loading="lazy"></span>
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <div id="hamburguer">
+            </button>
+            <ul id="menu">
                 <li class="li"><a href="#inicio" class="lang pt">Início</a><a href="#inicio" class="lang en"
                         style="display: none;">Home</a>
                 </li>
@@ -51,26 +56,21 @@
                 <li class="li"><a href="#service" class="lang pt">Serviços</a><a href="#service" class="lang en"
                         style="display: none;">Service</a>
                 </li>
-                <li class="li-contato"><a id="a-contato" href="#contato" class="lang pt">Contato</a><a id="a-contato"
+                <li class="li"><a id="a-contato" href="#contato" class="lang pt">Contato</a><a id="a-contato"
                         href="#contato" class="lang en" style="display: none;">Contact me</a></li>
-                <li class="idioma">
-                    <span class="lang pt">Idioma</span>
-                    <span class="lang en">Language</span>
+                <li class="sel-idioma">
+                    <span class="lang pt">PT-BR</span>
+                    <span class="lang en">EN</span>
                     <span class="language-select">
-                        <a href="#" onclick="changeLanguage('pt')"><img class="img-En"
-                                src="./img/img-assets/brazil_flags_flag_16979.ico" alt="Português" loading="lazy"></a>
-                        <a href="#" onclick="changeLanguage('en')"><img class="img-En"
-                                src="./img/img-assets/united_kingdom_flags_flag_17079.ico" alt="English"
-                                loading="lazy"></a>
+                        <a class="a-pt" href="#" onclick="changeLanguage('pt')">
+                            <img class="img-Pt" src="./img/img-assets/brazil_flags_flag_16979.ico" alt="Português" loading="lazy">
+                        </a>
+                        <a class="a-en" href="#" onclick="changeLanguage('en')">
+                            <img class="img-En" src="./img/img-assets/united_kingdom_flags_flag_17079.ico" alt="English" loading="lazy">
+                        </a>
                     </span>
                 </li>
-                <li class="btn-mobile">
-                    <button id="btn-mobile">
-                        abrir
-                    </button>
-                </li>
             </ul>
-            
         </nav>
     </header>
     <section class="background-video">
@@ -198,6 +198,14 @@
         </section>
     </section>
     <span id="contato"></span>
+    <section class="servicos">
+        <h2 class="title-portfolio">
+            <span class="lang pt">Serviços</span>
+            <span class="lang en">Service</span>
+        </h2>
+   <div class="aviso"><img  src="./construcao-removebg-preview.png" alt=""></div>
+    </section>
+    <span id="contato"></span>
     <footer>
         <h2 class="contact">
             <span class="lang pt">Entre em contato através das mídias sociais</span>
@@ -236,6 +244,7 @@
         </p>
     </footer>
     <script src="./src/script.js"></script>
+    <script src="./src/btnMobile.js"></script>
 </body>
 
 </html>

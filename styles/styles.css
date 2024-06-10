@@ -15,6 +15,20 @@
     --carousel-item-height: 200px;
 }
 
+:root {
+    --cor1: rgb(80, 80, 32);
+    /*cor linhas menu*/
+    --cor2:rgb(80, 80, 32);
+    /*cor nome menu*/
+    --cor3: rgb(80, 80, 32);
+    /*cor links do menu */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .loading {
     display: none;
     justify-content: center;
@@ -64,26 +78,20 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+   
 }
-
 
 body {
     background: var(--primary-color);
     overflow-x: hidden;
 }
-.btn-mobile{display: none;}
 
 .background-video {
     background-color: var(--secondary-color);
 }
 
-.container {
-    width: 100%;
-    min-height: calc(100vh - 100px);
-}
-
 .img-logo {
-    width: 370px;
+    width: 400px;
     transition: width 0.5s;
 }
 
@@ -94,6 +102,50 @@ body {
 .logo {
 width: 100%;
 height: auto;
+}
+
+.sel-idioma {
+    color: var(--text-color);
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+}
+
+.language-select {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.a-pt,
+.a-en {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: auto;
+    border: 1px solid transparent;
+}
+.a-pt:hover,
+.a-en:hover {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.img-En,
+.img-Pt {
+    margin-top: -10px;
+    margin-left: -8px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid transparent;
+}
+.img-En:hover,
+.img-Pt:hover {
+    border-top: 1px solid var(--text-color);
 }
 
 .title {
@@ -136,69 +188,6 @@ height: auto;
     padding-top: 40vh;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--header-bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s;
-    z-index: 999;
-}
-header.scrolled nav ul {
-    height: 100px;
-    background-color: var(--header-scrolled-bg-color);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 130px;
-    align-items: center;
-    transition: height 0.5s;
-}
-
-nav ul li {
-    margin: 0 15px;
-    height: 20px;
-    margin-right: 50px;
-}
-
-nav ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 19px;
-    display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ease;
-}
-
-nav ul li a:hover {
-    border-bottom: 1px solid var(--text-color);
-}
-
-
-.li-contato {
-    border: 1px solid var(--text-color);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 18px 20px;
-    transition: background-color 0.3s;
-}
-
-.li-contato:hover {
-    background-color: var(--link-hover-color);
-}
-
-
-
 .extra-content {
     margin-top: 70px;
 }
@@ -211,18 +200,6 @@ nav ul li a:hover {
     display: block;
 }
 
-.language-select {
-    display: flex;
-    box-sizing: border-box;
-    gap: 5px;
-    justify-content: center;
-}
-
-.img-En,
-.img-Pt {
-    width: 15px;
-    display: block;
-}
 
 .img-flexa {
     display: block;
@@ -249,20 +226,19 @@ nav ul li a:hover {
 }
 
 #a-contato {
-    border-bottom: none;
+    border: 1px solid var(--text-color);
+    transition:background-color 0.3s;
+}
+#a-contato:hover {
+    background-color: rgb(236, 236, 236);
 }
 
-.carousel {
-    background-color: var(--carousel-color);
-    margin-top: -200px;
-    position: relative;
-    overflow: hidden;
-}
+
 
 .img-carousel {
     display: flex;
     justify-content: center;
-    margin-top: -15px;
+    margin-top: 5px;
     align-items: center;
 }
 
@@ -415,6 +391,7 @@ footer {
     width: 100%;
     height: auto;
     color: var(--color-text-about);
+    margin-top: 150px;
 }
 
 .div-about {
@@ -460,6 +437,7 @@ footer {
 }
 
 .hard-skills {
+    margin-top: 20px;
     font-size: 25px;
     font-weight: 300;
     text-align: center;
@@ -477,7 +455,6 @@ footer {
     right: 10px;
     z-index: 1000;
     cursor: pointer;
-    display: none;
     margin-bottom: 0px;
 }
 
@@ -509,4 +486,213 @@ footer {
 
 .email-contact a:hover {
     text-decoration: underline;
+}
+
+
+
+/*inicio css Menu ***********************************************************   */
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+a:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    left: 20px;
+}
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content:center;
+    background-color:transparent;
+    transition: height 0.3s;
+}
+.header.scrolled {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    justify-content: center;
+    background-color:var(--primary-color);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    margin-left: 50px;
+}
+
+#menu a {
+    color: var(--cor3);
+    display: block;
+    padding: .5rem;
+    font-size: 18px;
+
+}
+
+/* fim da estrutura do Menu e cabeçalho quando a tela está sem responsividade */
+
+#btn-mobile {
+    display: none;
+}
+
+/* Inicio menu mobile telas menores */
+
+@media (max-width: 600px) {
+    btn-mobile {
+        display: block;
+    }
+
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+    
+        body {
+            background: var(--primary-color);
+            overflow-x: hidden;
+        }
+
+    .header{
+        margin-top: 0;
+        height: 70px;
+        background-color: var(--primary-color);
+    }
+
+    #logo{
+     width: 300px;
+    }
+    #a-contato{
+        border: none;
+    }
+    #menu {
+        display: block;
+        /*Agora desta parte para baixo vamos dar estilo a folha do menu quando está ativa */
+        position: absolute;
+        /*sobrepor todas*/
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        /* Esconde o menu na animação */
+        overflow-y: hidden;
+        /*na animação sincroniza os objetos com o visibility*/
+        /*overflow-y:auto; ativar se o menu tiver mais itens cria barra de rolagem*/
+    }
+
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        /* altura da tela - o do topo */
+        display: block;
+        visibility: visible;
+        /* mostra os itens do menu na animação*/
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #btn-mobile {
+        /*estilizando o button */
+        display: flex;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--cor2);
+    }
+
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        margin-left: 5px;
+        color: var(--cor1);
+    }
+
+
+    #hamburguer::after {
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+        /*position relative para alinhar o X do menu. */
+        background: currentColor;
+
+
+    }
+
+    #hamburguer::before {
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: currentColor;
+
+    }
+
+ /* nesta parte controla o lado onde fica o Menu */
+    nav{
+        display: flex;
+        /* background-color: red; */
+        width: 100%;
+        justify-content: right;
+    }
+
+    nav.active #hamburguer {
+        border-top-color: transparent;
+        /*ativa com o nav e deixa o 1º traço trasparente */
+    }
+
+    nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px
+    }
+    .sel-idioma{
+    display: none;
+    }
+    
+   
 }
