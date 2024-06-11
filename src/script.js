@@ -1,6 +1,17 @@
 const imgFlexa = document.getElementById('img-flexa');
 const imgLogo = document.querySelector('.img-logo');
 
+const btnMobile = document.querySelector('button#btn-mobile');
+
+
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault()
+    const nav = document.querySelector('nav#nav');
+    nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 setTimeout(() => {
     const imgWhatsap = document.querySelector('.span-whatsap');
@@ -66,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: targetElement.offsetTop,
                 behavior: 'smooth'
             });
+            toggleMenu(event); 
         }
     }
 
@@ -74,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', function (event) {
             scrollToSection(event, 'inicio');
         });
+        
     });
 
     const sobreLink = document.querySelectorAll('a[href="#sobre"]');
@@ -163,3 +176,4 @@ document.addEventListener('DOMContentLoaded', function () {
         nextButton.click();
     }, 6000);
 });
+

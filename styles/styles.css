@@ -566,7 +566,10 @@ a:hover {
         display: block;
     }
 
-
+   .li{
+    display: flex;
+    justify-content: center;
+   }
         body,
         html {
             margin: 0;
@@ -592,6 +595,7 @@ a:hover {
     #a-contato{
         border: none;
     }
+  
     #menu {
         display: block;
         /*Agora desta parte para baixo vamos dar estilo a folha do menu quando está ativa */
@@ -613,7 +617,8 @@ a:hover {
 
 
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: 280px;
+        /* height: calc(100vh - 70px); */
         /* altura da tela - o do topo */
         display: block;
         visibility: visible;
@@ -693,6 +698,25 @@ a:hover {
     .sel-idioma{
     display: none;
     }
-    
-   
+
+    #img-skill{
+     display: none;
+    }
+    #img-res{
+     width: 200px;
+     display: block;
+    }
+    .img-aviso{
+        width: 400px
+    }
+    .about{
+        margin-bottom: 20px;
+    }
+    .title-portfolio{
+        font-size: 28px;
+    }
+    .contact{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
