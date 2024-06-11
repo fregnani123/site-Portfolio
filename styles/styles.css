@@ -762,6 +762,8 @@ a:hover {
         font-size: 28px;
     }
     .contact{
+        display: flex;
+        text-align: center;
         font-size: 20px;
         margin-bottom: 20px;
     }
