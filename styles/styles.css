@@ -773,23 +773,27 @@ a:hover {
     }
 }
 
-@media (orientation: landscape) {
+@media (orientation: portrait) {
     .img-logo {
         display: none;
     }
+
     .logo-2 {
-       
         display: block;
     }
-    .img-logo2 {
-        width: 400px;
 
+    .img-logo2 {
+        width: 200px;
+        /* Ajuste a largura conforme necessário */
     }
-    .title{
+
+    .title {
         margin-top: 0px;
-       text-align: center;
+        text-align: center;
     }
-    .background-video{
-        height: 127vh;
+
+    .background-video {
+        height: 100vh;
+        /* Ajuste a altura conforme necessário */
     }
 }
