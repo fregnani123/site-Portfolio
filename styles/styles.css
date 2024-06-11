@@ -432,6 +432,7 @@ footer {
 }
 
 .text-about {
+    margin-top: 20px;
     font-size: 19px;
     font-weight: 300;
     font-family: inherit;
@@ -638,7 +639,7 @@ a:hover {
         position: absolute;
         /*sobrepor todas*/
         width: 100%;
-        top: 129px;
+        top: 50px;
         right: 0px;
         background-color: var(--primary-color);
         /* background-color: red; */
