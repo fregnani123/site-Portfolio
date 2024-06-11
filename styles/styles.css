@@ -29,6 +29,10 @@
     margin: 0;
 }
 
+.logo-2{
+display: none;
+}
+
 .loading {
     display: none;
     justify-content: center;
@@ -766,5 +770,26 @@ a:hover {
         text-align: center;
         font-size: 20px;
         margin-bottom: 20px;
+    }
+}
+
+@media (orientation: landscape) {
+    .img-logo {
+        display: none;
+    }
+    .logo-2 {
+       
+        display: block;
+    }
+    .img-logo2 {
+        width: 400px;
+
+    }
+    .title{
+        margin-top: 0px;
+       text-align: center;
+    }
+    .background-video{
+        height: 127vh;
     }
 }
