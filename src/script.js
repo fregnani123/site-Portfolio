@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const serviceLink = document.querySelectorAll('a[href="#service"]');
     serviceLink.forEach(link => {
         link.addEventListener('click', function (event) {
-            scrollToSection(event, 'contato');
+            scrollToSection(event, 'servico');
         });
     });
    
