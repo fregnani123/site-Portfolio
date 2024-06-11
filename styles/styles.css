@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(252, 252, 252);
-    --secondary-color: rgba(255, 255, 255, 0.589);
+    --secondary-color: rgba(255, 255, 255, 0.705);
     --text-color: rgb(80, 80, 32);
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --title-contact: white;
@@ -29,9 +29,20 @@
     margin: 0;
 }
 
-.logo-2{
-display: none;
+#logo{
+    padding-top:10px ;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
 }
+/* #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    left: 20px;
+} */
 
 .loading {
     display: none;
@@ -98,12 +109,13 @@ body {
 }
 
 .img-logo {
-    width: 400px;
+    width: 350px;
+    border-bottom: 2px solid var(--text-color) ;
     transition: width 0.5s;
 }
 
 .img-logo.scrolled {
-    width: 320px;
+    width: 400px;
 }
 
 .logo {
@@ -511,12 +523,7 @@ a:hover {
     border-bottom: 1px solid var(--text-color);
 }
 
-#logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    position: fixed;
-    left: 20px;
-}
+
 
 .header {
     position: fixed;
@@ -535,7 +542,7 @@ a:hover {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 120px;
+    height: 125px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -548,7 +555,8 @@ a:hover {
     display: flex;
     list-style: none;
     gap: .5rem;
-    margin-left: 50px;
+   
+    margin-top: 80px;
 }
 
 #menu a {
@@ -566,6 +574,11 @@ a:hover {
 }
 
 /* Inicio menu mobile telas menores */
+
+@media (max-width: 900px) {
+    btn-mobile {
+        display: block;
+    }}
 
 @media (max-width: 600px) {
     btn-mobile {
@@ -773,27 +786,4 @@ a:hover {
     }
 }
 
-@media (orientation: portrait) {
-    .img-logo {
-        display: none;
-    }
 
-    .logo-2 {
-        display: block;
-    }
-
-    .img-logo2 {
-        width: 200px;
-        /* Ajuste a largura conforme necessário */
-    }
-
-    .title {
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .background-video {
-        height: 100vh;
-        /* Ajuste a altura conforme necessário */
-    }
-}
