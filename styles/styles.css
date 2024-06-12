@@ -1,7 +1,8 @@
 :root {
     --primary-color: rgb(252, 252, 252);
     --secondary-color: rgba(255, 255, 255, 0.705);
-    --text-color: rgb(80, 80, 32);
+    /* --text-color: rgb(80, 80, 32); */
+    --text-color: rgb(39, 39, 39);
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --title-contact: white;
     --header-bg-color: #33333300;
@@ -16,11 +17,11 @@
 }
 
 :root {
-    --cor1: rgb(80, 80, 32);
+    --cor1: rgb(39, 39, 39);
     /*cor linhas menu*/
-    --cor2:rgb(80, 80, 32);
+    --cor2:rgb(39, 39, 39);
     /*cor nome menu*/
-    --cor3: rgb(80, 80, 32);
+    --cor3: rgb(39, 39, 39);
     /*cor links do menu */
 }
 
@@ -111,7 +112,7 @@ body {
 
 .img-logo {
     width: 350px;
-    border-bottom: 2px solid var(--text-color) ;
+    border-bottom: 2px solid rgb(66,66,27);
     transition: width 0.5s;
 }
 
@@ -174,12 +175,13 @@ height: auto;
     margin-top: 0;
     font-family: Roboto, Arial, sans-serif;
     color: var(--text-color);
+    color: rgb(66, 66, 27);
 }
 
 .slogan {
     margin-top: 0;
     font-size: 35px;
-    color: var(--text-color);
+    color: rgb(66, 66, 27);
 }
 
 .background-video {
@@ -207,6 +209,8 @@ height: auto;
     text-align: center;
     padding-top: 40vh;
 }
+
+
 
 .extra-content {
     margin-top: 70px;
@@ -246,11 +250,12 @@ height: auto;
 }
 
 #a-contato {
+    background: var(--primary-color);
     border: 1px solid var(--text-color);
     transition:background-color 0.3s;
 }
 #a-contato:hover {
-    background-color: rgb(236, 236, 236);
+    background-color:rgb(228, 228, 228);
 }
 
 
@@ -457,13 +462,6 @@ footer {
     letter-spacing: 0.05em;
 }
 
-.hard-skills {
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
-    color: white;
-}
 
 .section-portfolio {
     width: 100%;
