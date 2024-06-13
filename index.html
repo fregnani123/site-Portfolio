@@ -9,6 +9,7 @@
     content="Fabiano Fregnani, Full-stack Developer, HTML, CSS, JavaScript, React, Node.js, Express, C#, .Net, MongoDB, MySQL, Oracle">
 <link rel="stylesheet" href="./styles/styles.css">
 <link rel="stylesheet" href="./styles/jornada.css">
+<link rel="stylesheet" href="./styles/animation.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
 <link rel="alternate" hreflang="en" href="https://www.fabianofregnani.com/en">
@@ -28,17 +29,14 @@
     }
     </script>
 </head>
-
 <body>
+   
     <span id="inicio"></span>
     <header class="header">
-        <span class="span-whatsap"><a
+        <!-- <span class="span-whatsap"><a
                 href="https://wa.me/5548996607600?text=Ol%C3%A1%2C+sou+Fabiano+Desenvolvedor+Full-stack."
                 target="_blank"><img class="img-whatsap" src="./img/img-contato/whatsap.png"
-                    alt="Entre em contato pelo WhatsApp"></a></span>
-
-        <h1 id="logo"><img class="img-logo" src="./img/img-assets/logo.png" class="img-logo"
-                alt="Logo de Fabiano Fregnani" loading="lazy"></h1>
+                    alt="Entre em contato pelo WhatsApp"></a></span> -->
         <nav id="nav">
             <button id="btn-mobile">Menu
                 <div id="hamburguer">
@@ -77,10 +75,10 @@
         </nav>
     </header>
     <section class="background-video">
-        <video src="./video/novo.mp4" autoplay loop muted></video>
         <div class="content">
-            <h1 class="title"><span class="lang pt">Desenvolvedor Full-stack</span>
-                <span class="lang en" style="display: none;">Full-stack Developer</span>
+            <p class="logo"><img class="img-logo" src="./img/img-assets/logo-removebg-preview.png" alt="">Fabiano Fregnani</p>
+            <h1 class="title"><span class="lang pt">Desenvolvedor <br>Full-stack</span>
+                <span class="lang en" style="display: none;">Full-stack <br>Developer</span>
             </h1>
             <p class="slogan">
                 <span class="lang pt">Construindo sonhos, linha por linha.</span>
@@ -98,71 +96,16 @@
             <span class="lang en" style="display: none;">About Me</span>
         </h2>
         <div class="div-about">
+
+            <div class="animation-container">
+               <span ><img class="img-animation" src="./img/img-service/Front-end-removebg-preview.png" alt=""></span>
+            </div>
+
+
             <main class="span-text">
-                <h2 class="titulo-about">
-                    <!-- <span class="span-destacar lang pt">Desenvolvedor Full-stack</span> -->
-                    <!-- <span class="span-destacar lang en" style="display: none;">Full-stack Developer</span> -->
-                </h2>
-                <p class="text-about lang pt">
-                    Olá! Sou Fabiano Fregnani, um desenvolvedor full-stack apaixonado por transformar ideias em
-                    soluções digitais. Atualmente estou no <span class="span-destacar">4º semestre do curso superior de
-                        tecnólogo em Análise e Desenvolvimento de Sistemas</span>, onde tenho a oportunidade de
-                    aprofundar meu conhecimento teórico e prático em
-                    programação.
-
-                    Além disso, ao longo dos meus dois anos e meio de estudo, dediquei-me a diversos cursos
-                    livres na área, aprimorando minhas habilidades em diferentes tecnologias e metodologias de
-                    desenvolvimento. Estou sempre em busca de novos conhecimentos e desafios para aprimorar
-                    minhas habilidades e oferecer soluções digitais cada vez mais eficientes e inovadoras.
-
-                    Minhas habilidades incluem:
-
-                    Front-end: Utilizando <span class="span-destacar">HTML, CSS, JavaScript, React, e
-                        Electron.js</span>, construo interfaces de usuário responsivas e dinâmicas que garantem
-                    uma experiência agradável para todos os usuários.
-                    Back-end: Com conhecimentos em <span class="span-destacar">Node.js, Express, C#, .Net, e
-                        bancos de dados como MongoDB, MySQL e Oracle</span>, minha abordagem é centrada em resolver
-                    problemas de forma criativa e eficiente.
-
-                    Estou constantemente contribuindo para projetos de código aberto e participando de comunidades
-                    de desenvolvedores, onde posso compartilhar conhecimento e aprender com outros profissionais.
-
-                    Vamos construir algo incrível juntos! Confira alguns dos meus projetos abaixo e entre em
-                    contato para discutirmos como posso ajudar a transformar suas ideias em realidade.
+                <p class="text-about lang pt"> 
                 </p>
                 <p class="text-about lang en">
-                    Hello! I'm Fabiano Fregnani, a full-stack developer passionate about turning ideas into digital
-                    solutions.
-                    Currently, I'm in the <span class="span-destacar">4th semester of the undergraduate technologist
-                        program in Systems Analysis and Development.</span>, where I have
-                    the opportunity to
-                    deepen my theoretical and practical knowledge in programming.
-
-                    Additionally, over my two and a half years of study, I've dedicated myself to various free
-                    courses in the field,
-                    enhancing my skills in different development technologies and methodologies. I'm always seeking
-                    new knowledge and
-                    challenges to improve my skills and offer increasingly efficient and innovative digital
-                    solutions.
-
-                    My skills include:
-
-                    Front-end: Using <span class="span-destacar">HTML, CSS, JavaScript, React, and
-                        Electron.js</span>, I build
-                    responsive and dynamic user interfaces that ensure a pleasant experience for all users.
-                    Back-end: With expertise in <span class="span-destacar">Node.js, Express, C#, .Net, and
-                        databases like MongoDB,
-                        MySQL, and Oracle</span>, my approach is centered on creatively and efficiently solving
-                    problems.
-
-                    I'm constantly contributing to open-source projects and participating in developer communities,
-                    where I can share
-                    knowledge and learn from other professionals.
-
-                    Let's build something amazing together! Check out some of my projects below and get in touch to
-                    discuss how I can
-                    help turn your ideas into reality.
-                </p>
                 <h3 class="hard-skills">
                     <p class="lang pt">Qualificações</p>
                     <p class="span-skills">Minha jornada até aqui</p>
@@ -279,7 +222,7 @@
             <span class="lang pt">Alguns projetos do meu Portfólio</span>
             <span class="lang en" style="display: none;">Some Projects from My Portfolio</span>
         </h1>
-        <span class="aviso"><img class="img-aviso" src="./construcao-removebg-preview.png" alt=""></span>
+        <!-- <span class="aviso"><img class="img-aviso" src="./construcao-removebg-preview.png" alt=""></span> -->
     </section>
     <span id="servico"></span>
     <section class="servicos">
