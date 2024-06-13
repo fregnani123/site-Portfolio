@@ -1,13 +1,13 @@
 :root {
     --primary-color: width: 100%; height: 100vh;
-    background: linear-gradient(90deg,#53394f , #2C1E4A,#000000 );
+    background: linear-gradient(90deg,#41223b , #2C1E4A,#000000 );
     --text-color: rgb(255, 255, 255);
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --title-contact: white;
     --header-bg-color: #33333300;
     --header-scrolled-bg-color:#2C1E4A;
     --footer-bg-color: rgb(59, 59, 59);
-    --color-text-about: rgb(56, 56, 56);
+    --color-text-about: rgb(255, 255, 255);
     --span-letra-destacar: rgb(80, 80, 32);
     --carousel-color: rgb(252, 252, 252);
     --highlight-color: rgb(255, 244, 194);
@@ -118,6 +118,7 @@ body {
     Arial,
     sans-serif;
     letter-spacing: 0.2em;
+    color: rgb(253, 253, 253);
     animation: slideFromBottom 2s ease forwards;
 }
 
@@ -180,15 +181,18 @@ body {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'minhaFonte', Arial, sans-serif;
     font-weight: 900;
     margin-top: 120px;
-    color: var(--text-color);
     letter-spacing: 0.3em;
     text-align: left;
     margin-left: 90px;
-    animation: slideFromBottom 2s ease forwards;
+    color: white;
+   animation: slideFromBottom 2s ease forwards;
+    background: linear-gradient(to top, rgb(230, 230, 230), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .slogan {
@@ -196,7 +200,7 @@ body {
     margin-top: 0;
     font-weight: 300;
     font-size: 25px;
-    color: var(--text-color);
+    color: rgb(255, 255, 255);
     text-align: left;
     margin-left: 90px;
     letter-spacing: 0.3em;
@@ -204,20 +208,25 @@ body {
     animation: slideFromBottom 2s ease forwards;
 }
 
-/* .background-video {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background: var(--primary-color);
-} */
- 
+.circuito{
+    position: absolute;
+    right:0;
+    z-index: -1;
+    top: 50px;
+    left: 800px;
+    width:100px;
+    right:10px;
+}
+ .btn-flecha{
+    /* background-color: red; */
+    text-align: center;
+ }
  .background-video {
      position: relative;
-     height: 100vh;
+     height: 120vh;
      width: 100%;
      overflow: hidden;
-     background: linear-gradient(270deg, #000000, #2C1E4A, #53394f, #2C1E4A, #000000);
+     background: linear-gradient(270deg, #000000, #2C1E4A, #41223b, #2C1E4A, #000000);
      background-size: 400% 400%;
      animation: animateGradient 15s ease infinite;
  }
@@ -243,23 +252,6 @@ body {
          background-position: 0% 50%;
      }
  }
-.content {
-    position: relative;
-    color: var(--text-color);
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-}
-
-
-.content .lang {
-    display: none;
-}
-
-.content .lang.active {
-    display: block;
-}
-
 
 .img-flexa {
     display: block;
@@ -452,7 +444,8 @@ footer {
     width: 100%;
     height: auto;
     color: var(--color-text-about);
-    margin-top: 150px;
+    margin-top: 150px; 
+   
 }
 
 .div-about {
@@ -471,7 +464,8 @@ footer {
 }
 
 .span-text {
-    /* background-color: red; */
+    text-align: center;
+    align-items: center;
     width: auto;
     height:auto;
     overflow: hidden;
@@ -482,12 +476,15 @@ footer {
 
 .text-about {
     margin-top: 20px;
+    margin-left: 50px;
     font-size: 19px;
-    font-weight: 300;
-    font-family: inherit;
+    font-weight: 300; /* Deixar a fonte fina */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
     color: var(--color-text-about);
     letter-spacing: 0.08em;
+    text-align: justify;
 }
+
 
 .span-destacar {
     font-weight: 700;
@@ -498,6 +495,7 @@ footer {
     font-weight: 300;
     font-size: 50px;
     margin-top: 100px;
+    margin-bottom: 20px;
     color: var(--text-color);
     width: 100%;
     display: flex;
@@ -588,281 +586,4 @@ footer {
     margin-right: 20px;
     width: 40px;
 }
-
-/*inicio css Menu ***********************************************************   */
-
-a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-a:hover {
-    border-bottom: 1px solid var(--text-color);
-}
-
-.header {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 60px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    justify-content:center;
-    background: linear-gradient(90deg, #53394f, #2C1E4A, #000000);;
-    transition: height 0.3s;
-}
-.header.scrolled {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 110px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    justify-content: center;
-    background:linear-gradient(90deg, #53394f, #2C1E4A, #000000);
-    border-bottom: 1px solid #ffffff5b;
-}
-
-
-/* aqui nesta parte altera a altura das palavras do nume aberto*/
-#menu {
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    margin-top: 0px;
-    
-}
-
-#menu a {
-    color: var(--cor3);
-    display: block;
-    padding: .5rem;
-    font-weight: 300;
-    font-size: 13px;
-     letter-spacing: 0.1em;
-}
-
-/* fim da estrutura do Menu e cabeçalho quando a tela está sem responsividade */
-
-#btn-mobile {
-    display: none;
-}
-
-/* Inicio menu mobile telas menores */
-
-
-@media (max-width: 800px) {
-    #btn-mobile {
-        display: block;
-       
-    }
-
-   .li{
-    display: flex;
-    justify-content: center;
-  
-   }
-   
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
-    
-        body {
-            overflow-x: hidden;
-        }
-
-    .header{
-        margin-top: 0;
-        height: 130px;
-        width: 100%;
-        background-color: var(--header-scrolled-bg-color);
-        display: block;
-    }
-
-    #logo{
-     justify-content: center;
-     width: 100%;
-     margin: 0;
-    text-align: center;
-    }
-    
-    .img-logo{
-        margin-top: 20px;
-        margin-right: 25px;
-        width: 100px;
-    }
-    
-    #a-contato{
-        border: none;
-        letter-spacing: 0.5em;
-    }
-    #a-contato:hover{
-     background-color: var(--primary-color);
-    }
-  
-    #menu {
-        display: block;
-        /*Agora desta parte para baixo vamos dar estilo a folha do menu quando está ativa */
-        position: absolute;
-        width: 100%;
-        top: 90px;
-        right: 0px;
-        background-color: var(--header-scrolled-bg-color);
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow: hidden;
-    }
-
-
-    #nav.active #menu {
-        height: 350px;
-        overflow-x: hidden;
-        /* height: calc(100vh - 70px); */
-        /* altura da tela - o do topo */
-        display: block;
-        visibility: visible;
-        /* mostra os itens do menu na animação*/
-    }
-
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid var(--primary-color);
-    }
-    
-    #menu:hover a:hover {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid var(--text-color);
-    }
-    
-
-    #btn-mobile {
-        /*estilizando o button */
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        border: none;
-        background: none;
-        cursor: pointer;
-        color: transparent;
-        
-    }
-
-    #hamburguer {
-        display: block;
-        width: 50px;
-        border-top: 4px solid;
-        margin-left: 0px;
-        color: var(--cor1);
-    }
-
-
-    #hamburguer::after {
-        content: '';
-        width: 50px;
-        height: 2px;
-        display: block;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-        border-top: 4px solid;
-        /*position relative para alinhar o X do menu. */
-        background: currentColor;
-
-
-    }
-
-    #hamburguer::before {
-        content: '';
-        width: 50px;
-        border-top: 4px solid;
-        height: 2px;
-        display: block;
-        margin-top: 5px;
-        background: currentColor;
-
-    }
-
- /* nesta parte controla o lado onde fica o Menu os 3 riscos */
-    nav{
-        margin-top: 55px;
-        display: flex;
-        /* background-color: red; */
-        width: 100%;
-        justify-content: center;
-    }
-
-    nav.active #hamburguer {
-        border-top-color: transparent;
-        /*ativa com o nav e deixa o 1º traço trasparente */
-    }
-
-    nav.active #hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px
-    }
-    .sel-idioma {
-     width: 100%;
-     position: relative;
-     margin-left: 11px;
-     margin-top: 7px;
-     top: 0;
-    }
-   
-    .language-select{
-      display: flex;
-    }
-
-    .img-En,.img-Pt{
-      width: 30px;
-      height: auto;
-    }
-
-    #img-skill{
-     display: none;
-    }
-    #img-res{
-     width: 200px;
-     display: block;
-    }
-    .img-aviso{
-        width: 400px
-    }
-    .about{
-        margin-bottom: 20px;
-    }
-    .title-portfolio{
-        font-size: 28px;
-    }
-    .contact{
-        display: flex;
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .service{
-    display: block;
-    height: 100vh;
-    margin-left: 110px;
-}
-}
-
 
