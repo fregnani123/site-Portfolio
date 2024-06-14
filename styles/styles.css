@@ -1,6 +1,7 @@
 :root {
-    --primary-color: width: 100%; height: 100vh;
-    background: linear-gradient(90deg,#41223b , #2C1E4A,#000000 );
+    /* --primary-color: width: 100%; height: 100vh;
+    background: linear-gradient(90deg,#41223b , #2C1E4A,#000000 ); */
+     --primary-color: rgb(31, 27, 59);
     --text-color: rgb(255, 255, 255);
     --link-hover-color: rgba(128, 128, 128, 0.192);
     --title-contact: white;
@@ -69,7 +70,52 @@
         width: 500px;
     }
 }
+.background-video .video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -1;
+}
 
+
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, rgba(31, 27, 59, 0) 150px, rgba(50, 35, 97, 0.884));
+}
+
+/* @keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
 
 .img-lobo {
     width: 300px;
@@ -104,10 +150,11 @@ html {
 
 body {
     overflow-x: hidden;
+    background: var(--primary-color);
 }
 
 .logo{
-    margin-top: 130px;
+    margin-top: 0px;
     width: 100%;
     display: flex;
     margin-left: 90px;
@@ -181,28 +228,30 @@ body {
 }
 
 .title {
+    width: 100%;
+    text-align:left;
     font-size: 60px;
     font-family: 'minhaFonte', Arial, sans-serif;
-    font-weight: 900;
+    font-weight: bolder;
     margin-top: 120px;
     letter-spacing: 0.3em;
     text-align: left;
     margin-left: 90px;
     color: white;
-   animation: slideFromBottom 2s ease forwards;
-    background: linear-gradient(to top, rgb(230, 230, 230), white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: slideFromBottom 2s ease forwards;
 }
 
 .slogan {
+    text-align: left;
+    width: 100%;
+    margin-left: 90px;
     font-family: Arial, sans-serif;
     margin-top: 0;
     font-weight: 300;
     font-size: 25px;
     color: rgb(255, 255, 255);
     text-align: left;
-    margin-left: 90px;
+    
     letter-spacing: 0.3em;
     text-transform: uppercase; 
     animation: slideFromBottom 2s ease forwards;
@@ -221,37 +270,7 @@ body {
     /* background-color: red; */
     text-align: center;
  }
- .background-video {
-     position: relative;
-     height: 120vh;
-     width: 100%;
-     overflow: hidden;
-     background: linear-gradient(270deg, #000000, #2C1E4A, #41223b, #2C1E4A, #000000);
-     background-size: 400% 400%;
-     animation: animateGradient 15s ease infinite;
- }
-
- @keyframes animateGradient {
-     0% {
-         background-position: 0% 50%;
-     }
-
-     25% {
-         background-position: 50% 50%;
-     }
-
-     50% {
-         background-position: 100% 50%;
-     }
-
-     75% {
-         background-position: 50% 50%;
-     }
-
-     100% {
-         background-position: 0% 50%;
-     }
- }
+ 
 
 .img-flexa {
     display: block;
