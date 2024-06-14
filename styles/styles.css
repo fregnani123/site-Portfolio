@@ -92,7 +92,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    background: linear-gradient(to bottom, rgba(31, 27, 59, 0) 150px, rgba(50, 35, 97, 0.884));
+    background: linear-gradient(to bottom, rgba(31, 27, 59, 0) 150px, rgba(50, 35, 97, 0.952));
 }
 
 /* @keyframes animateGradient {
@@ -267,15 +267,17 @@ body {
     right:10px;
 }
  .btn-flecha{
-    /* background-color: red; */
+
     text-align: center;
+    box-sizing: border-box;
+    height: 100px;
  }
  
 
 .img-flexa {
     display: block;
     width: 30px;
-    margin-top: 70px;
+    margin-top: 60px;
     cursor: pointer;
     transition: padding 0.5s;
 }
@@ -297,7 +299,7 @@ body {
 }
 
 #a-contato {
-    background: var(--primary-color);
+    background: transparent;
     border: 1px solid var(--text-color);
     transition:background-color 0.3s;
 }
@@ -373,14 +375,15 @@ body {
 }
 
 footer {
-    height: 50vh;
+    padding-top: 20px;
     align-items: center;
     width: 100%;
-    background-color: var(--footer-bg-color);
+    height: 100vh;
+    background: linear-gradient(90deg, #2C1E4A, #000000);
 }
 
 .copy {
-    background-color: var(--footer-bg-color);
+    background-color:transparent;
     display: flex;
     justify-content: center;
     align-items:end;
@@ -461,10 +464,10 @@ footer {
 
 .section-about {
     width: 100%;
-    height: auto;
+    height: 100vh;
     color: var(--color-text-about);
-    margin-top: 150px; 
-   
+    padding-top: 150px;
+    background: linear-gradient(90deg, #2C1E4A, #000000);
 }
 
 .div-about {
@@ -474,6 +477,7 @@ footer {
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    background: linear-gradient(90deg, #2C1E4A, #000000);
 }
 .animation{
     display: none;
@@ -567,14 +571,23 @@ footer {
     text-decoration: underline;
 }
 
+.servicos{
+width: 100%;
+height: 100vh;
+padding-top: 20px;
+background: linear-gradient(90deg, #2C1E4A, #000000);
+padding-bottom: 150px;
+
+}
 .service{
     display: flex;
-    width: 100%;
-    height: 350px;
+    /* width: 100%; */
+    /* background-color: red; */
     justify-content: center;
     align-items: top;
-    gap: 20px;
+    gap: 20px; 
 }
+
 .title-service {
     width: 100%;
     font-size: 40px;

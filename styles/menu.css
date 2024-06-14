@@ -253,8 +253,7 @@ a:hover {
 
     .service {
         display: block;
-        height: 100vh;
-        margin-left: 110px;
+        text-align: center;
     }
 }
 /*inicio css Menu ***********************************************************   */
@@ -281,7 +280,7 @@ a:hover {
     align-items: center;
     padding: 1rem;
     justify-content: center;
-    background: linear-gradient(90deg,#41223b, #2C1E4A, #000000);
+    background: linear-gradient(90deg, #2C1E4A, #000000);
     ;
     transition: height 0.3s;
 }
@@ -296,9 +295,8 @@ a:hover {
     align-items: center;
     padding: 1.5rem;
     justify-content: center;
-    background: linear-gradient(90deg, #41223b, #2C1E4A, #000000);
-    border-bottom: 1px solid #ffffff5b;
-}
+    background: linear-gradient(90deg, #2C1E4A, #000000);
+    }
 
 
 /* aqui nesta parte altera a altura das palavras do nume aberto*/
@@ -537,9 +535,5 @@ a:hover {
         margin-bottom: 20px;
     }
 
-    .service {
-        display: block;
-        height: 100vh;
-        margin-left: 110px;
-    }
+   
 }
