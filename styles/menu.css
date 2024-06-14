@@ -581,4 +581,69 @@ a:hover {
     width: 100%;
 }
 
+.title {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    justify-content: left;
+    font-family: 'minhaFonte', Arial, sans-serif;
+    font-weight: bolder;
+    margin-top: 120px;
+    letter-spacing: 0.3em;
+    color: white;
+    animation: slideFromBottom 2s ease forwards;
+}
+
+.slogan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 0px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    animation: slideFromBottom 2s ease forwards;   
+}
+.logo{
+ display: none;
+}
+ #li-idioma {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+     /* Alinha texto centralmente */
+ }
+
+ .ul-linguagem {
+     padding: 0;
+     margin: 0;
+     display: block;
+     width: auto;
+ }
+
+ .ul-linguagem li {
+     font-family: sans-serif;
+     font-weight: 100;
+    font-size: 15px;
+    margin-left: 30px;
+
+ }
+
+ .seta-img {
+     margin-top: 0px;
+     margin-left: 10px;
+ }
+ .img-seta-linguagem {
+     width:20px;
+ }
+ 
 }
