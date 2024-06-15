@@ -13,12 +13,12 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-setTimeout(() => {
-    const imgWhatsap = document.querySelector('.span-whatsap');
-    if (window.innerWidth > 768) {
-        imgWhatsap.style.display = 'block';
-    }
-}, 8000);
+// setTimeout(() => {
+//     const imgWhatsap = document.querySelector('.span-whatsap');
+//     if (window.innerWidth > 768) {
+//         imgWhatsap.style.display = 'block';
+//     }
+// }, 8000);
 
 setTimeout(() => {
     const loadingPage = document.querySelector('.loading');
@@ -47,7 +47,7 @@ document.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
     const imgLogo = document.querySelector('.img-logo');
 
-    if (window.innerWidth > 700) { // Verifica se a largura da tela é maior que 700px
+    if (window.innerWidth > 700) { 
         if (window.scrollY > 0) {
             header.classList.add('scrolled');
             imgLogo.classList.add('scrolled');
@@ -148,32 +148,31 @@ window.onload = function () {
     changeLanguage('pt');
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-    const items = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-    let currentIndex = 0;
+// document.addEventListener('DOMContentLoaded', function () {
+//     const items = document.querySelectorAll('.carousel-item');
+//     const prevButton = document.querySelector('.carousel-prev');
+//     const nextButton = document.querySelector('.carousel-next');
+//     let currentIndex = 0;
 
-    function showItem(index) {
-        items.forEach((item, i) => {
-            item.classList.toggle('active', i === index);
-        });
-    }
+//     function showItem(index) {
+//         items.forEach((item, i) => {
+//             item.classList.toggle('active', i === index);
+//         });
+//     }
 
-    prevButton.addEventListener('click', function () {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-        showItem(currentIndex);
-    });
+//     prevButton.addEventListener('click', function () {
+//         currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+//         showItem(currentIndex);
+//     });
 
-    nextButton.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % items.length;
-        showItem(currentIndex);
-    });
+//     nextButton.addEventListener('click', function () {
+//         currentIndex = (currentIndex + 1) % items.length;
+//         showItem(currentIndex);
+//     });
 
-    showItem(currentIndex);
+//     showItem(currentIndex);
 
-    setInterval(() => {
-        nextButton.click();
-    }, 6000);
-});
-
+//     setInterval(() => {
+//         nextButton.click();
+//     }, 6000);
+// });
