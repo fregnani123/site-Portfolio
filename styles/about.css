@@ -1,3 +1,4 @@
+/* Base styles for the sections */
 .section {
     height: 100vh;
     margin: 0;
@@ -7,7 +8,6 @@
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
-    /* background-color: aquamarine; */
     background: linear-gradient(90deg, #2C1E4A, #000000);
 }
 
@@ -22,10 +22,8 @@
 
 .div-text-about {
     display: flex;
-    text-align: top;
     justify-content: center;
     width: 100%;
-    /* background-color: red; */
     margin-top: 0px;
 }
 
@@ -34,7 +32,6 @@
     margin-right: 20px;
     height: 100vh;
     margin-top: 150px;
-    /* animation: slide-section 2s ease forwards; */
 }
 
 .img-About {
@@ -56,6 +53,8 @@
     display: none;
     opacity: 0;
 }
+
+/* Animation for the section */
 .section.show-animate .img-About {
     animation: slide-section-img 2s ease forwards;
     display: block;
@@ -81,6 +80,7 @@
     font-size: 30px;
 }
 
+/* Keyframes for animations */
 @keyframes slide-section {
     from {
         transform: translateY(20%);
@@ -92,6 +92,7 @@
         opacity: 1;
     }
 }
+
 @keyframes slide-section-img {
     from {
         transform: translateX(20%);
@@ -101,5 +102,12 @@
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .img-About {
+        display: none !important;
     }
 }
