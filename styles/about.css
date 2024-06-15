@@ -39,6 +39,7 @@
 
 .img-About {
     width: 350px;
+    display: none;
 }
 
 .text-about {
@@ -54,6 +55,10 @@
     height: 100vh;
     display: none;
     opacity: 0;
+}
+.section.show-animate .img-About {
+    animation: slide-section-img 2s ease forwards;
+    display: block;
 }
 
 .section.show-animate .text-about {
@@ -84,6 +89,17 @@
 
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-section-img {
+    from {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
         opacity: 1;
     }
 }
