@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./styles/menu.css">
 <link rel="stylesheet" href="./styles/about.css">
 <link rel="stylesheet" href="./styles/servicos.css">
+<link rel="stylesheet" href="./styles/contact.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -109,7 +110,7 @@
                         <span class="lang-pt">Sobre Mim</span>
                         <span class="lang-en" style="display: none;">About Me</span>
                     </h2>
-                    <p><span class="destaque">Olá! </span>Eu sou <span class="destaque">Fabiano
+                    <p class="text"><span class="destaque">Olá! </span>Eu sou <span class="destaque">Fabiano
                             Fregnani</span> , um programador <span class="destaque">Full-stack </span>que descobriu o
                         mundo da programação em
                         janeiro de 2022.
@@ -120,38 +121,40 @@
                         minhas habilidades e
                         conhecimentos.<span class="destaque">Vamos criar algo incrível juntos</span>?</p>
                 </main>
-                <span class="img-animation"><img id="img-about" class="img-About" src="./img/about/data_12256370.png"
+                <span class="img-animation"><img id="img-about" class="img-About" src="./img/about/about.png"
                         alt=""></span>
             </div>
     </section>
+
     <span id="servico"></span>
 
-
     <section class="section-service">
-        <h2 class="title-service">
-            <span><img src="./img/img-service/pc.png" alt=""></span>
-       <span class="lang-pt">Serviços</span>
-            <!-- <span class="lang-en">Service</span> -->
-        </h2>
-        
-        <div class="div-service">
-            <div class="service-1">
-                <img class="img-ux" src="./img/img-service/web-design.png" alt="imagem Ui-Ux">
-                <p>Ui/Ux <br> Designer<br>
-                    <!-- <span>Veja Mais</span> -->
-            </div>
-            <div class="service-2">
-                <img class="img-ux" src="./img/img-service/web-front.png" alt="Front-end">
-                <p>Front-End</p>
-            </div>
-            <div class="service-3">
-                <img class="img-ux" src="./img/img-service/back.png" alt="Back-end">
-                <p>Back-End</p>
+            <div class="header-service">
+                <span class="span-service"><img class="img-service" src="./img/img-service/service.png" alt="">
+              </span>
+              <div class="div-service">
+                    <h2 class="title-service">Serviços</h2>
+                    <div class="div-squad">
+                    <div class="service-1">
+                        <img class="img-ux" src="./img/img-service/web-design.png" alt="imagem Ui-Ux">
+                        <p>Ui/Ux <br> Designer<br>
+                            <!-- <span>Veja Mais</span> -->
+                    </div>
+                    <div class="service-2">
+                        <img class="img-ux" src="./img/img-service/web-front.png" alt="Front-end">
+                        <p>Front-End</p>
+                    </div>
+                    <div class="service-3">
+                        <img class="img-ux" src="./img/img-service/back.png" alt="Back-end">
+                        <p>Back-End</p>
+                    </div></div>
             </div>
         </div>
     </section>
+
+
     <span id="contato"></span>
-    <footer>
+    <section class="contact">
         <h2 class="contact">
             <span class="lang pt">Entre em contato através das mídias sociais</span>
             <span class="lang en">Get in touch through social media</span>
@@ -187,7 +190,7 @@
             <span class="lang pt">&copy; 2024 Fabiano Fregnani. Todos os direitos reservados.</span>
             <span class="lang en">&copy; 2024 Fabiano Fregnani. All rights reserved.</span>
         </p>
-    </footer>
+    </section>
     <script src="./src/script.js"></script>
     <script src="./src/btnMobile.js"></script>
     <script src="./src/animacao.js"></script>

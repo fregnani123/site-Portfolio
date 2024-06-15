@@ -1,0 +1,60 @@
+
+#li-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 35px;
+    padding-top: 20px;
+    margin-top: 50px;
+    color: var(--title-contact);
+    width: 100%;
+    justify-content: center;
+    letter-spacing: 0.05em;
+}
+
+
+.squad-1,
+.squad-2,
+.squad-3,
+.squad-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.squad-1:hover,
+.squad-2:hover,
+.squad-3:hover,
+.squad-4:hover,
+.a-squad:hover {
+    border-radius: 3px;
+    background: rgb(24, 23, 23);
+}
+
+.squad-1:hover {
+    background: rgb(0, 119, 181);
+}
+
+.squad-3:hover {
+    background: rgb(0, 0, 0);
+}
+
+.squad-4:hover {
+    background: #3b5998;
+}
+
+.img-squad {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

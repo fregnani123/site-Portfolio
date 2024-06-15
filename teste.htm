@@ -1,306 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fabiano Fregnani | Desenvolvedor Full-stack | Portfólio e Contato</title>
-<meta name="description"
-    content="Fabiano Fregnani, Desenvolvedor Full-stack, especializado em criar soluções digitais eficientes e intuitivas.">
-<meta name="keywords"
-    content="Fabiano Fregnani, Full-stack Developer, HTML, CSS, JavaScript, React, Node.js, Express, C#, .Net, MongoDB, MySQL, Oracle">
-<link rel="stylesheet" href="./styles/styles.css">
-<link rel="stylesheet" href="./styles/jornada.css">
-<link rel="stylesheet" href="./styles/animation.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="alternate" hreflang="en" href="https://www.fabianofregnani.com/en">
-<link rel="alternate" hreflang="pt" href="https://www.fabianofregnani/pt">
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Fabiano Fregnani",
-        "jobTitle": "Full-stack Developer",
-        "url": "https://www.seusite.com",
-        "sameAs": [
-            "https://www.linkedin.com/in/fabiano-fregnani-8984051a7/",
-            "https://github.com/fregnani123",
-            "https://x.com/FabianoFregnani"
-        ]
-    }
-    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            background: white;
+            position: relative;
+        }
+
+        .folder {
+            font-size: 250px;
+            color: transparent;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-text-stroke: 3px transparent;
+        }
+
+        .folder::before {
+            content: '\f07b';
+            /* Unicode for the folder icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 00px;
+            background: linear-gradient(to bottom right,
+                    rgb(173, 96, 212),
+                    rgba(229, 17, 253, 0.555),
+                    rgba(32, 190, 226, 0.596),
+                    rgb(173, 96, 212));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 3px transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .user {
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-30%);
+            background: linear-gradient(to bottom right,
+                    rgb(173, 96, 212),
+                    rgba(229, 17, 253, 0.404),
+                    rgba(32, 190, 226, 0.623),
+                    rgb(173, 96, 212));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-    <span id="inicio"></span>
-    <header class="header">
-        <!-- <span class="span-whatsap"><a
-                href="https://wa.me/5548996607600?text=Ol%C3%A1%2C+sou+Fabiano+Desenvolvedor+Full-stack."
-                target="_blank"><img class="img-whatsap" src="./img/img-contato/whatsap.png"
-                    alt="Entre em contato pelo WhatsApp"></a></span> -->
-        <nav id="nav">
-            <button id="btn-mobile">Menu
-                <div id="hamburguer">
-            </button>
-            <ul id="menu">
-                <li class="li"><a href="#inicio" class="lang pt">Home</a><a href="#inicio" class="lang en"
-                        style="display: none;">Home</a>
-                </li>
-                <li class="li"><a href="#sobre" class="lang pt">Sobre</a><a href="#sobre" class="lang en"
-                        style="display: none;">About</a>
-                </li>
-                </li>
-                <li class="li"><a href="#portfolio" class="lang pt">Portfólio</a><a href="#portfolio" class="lang en"
-                        style="display: none;">Portfolio</a></li>
-                <li class="li"><a href="#service" class="lang pt">Serviços</a><a href="#service" class="lang en"
-                        style="display: none;">Service</a>
-                </li>
-                <li class="li"><a id="a-contato" href="#contato" class="lang pt">Contato</a><a id="a-contato"
-                        href="#contato" class="lang en" style="display: none;">Contact me</a></li>
-                <li class="sel-idioma">
-                    <span class="lang pt">PT-BR</span>
-                    <span class="lang en">EN</span>
-                    <span class="language-select">
-                        <a class="a-pt" href="#" onclick="changeLanguage('pt')">
-                            <img class="img-Pt" src="./img/img-assets/brazil_flags_flag_16979.ico" alt="Português"
-                                loading="lazy">
-                        </a>
-                        <a class="a-en" href="#" onclick="changeLanguage('en')">
-                            <img class="img-En" src="./img/img-assets/united_kingdom_flags_flag_17079.ico" alt="English"
-                                loading="lazy">
-                        </a>
-                    </span>
-                </li>
 
-            </ul>
-        </nav>
-    </header>
-    <section class="background-video">
-        <div class="content">
-            <p class="logo"><img class="img-logo" src="./img/img-assets/logo-removebg-preview.png" alt="">Fabiano
-                Fregnani</p>
-            <h1 class="title"><span class="lang pt">Desenvolvedor <br>Full-stack</span>
-                <span class="lang en" style="display: none;">Full-stack <br>Developer</span><img class="circuito"
-                    src="./img/img-service/laptop_12371857.png" alt="">
-            </h1>
-            <p class="slogan">
-                <span class="lang pt">Construindo sonhos, linha por linha.</span>
-                <span class="lang en" style="display: none;">Building dreams, line by line.</span>
-            </p>
-            <button id="img-flexa"><img class="img-flexa" src="./img/img-assets/seta-baixo.png"
-                    alt="Role a página e descubra"></button>
-            </h1>
-            <!-- <div class="video"><video autoplay muted loop>
-                <source src="video/video.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video></div> -->
-        </div>
-    </section>
-    <span id="about"></span>
-    <section class="section-about">
-        <h2 class="about">
-
-            <span class="lang pt">Sobre Mim</span>
-            <span class="lang en" style="display: none;">About Me</span>
-        </h2>
-        <div class="div-about">
-            <!-- <div class="animation-container">
-               <span ><img class="img-animation" src="./img/img-service/pc.png" alt=""></span>
-            </div> -->
-            <main class="span-text">
-
-                <div class="div-text-about">
-                    <p class="text-about lang pt">
-                        Olá! Eu sou Fabiano Fregnani, um programador Full-stack que descobriu o mundo da programação em
-                        janeiro de 2022.
-                        Atuo
-                        como freelancer no desenvolvimento tanto no front-end quanto no back-end. Ajudo clientes a
-                        transformar ideias em
-                        soluções digitais funcionais e criativas. Estou sempre em busca de novos desafios para expandir
-                        minhas habilidades e
-                        conhecimentos. Vamos criar algo incrível juntos?
-                    </p>
-                    <p class="text-about lang en"></p>
-                    <!-- <h3 class="hard-skills">
-                    <p class="lang pt">Qualificações</p>
-                    <p class="span-skills">Minha jornada até aqui</p>
-                    <span class="span-destacar lang en" style="display: none;">Hard Skills</span>
-                </h3> -->
-
-                </div>
-
-                <div class="jornada">
-                    <h3 class="title-formacoes">
-                        <span><i class="fa fa-graduation-cap"></i> Formações </span>
-                        <span> <i class="fa fa-briefcase"></i> Trabalhos </span>
-                    </h3>
-
-                    <div class="display-block">
-
-                        <div class="jornada-1">
-                            <ul class="list-invert">
-                                <li id="title">
-                                    <p class="front">Análise e Desenvolvimento de Sistemas - 1200Hrs </p>
-                                    <p class="instituicao">
-                                        UNOPAR - Universidade Norte do Paraná
-                                    </p>
-                                    <p class="data">
-                                        01/06/2025 - 02/01/2023 <i class="fa fa-calendar"></i>
-                                    </p>
-                                </li>
-                                <li id="title">
-                                    <p class="front">Curso HTML5 e CSS3: módulos 5 de 5 - 200Hrs</p>
-                                    <p class="instituicao">
-                                        Curso em Video
-                                    </p>
-                                    <p class="data">
-                                        01/06/2024 - 01/01/2022<i class="fa fa-calendar"></i>
-                                    </p>
-                                </li>
-                                <li id="title">
-                                    <p class="front">Curso GIT E GITHUB - 20Hrs</p>
-                                    <p class="instituicao">
-                                        Curso em Video
-                                    </p>
-                                    <p class="data">
-                                        01/05/2024 <i class="fa fa-calendar"></i>
-                                    </p>
-                                </li>
-                                <li id="title">
-                                    <p class="front">Curso básico de MySQL - 40Hrs</p>
-                                    <p class="instituicao">
-                                        Curso em Video
-                                    </p>
-                                    <p class="data">
-                                        01/03/2023 <i class="fa fa-calendar"></i>
-                                    </p>
-                                </li>
-                                <li id="title">
-                                    <p class="front">Curso Desenvolvimento Full Stack - HTML5 - CSS3 - JavaScript -
-                                        NodeJS - MongoDB - Firebase - JQuery - Bootstrap - 48Hrs</p>
-                                    <p class="instituicao">
-                                        ProgramadorBr
-                                    </p>
-                                    <p class="data">
-                                        01/03/2023 <i class="fa fa-calendar"></i>
-                                    </p>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="jornada-2">
-                            <ul class="list-invert-2">
-                                <li id="title-2">
-                                    <p class="front">Desenvolvedor Freelancer</p>
-                                    <p class="instituicao">
-                                        Autónomo
-                                    </p>
-                                    <p class="data">
-                                        <i class="fa fa-calendar"></i> 01/01/2024 - Atualmente.
-                                    </p>
-                                    <p class="instituicao">
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!--                 
-                <div class="img-carousel">
-                    <button class="carousel-prev"><img id="seta" src="./img/img-assets/seta_esquerda.png"
-                            alt="Anterior"></button>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img id="img-skill" src="./img/img-carousel/stack.png" alt="imagem não disponível.">
-                            <img id="img-res" src="./img/img-carousel/stack-res.png" alt="imagem não disponível.">
-                        </div>
-                        <div class="carousel-item">
-                            <img id="img-skill" src="./img/img-carousel/stack2.png" alt="imagem não disponível.">
-                            <img id="img-res" src="./img/img-carousel/stack2-res.png" alt="imagem não disponível.">
-                        </div>
-                        <div class="carousel-item">
-                            <img id="img-skill" src="./img/img-carousel/stack3.png" alt="imagem não disponível.">
-                            <img id="img-res" src="./img/img-carousel/stack3-res.png" alt="imagem não disponível.">
-                        </div>
-                    </div>
-                    <button class="carousel-next"><img id="seta" src="./img/img-assets/seta_direita.png"
-                            alt="Próximo"></button>
-                </div>
-            </main>
-        </div> 
-
-                <span id="portfolio"></span>
-    </section>
-    <section class="section-portfolio">
-        <h1 class="title-portfolio">
-            <span class="lang pt">Alguns projetos do meu Portfólio</span>
-            <span class="lang en" style="display: none;">Some Projects from My Portfolio</span>
-        </h1>
-        <!-- <span class="aviso"><img class="img-aviso" src="./construcao-removebg-preview.png" alt=""></span> -->
-    </section>
-    <span id="servico"></span>
-    <section class="servicos">
-        <h2 class="title-portfolio">
-            <span class="lang pt">Serviços</span>
-            <span class="lang en">Service</span>
-        </h2>
-        <div class="service">
-            <div class="service-1">
-                <img class="img-ux" src="./img/img-service/web-design.png" alt="imagem Ui-Ux">
-                <p>Ui/Ux <br> Designer</p>
-                <span>Veja Mais</span>
-            </div>
-            <div class="service-2">
-                <img class="img-ux" src="./img/img-service/web-front.png" alt="Front-end">
-                <p>Front-End</p>
-            </div>
-            <div class="service-3">
-                <img class="img-ux" src="./img/img-service/back.png" alt="Back-end">
-                <p>Back-End</p>
-            </div>
-        </div>
-    </section>
-    <span id="contato"></span>
-    <footer>
-        <h2 class="contact">
-            <span class="lang pt">Entre em contato através das mídias sociais</span>
-            <span class="lang en">Get in touch through social media</span>
-        </h2>
-        <div>
-            <ul class="contatos">
-                <li id="li-contato">
-                    <a class="a-squad" href="https://www.linkedin.com/in/fabiano-fregnani-8984051a7/" target="_blank">
-                        <div class="squad-1"><img class="img-squad" src="./img/img-contato/in.png" alt="LinkedIn"></div>
-                    </a>
-                    <a class="a-squad" href="https://github.com/fregnani123" target="_blank">
-                        <div class="squad-2"><img class="img-squad" src="./img/img-contato/github.png" alt="GitHub">
-                        </div>
-                    </a>
-                    <a class="a-squad" href="https://x.com/FabianoFregnani" target="_blank">
-                        <div class="squad-3"><img class="img-squad" src="./img/img-contato/x.png" alt="X"></div>
-                    </a>
-
-                    <a class="a-squad" href="https://www.facebook.com/fabiano.freg123" target="_blank">
-                        <div class="squad-4"><img class="img-squad" src="./img/img-contato/face.png" alt="Facebook">
-                        </div>
-                    </a>
-                </li>
-                <li class="email-contact">
-                    <span class="lang pt">Entre em contato por e-mail: <a
-                            href="mailto:fabianofregnani@hotmail.com">fabianofregnani@hotmail.com</a></span>
-                    <span class="lang en">Contact us by email: <a
-                            href="mailto:fabianofregnani@hotmail.com">fabianofregnani@hotmail.com</a></span>
-                </li>
-            </ul>
-        </div>
-        <p class="copy">
-            <span class="lang pt">&copy; 2024 Fabiano Fregnani. Todos os direitos reservados.</span>
-            <span class="lang en">&copy; 2024 Fabiano Fregnani. All rights reserved.</span>
-        </p>
-    </footer>
-    <script src="./src/script.js"></script>
-    <script src="./src/btnMobile.js"></script>
+<body>
+    <div class="container">
+        <i class="fas fa-folder folder"></i>
+        <i class="fas fa-user user"></i>
+    </div>
 </body>
 
 </html>
