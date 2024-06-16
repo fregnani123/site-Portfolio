@@ -1,3 +1,5 @@
+
+
 .section {
     height: 100vh;
     margin: 0;
@@ -18,7 +20,7 @@
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
-    background: linear-gradient(to top, #7cbdd4, #c54eb1);
+    background: linear-gradient(to top, #BB6EE2, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -27,7 +29,6 @@
     text-align: top;
     justify-content: center;
     width: 100%;
-    /* background-color: red; */
     margin-top: 0px;
 }
 
@@ -85,11 +86,9 @@
 
 .destaque {
     font-size: 35px;
-    background: linear-gradient(to top, #7cbdd4, #c54eb1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    /* Opcional: adicionar negrito para destacar mais */
+    background: linear-gradient(to top, #BB6EE2, white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 @keyframes slide-section {
     from {

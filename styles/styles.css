@@ -7,7 +7,6 @@
     --title-contact: white;
     --header-bg-color: #33333300;
     --header-scrolled-bg-color:#2C1E4A;
-    --footer-bg-color: rgb(59, 59, 59);
     --color-text-about: rgb(255, 255, 255);
     --span-letra-destacar: rgb(80, 80, 32);
     --carousel-color: rgb(252, 252, 252);
@@ -158,6 +157,7 @@ body {
     letter-spacing: 0.2em;
     color: rgb(253, 253, 253);
     animation: slideFromBottom 2s ease forwards;
+    /* background-color: red; */
 }
 
 @keyframes slideFromBottom {
@@ -175,8 +175,8 @@ body {
 }
 
 .img-logo {
-    width: 80px;
-    border: 1px solid #954BBC;
+    width: 120px;
+    /* border: 1px solid #954BBC; */
     border-radius: 50%;
     padding: 3px;
     margin-right: 15px;
@@ -294,7 +294,7 @@ body {
     transition:background-color 0.3s;
 }
 #a-contato:hover {
-    background-color:var(--header-scrolled-bg-color);
+    background-color: #2c1e4a6b;
 }
 
 
@@ -341,17 +341,7 @@ body {
     margin-right: 15px;
 }
 
-.title-portfolio {
-    width: 100%;
-    height: 140px;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    color: var(--text-color);
-    font-weight: 300;
-    margin-top: 50px;
-}
+
 
 .section-carousel {
     height: 100vh;
@@ -364,43 +354,6 @@ body {
     z-index: -1;
 }
 
-footer {
-    padding-top: 20px;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(90deg, #2C1E4A, #000000);
-}
-
-.copy {
-    background-color:transparent;
-    display: flex;
-    justify-content: center;
-    align-items:end;
-    height: 190px;
-    color: white;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    padding-bottom: 10px;
-}
-
-.contatos {
-    display: block;
-    width: 100%;
-    height: 50px;
-    list-style: none;
-    justify-content: center;
-    gap: 5px;
-    padding-bottom: 100px;
-}
-
-
-.section-portfolio {
-    width: 100%;
-    height: auto;
-}
-
 .span-whatsap {
     position: fixed;
     bottom: 10px;
@@ -410,35 +363,6 @@ footer {
     margin-bottom: 0px;
 }
 
-
-.img-whatsap {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    transition: width 0.5s ease, height 0.5s ease;
-}
-
-.img-whatsap:hover {
-    width: 70px;
-    height: 70px;
-}
-
-.email-contact {
-    margin-top: 20px;
-    text-align: center;
-    color: var(--title-contact);
-}
-
-.email-contact a {
-    color: var(--title-contact);
-    /* Ajuste a cor conforme necessário */
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.email-contact a:hover {
-    text-decoration: underline;
-}
 
 
 

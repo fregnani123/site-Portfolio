@@ -27,9 +27,10 @@
 }
 
 .img-service {
-    width: 350px;
+    width: 500px;
     height: auto;
-    margin-left: 90px;
+    margin-top: 200px;
+    margin-left: 50px;
     /* background: red; */
 
 }
@@ -51,7 +52,7 @@
     height: auto;
     margin: 0;
     align-items: center;
-   
+    margin-top: 200px;
 }
 
 .div-service {
@@ -62,7 +63,7 @@
     margin-top: 20px;
 }
 .div-squad{
-    margin-top:40px;
+    margin-top: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -75,7 +76,8 @@
     height: 200px;
     background-color: var(--primary-color);
     border-radius: 3px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgb(83,140,234);
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.07); */
     display: flex;
     align-items: center;
     justify-content: center;
