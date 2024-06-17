@@ -1,7 +1,7 @@
 
 .contact {
     width: 100%;
-    height: 110vh;
+    height: 140vh;
     box-sizing: border-box;
     font-weight: 300;
     font-size: 35px;
@@ -10,7 +10,7 @@
     color: var(--title-contact);
     justify-content: left;
     letter-spacing: 0.05em;
-    background: linear-gradient(90deg, #2C1E4A, #000000);
+    background: linear-gradient(90deg, #201636, #000000);
 }
 .title-contact{
     display: flex;
@@ -36,14 +36,18 @@
     margin-bottom: 15px;
 }
 .email a{
-    color: white;
+    color: rgb(173, 96, 212);
 }
 
 #li-contato {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+    /* background-color: #3b5998; */
+    width: 350px;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid white;
 }
 
 .squad-1,
@@ -105,41 +109,53 @@ footer {
 .contatos {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 20px;
     list-style: none;
     justify-content: left;
     gap: 5px;
     padding-bottom: 100px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 .img-whatsap {
-    width: 45px;
-    padding: 5px;
+    width: 29px;
     height: auto;
     border-radius: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
-    transition: background-color 0.3s ease;
+    transition: 
+    background-color 0.3s ease;
 }
 
-.img-whatsap:hover {
-   cursor: pointer;
-   padding: 5px;
-   background-color: #00471a;
-}
+
 .fone-text{
     font-size: 35px;
+    
 }
 
 .fone{
     display: flex;
     align-items: center;
+    color: rgb(173, 96, 212);
+    font-size: 20px;
+    margin-top: 15px;
+}
+.social {
+font-size:35px;
+font-weight: 300;
 }
 
+.email{
+    font-size: 20px;
+    font-weight: 300;
+}
 
 .email-contact {
     margin-top: 20px;
     text-align: center;
-    color: var(--title-contact);
+    
 }
 
+.email-text{
+    font-size: 35px;
+    
+}
