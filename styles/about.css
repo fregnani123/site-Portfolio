@@ -67,6 +67,15 @@
     animation: slide-section-img 2s ease forwards;
     display: block;
 }
+.ico-circuito{
+    width: 50px;
+    margin-right: 10px;
+}
+#img-ico{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 .section.show-animate .text-about {
     display: block;
