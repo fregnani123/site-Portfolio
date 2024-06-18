@@ -130,7 +130,6 @@
     justify-content: center;
 }
 
-
 body,
 html {
     margin: 0;
@@ -158,6 +157,14 @@ body {
     color: rgb(253, 253, 253);
     animation: slideFromBottom 2s ease forwards;
     /* background-color: red; */
+}
+.nome-logo{
+    text-align: left;
+}
+.logo-trabalho{
+    font-size: 8px;
+    margin-left: 50px;
+    font-weight: 300;
 }
 
 @keyframes slideFromBottom {

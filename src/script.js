@@ -56,11 +56,10 @@ document.addEventListener('scroll', function () {
 
 imgFlexa.addEventListener('click', function () {
     window.scrollBy({
-        top: window.innerHeight,
+        top: window.innerHeight + 100,  // Descer a altura da janela mais 100 pixels
         behavior: 'smooth'
     });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
     function scrollToSection(event, targetId) {
         event.preventDefault();
