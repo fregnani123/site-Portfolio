@@ -17,17 +17,25 @@
     margin-right: 50px;
     width: 230px;
     height: 370px;
-   
 }
-.title-contact{
+
+.title-contact {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 40px;
     margin-top: 120px;
     font-weight: 300;
-    color:white;
 }
+
+.title-contact .lang-pt {
+    background: linear-gradient(to top, rgb(83, 140, 234), white);
+    -webkit-background-clip: text;
+    /* Para compatibilidade com navegadores WebKit */
+    background-clip: text;
+    color: transparent;
+}
+
 .div-midias{
     display: flex;
     justify-content: center;
@@ -50,8 +58,8 @@
 .squad-2,
 .squad-3,
 .squad-4 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 3px;
     cursor: pointer;
     border: 1px solid white;
@@ -115,9 +123,9 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 350px;
+    width: 290px;
     padding: 10px;
-    justify-content: left;
+    justify-content: center;
     border: 1px solid rgb(83, 199, 223);
 }
 .img-whatsap {
@@ -136,26 +144,34 @@ footer {
     font-weight: 300px;
 }
 
-.fone{
+.fone {
     display: flex;
     align-items: center;
-    color:rgb(83, 199, 223);
     font-size: 20px;
     margin-top: 0px;
+    background: linear-gradient(to top, rgb(83, 199, 223), white);
+    -webkit-background-clip: text;
+    /* Para compatibilidade com navegadores WebKit */
+    background-clip: text;
+    color: transparent;
 }
 .social {
 font-size:30px;
 font-weight: 300;
 }
 
-.email{
+.email {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 0;    
+    margin-top: 0;
     font-size: 25px;
     font-weight: 300;
-    color: rgb(83, 199, 223);
+    background: linear-gradient(to top, rgb(83, 199, 223), white);
+    -webkit-background-clip: text;
+    /* Para compatibilidade com navegadores WebKit */
+    background-clip: text;
+    color: transparent;
 }
 
 .email-text{
