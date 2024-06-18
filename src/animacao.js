@@ -9,7 +9,6 @@ window.onscroll = () => {
       
         if (top >= offset - height * 0.5 && top < offset + height * 0.5) {
             sec.classList.add('show-animate');
-       
         }
     });
 };

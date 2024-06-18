@@ -146,12 +146,9 @@ a:hover {
 
     }
 
-
     #nav.active #menu {
         height: 350px;
         overflow-x: hidden;
-        /* height: calc(100vh - 70px); */
-        /* altura da tela - o do topo */
         display: block;
         visibility: visible;
         /* mostra os itens do menu na animação*/
@@ -406,7 +403,6 @@ a:hover {
     }
 
     #menu {
-        display: block;
         /*Agora desta parte para baixo vamos dar estilo a folha do menu quando está ativa */
         position: absolute;
         width: 100%;
@@ -424,8 +420,6 @@ a:hover {
     #nav.active #menu {
         height: 350px;
         overflow-x: hidden;
-        /* height: calc(100vh - 70px); */
-        /* altura da tela - o do topo */
         display: block;
         visibility: visible;
         /* mostra os itens do menu na animação*/
