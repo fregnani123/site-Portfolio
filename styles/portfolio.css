@@ -110,16 +110,16 @@
 
 
 #cor-1{
-    background: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
 #cor-2{
-    background: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
 #cor-3{
-    background: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
 #cor-4{
-    background: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
 
 .img-pc{
