@@ -70,8 +70,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    background: linear-gradient(to bottom, rgba(31, 27, 59, 0) 150px, rgba(50, 35, 97, 0.952));
+    /* color: white;
+    background: linear-gradient(to bottom, rgba(31, 27, 59, 0) 150px, rgba(50, 35, 97, 0.877)); */
 }
 
 .img-lobo {

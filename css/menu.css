@@ -1,0 +1,182 @@
+/* Inicio da estrutura do Menu - cabeçalho tela sem responsividade */
+:root {
+
+    --primary-color: black;
+    --secondary-color: #2C1E4A;
+
+    /*cor linhas menu*/
+    --cor1: black;
+    /*cor nome menu*/
+    --cor2: black;
+    /*cor links do menu */
+    --cor3: rgb(255, 255, 255);
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+   border-bottom:1px solid var(--cor3);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header {
+    color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    height: 50px;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+    justify-content: flex-end;
+    background:linear-gradient(90deg, #361e4a, #000000);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    
+}
+
+#menu a {
+    color: var(--cor3);
+    display: block;
+    padding: .5rem;
+
+}
+
+/* fim da estrutura do Menu e cabeçalho quando a tela está sem responsividade */
+
+#btn-mobile {
+    display: none;
+}
+
+/* Inicio menu mobile telas menores */
+
+@media (max-width: 900px) {
+    btn-mobile {
+        display: block;
+    }
+    header{
+        background: #110c1d
+    }
+
+    #menu {
+        display: block;
+        /*Agora desta parte para baixo vamos dar estilo a folha do menu quando está ativa */
+        position: absolute;
+        /*sobrepor todas*/
+        width: 0%;
+        top: 40px;
+        right: 0px;
+        background: #110c1d;
+        height: 300px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        text-align: center;
+        /* Esconde o menu na animação */
+        overflow: hidden;
+        /*na animação sincroniza os objetos com o visibility*/
+        /*overflow-y:auto; ativar se o menu tiver mais itens cria barra de rolagem*/
+    }
+
+    #nav.active #menu {
+        width: 100%;
+        text-align: center;
+        /* height: calc(100vh - 70px); */
+        /* altura da tela - o do topo */
+        display: block;
+        visibility: visible;
+        overflow: hidden;
+        /* mostra os itens do menu na animação*/
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+    }
+    a:hover {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        background-color: rgba(42, 0, 53, 0.301);
+    }
+
+    #btn-mobile {
+        /*estilizando o button */
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--cor3);
+    }
+
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        margin-left: 5px;
+        color: var(--cor3);
+    }
+
+
+    #hamburguer::after {
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+        /*position relative para alinhar o X do menu. */
+        background: currentColor;
+
+
+    }
+
+    #hamburguer::before {
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: currentColor;
+
+    }
+
+    nav.active #hamburguer {
+        border-top-color: transparent;
+        /*ativa com o nav e deixa o 1º traço trasparente */
+    }
+
+    nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px
+    }
+
+}

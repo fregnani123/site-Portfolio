@@ -166,8 +166,9 @@ font-weight: 300;
 
 @media (max-width: 800px) {
    
-.img-animation{
+.img-animation,.img-conversa{
     display: none;
 }
+
 
 }
