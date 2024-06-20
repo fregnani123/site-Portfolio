@@ -1,6 +1,4 @@
-const imgFlexa = document.getElementById('img-flexa');
-const imgLogo = document.querySelector('.img-logo');
-
+const imgFlexa = document.getElementById('btn-arrow');
 const btnMobile = document.querySelector('button#btn-mobile');
 
 
@@ -13,18 +11,6 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-setTimeout(() => {
-    const loadingPage = document.querySelector('.loading');
-    const body = document.querySelector('body');
-
-    if (loadingPage) {
-        loadingPage.style.display = 'none';
-    }
-
-    if (body) {
-        body.style.overflowY = 'scroll';
-    }
-}, 5000);
 
 const btn = document.getElementById('btn-mobile')
 
@@ -38,19 +24,16 @@ btn.addEventListener('click', (e) => {
 
 document.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
-    const imgLogo = document.querySelector('.img-logo');
 
     if (window.innerWidth > 700) { 
         if (window.scrollY > 0) {
             header.classList.add('scrolled');
-            imgLogo.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
-            imgLogo.classList.remove('scrolled');
         }
     } else {
         header.classList.remove('scrolled');
-        imgLogo.classList.remove('scrolled');
+      
     }
 });
 
