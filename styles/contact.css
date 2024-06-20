@@ -29,11 +29,7 @@
 }
 
 .title-contact .lang-pt {
-    background: linear-gradient(to top, rgb(83, 140, 234), white);
-    -webkit-background-clip: text;
-    /* Para compatibilidade com navegadores WebKit */
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .div-midias{
@@ -149,11 +145,7 @@ footer {
     align-items: center;
     font-size: 20px;
     margin-top: 0px;
-    background: linear-gradient(to top, rgb(83, 199, 223), white);
-    -webkit-background-clip: text;
-    /* Para compatibilidade com navegadores WebKit */
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 .social {
 font-size:30px;
@@ -167,11 +159,7 @@ font-weight: 300;
     margin-top: 0;
     font-size: 25px;
     font-weight: 300;
-    background: linear-gradient(to top, rgb(83, 199, 223), white);
-    -webkit-background-clip: text;
-    /* Para compatibilidade com navegadores WebKit */
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .email-text{
