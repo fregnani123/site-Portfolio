@@ -133,8 +133,6 @@ footer {
     
 }
 
-
-
 .fone-text{
     font-size: 30px;
     font-weight: 300px;
@@ -166,3 +164,10 @@ font-weight: 300;
     font-size: 30px;   
 }
 
+@media (max-width: 800px) {
+   
+.img-animation{
+    display: none;
+}
+
+}

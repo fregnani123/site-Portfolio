@@ -470,8 +470,6 @@ a:hover {
         border-top: 4px solid;
         /*position relative para alinhar o X do menu. */
         background: currentColor;
-
-
     }
 
     #hamburguer::before {
@@ -639,6 +637,8 @@ a:hover {
  .img-seta-linguagem {
      width:20px;
  }
+
+ 
 
  
 }

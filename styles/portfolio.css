@@ -49,6 +49,7 @@
    
 }
 
+
 .carousel-item {
     position: relative;
     flex: 0 0 0;
@@ -74,10 +75,8 @@
 .carousel-controls {
     cursor: pointer;
     display: flex;
-    justify-content: center;
-    position:absolute;
-    margin-top: 300px;
-    left: 410px;
+    position: absolute;
+    bottom: 0;
 }
 
 .carousel-controls .btn-item {
@@ -126,4 +125,22 @@
     width: 450px;
     height: auto;
     margin-bottom: 80px;
+}
+.email-text {
+    font-size: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .img-pc {
+        display: none;
+    }
+    .container-carousel{
+        display: block;
+        margin-top: 50px;
+        margin-left: -30px;
+        align-items: center;
+    }
+   
+
 }
