@@ -1,6 +1,13 @@
 :root {
     --primary-color: black;
     --secondary-color: #2C1E4A;
+    --text-color:white;
+
+/* medidas Title-sections */
+
+   --font-size-fullScreen:50px;
+   --font-size-mobile:30px;
+
 }
 
 @font-face {
@@ -22,6 +29,48 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+/* Cores das Sections */
+.title-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-fullScreen);
+}
+
+#section1 {
+    background: linear-gradient(to top, #211738, rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 120vh;
+    margin: 0;
+}
+
+
+#section3 {
+    background-color: #9b59b6;
+    width: 100%;
+    margin: 0;
+}
+
+#section4 {
+    background-color: #e67e22;
+    width: 100%;
+    margin: 0;
+}
+
+#section5 {
+    background-color: #e74c3c;
+    width: 100%;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: auto;
 }
 
 /* css section1 */
@@ -50,45 +99,41 @@ section {
     width: 100%;
 }
 
-/* Cores das Sections */
-#section1 {
-    background: linear-gradient(to top, #211738, rgba(255, 255, 255, 0));
-    width: 100%;
-    height: 120vh;
-    margin: 0;
-}
+/* css section2 */
 
 #section2 {
-    background-color: #3498db;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(31, 29, 63), #000000);
     width: 100%;
+    height: auto;
     margin: 0;
 }
-
-#section3 {
-    background-color: #9b59b6;
-    width: 100%;
-    margin: 0;
+.content-about{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 90vh;
+}
+.img-about{
+    width: 300px;
+    display: flex;
+}
+.img-about-mobile{
+    width: 50px;
+    display: none;
+}
+.text-about{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.word-highlighting{
+    font-size:26px;
+    color: #9b59b6;
 }
 
-#section4 {
-    background-color: #e67e22;
-    width: 100%;
-    margin: 0;
-}
-
-#section5 {
-    background-color: #e74c3c;
-    width: 100%;
-    margin: 0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    margin-top: auto;
-}
 
 /* Estilos Responsivos */
 @media (min-width: 900px) {
@@ -127,4 +172,13 @@ footer {
             object-fit: cover;
             z-index: -1;
         }
+ .img-about-mobile {
+     width: 50px;
+     display: flex;
+     margin-left: 10px;
+ }
+ .img-about {
+     width: 300px;
+     display: none;
+ }
 }
