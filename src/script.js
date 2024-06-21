@@ -43,6 +43,7 @@ imgFlexa.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     function scrollToSection(event, targetId) {
         event.preventDefault();

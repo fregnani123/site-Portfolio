@@ -2,6 +2,8 @@
     --primary-color: black;
     --secondary-color: #2C1E4A;
     --text-color:white;
+    --color-line-qualification:#5E366E;
+
 
 /* medidas Title-sections */
 
@@ -43,13 +45,6 @@ body {
     background: linear-gradient(to top, #211738, rgba(255, 255, 255, 0));
     width: 100%;
     height: 120vh;
-    margin: 0;
-}
-
-
-#section3 {
-    background-color: #9b59b6;
-    width: 100%;
     margin: 0;
 }
 
@@ -134,6 +129,58 @@ section {
     color: #9b59b6;
 }
 
+/* css section3 */
+
+#section3 {
+    background: linear-gradient(90deg, rgb(31, 29, 63), #000000);
+    width: 100%;
+    margin: 0;
+}
+.div-portfolio{
+    margin-top: 100px;
+}
+
+
+/* css section4 */
+#section4 {
+    background: linear-gradient(90deg, rgb(31, 29, 63), #000000);
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+.div-service{
+    margin-top: 100px;
+}
+
+.img-service{
+    width: 100px;
+    height: auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+.service-1,.service-2,.service-3{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(31, 29, 63);
+  margin: 10px;
+}
+.div-squad{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* css section6 */
+#section5 {
+    background: linear-gradient(90deg, rgb(31, 29, 63), #000000);
+    width: 100%;
+    margin: 0;
+}
+.div-contacto{
+    margin-top: 100px;
+}
+
 
 /* Estilos Responsivos */
 @media (min-width: 900px) {
@@ -158,7 +205,7 @@ section {
 }
 
 
-/* Altura menor para telas menores que 600px */
+/* Altura menor para telas menores que 800px */
 @media (max-width: 800px) {
     #section1 {
         height: 80vh;
@@ -181,4 +228,16 @@ section {
      width: 300px;
      display: none;
  }
+
+ .div-squad {
+     display: block; 
+     margin-left: 100px;
+ }
+ #section4 {
+     background: linear-gradient(90deg, rgb(31, 29, 63), #000000);
+     width: 100%;
+     height: auto;
+     margin: 0;
+ }
+ 
 }
