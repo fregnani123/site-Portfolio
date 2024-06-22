@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contatoLink = document.querySelectorAll('a[href="#contato"]');
     contatoLink.forEach(link => {
         link.addEventListener('click', function (event) {
-            scrollToSection(event, 'contato');
+            scrollToSection(event, 'contacto');
         });
     });
 
