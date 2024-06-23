@@ -73,7 +73,27 @@ i{
     font-size: 25px;
     margin-left: 90px;
 }
-
+.img-social{
+    width: 40px;
+    height: 40px;
+}
+.ul-contact{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.li-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 3px;
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
    
