@@ -8,9 +8,17 @@
     align-items: center;
     margin-top: 70px;
     margin-left: 90px;
+    position:absolute;
+    z-index: 2;
+}
+/* controla texto do todo texto incluindo slogan para animaçao */
+.section1-diplay {
+    top: 250px;
+    position: absolute;
+    z-index: 2;
 }
 .img-logo{
-    width: 70px;
+    width: 60px;
     height: auto;
 }
 .name-logo {
@@ -26,13 +34,15 @@
 .p-down-arrow{
 width: 100%;
 height: auto;
+/* background-color: red; */
 display: block;
 }
 #btn-arrow{
 background: rgba(255, 255, 255, 0);
 border: none;
-height: 50px;
+/* height: 50px; */
 margin-top: 35px;
+margin-left: 250px;
 cursor: pointer;
 transition: padding-top .3s ease; 
 }
@@ -47,8 +57,14 @@ padding-top: 30px;
     font-weight: 1000;
     text-align: left;
     margin-top: 70px;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 5px;
+}
+
+/* controla texto do todo texto incluindo slogan para animaçao */
+.section1-diplay{
+position: absolute;
+z-index: 2;
 }
 #text-full-stack{
     margin-left: 90px;
@@ -65,6 +81,7 @@ i{
 .slogan {
     margin-top: -20px;
     text-align: left;
+    color:var(--vetor-color);
 }
 #text-slogan {
     /* font-family: 'Roboto', sans-serif; */
@@ -73,9 +90,41 @@ i{
     font-size: 25px;
     margin-left: 90px;
 }
+.div-contacto-itens {
+    padding-top: 13px;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: left;
+}
 .img-social{
     width: 40px;
     height: 40px;
+}
+.p-social-info{
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-whatsap{
+    width: 35px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+.p-social-title{
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
 }
 .ul-contact{
     margin-top: 20px;
@@ -84,7 +133,9 @@ i{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
+    border: 1px solid white;
+    padding: 5px;  
+    width: 240px;
 }
 .li-contact{
     display: flex;
@@ -93,6 +144,8 @@ i{
     border: 1px solid white;
     padding: 3px;
     cursor: pointer;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 600px) {

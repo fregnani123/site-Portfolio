@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/qualification.css">
+    <link rel="stylesheet" href="./css/animacaoBG.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./img/img-assets/favicon.ico" type="image/x-icon">
@@ -41,6 +42,8 @@
 </head>
 
 <body>
+    <div id="hex-container" class="hex-grid">
+    </div>
     <span id="inicio"></span>
     <header class="header">
         <nav id="nav">
@@ -67,10 +70,6 @@
     </header>
     <main>
         <section id="section1">
-            <!-- <video class="bg-video" autoplay muted loop>
-                <source src="./video/v.mp4" type="video/mp4">
-            </video> -->
-
             <h1 class="logo">
                 <img class="img-logo" src="./img/img-assets/logo1.png" alt=""><span class="name-logo">Fabiano
                     Fregnani.<br />
@@ -78,6 +77,7 @@
                 </span>
             </h1>
 
+            <div class="section1-diplay">
             <h2 class="title-home">
                 <p id="text-full-stack" class="lang pt">Desenvolvedor</p>
                 <p class="text-full-stack">Full-stack<i class="fas fa-laptop-code"></i></p>
@@ -90,7 +90,7 @@
             <p class="p-down-arrow">
                 <button id="btn-arrow"><img class="down-arrow" src="./img/img-assets/seta-baixo.png"
                         alt="Role a página e descubra"></button>
-            </p>
+            </p></div>
         </section>
 
 
@@ -207,21 +207,19 @@
             <span id="contacto"></span>
             <div class="div-contacto">
                 <h2 class="title-section size">Envie uma mensagem para mim, vamos conversar.</h2>
-               <div>
-                 <p>
-                    Telefone
-                 </p>
-                 +55 (48) 996607600
-               </div>
-              <p>Email</p>
-              <p>fabianofregnani@hotmail.com</p>
-              <p>Social</p>
+               <div class="div-contacto-itens">
+                 <p class="p-social-title">Telefone </p>
+                <p class="p-social-info">+55 (48) 996607600 <img class="img-whatsap" src="./img/img-contato/whatsapp.png" alt="whatsap"></p> 
+              <p  class="p-social-title">Email <img src="" alt=""></p>
+              <p class="p-social-info">fabianofregnani@hotmail.com</p>
+              <p class="p-social-title">Social</p>
               <ul class="ul-contact">
                 <li class="li-contact"><img class="img-social" src="img/img-contato/in.png" alt="Linkedin"></li>
                 <li class="li-contact"><img class="img-social" src="img/img-contato/github.png" alt="Github"></li>
                 <li class="li-contact"><img class="img-social" src="img/img-contato/x.png" alt="Twiter"></li>
                 <li class="li-contact"><img class="img-social" src="img/img-contato/face.png" alt="Facebook"></li>
               </ul>
+            </div>
             </div>
         </section>
     </main>

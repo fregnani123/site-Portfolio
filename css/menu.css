@@ -3,6 +3,7 @@
 
     --primary-color: black;
     --secondary-color: #2C1E4A;
+    --vetor-color: #6f0091;
 
     /*cor linhas menu*/
     --cor1: black;
@@ -46,20 +47,20 @@ header {
     padding: 1rem;
     z-index: 1000;
     justify-content: flex-end;
-    /* background: linear-gradient(to right, #211738, rgb(0, 0, 0)); */
+    background: linear-gradient(to right, #6f0091, rgb(0, 0, 0));
+    background: #6f0091;
     transition: height 0.3s ease;
 }
 
 .scrolled{
  height: 70px;
- background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+ background: #6f0091;;
 }
 
 #menu {
     display: flex;
     list-style: none;
-    gap: .5rem;
-    
+    gap: .5rem;  
 }
 
 #menu a {
