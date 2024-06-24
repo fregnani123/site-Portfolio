@@ -199,13 +199,13 @@ section {
 }
 
 
-
 /* css section5*/
 #section5 {
     /* background: linear-gradient(to right, #150f24, rgb(0, 0, 0)); */
     position: relative;
+    padding-top: 10px;
+    padding-bottom: 30px;
     overflow: hidden;
-    /* background: linear-gradient(to right, #211738, rgb(0, 0, 0)); */
     background-color: transparent;
     width: 100%;
     margin: 0;
@@ -222,8 +222,6 @@ section {
     left: 0;
     top: 0;
 }
-
-
 
 footer {
     display: flex;
