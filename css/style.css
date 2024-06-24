@@ -74,6 +74,7 @@ body {
 }
 
 body {
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     font-family: Arial, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
@@ -109,15 +110,16 @@ section {
     width: 100%;
 }
 
-/* css section2 */
+/* css section2 about */
 #section2 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
     height: auto;
     margin: 0;
+    
 }
 .content-about{
     display: flex;
@@ -152,24 +154,28 @@ section {
     animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
 }
 
-/* css section3 */
+/* css section3 portfolio */
+.title-portfolio{
+   display: flex;
+   text-align: end;
+   margin-top: 90px;
+}
 #section3 {
-    background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
     margin: 0;
+    height: auto;
 }
 .div-portfolio{
-    margin-top: 100px;
-    
+
 }
 
-/* css section4 */
+/* css section4 about*/
 #section4 {
-    background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
     height: 90vh;
     margin: 0;
-   
 }
 .div-service{
     margin-top: 100px;
@@ -191,19 +197,12 @@ section {
     display: flex;
     justify-content: center;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background: var(--footer);
-    color: white;
-    font-size: 13px;
-    padding: 2px;
-}
+
 
 
 /* css section5*/
 #section5 {
+    /* background: linear-gradient(to right, #150f24, rgb(0, 0, 0)); */
     position: relative;
     overflow: hidden;
     /* background: linear-gradient(to right, #211738, rgb(0, 0, 0)); */
@@ -222,6 +221,18 @@ footer{
     z-index: -1;
     left: 0;
     top: 0;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--footer);
+    color: white;
+    font-size: 13px;
+    padding: 2px;
 }
 
 /* Estilos Responsivos */
