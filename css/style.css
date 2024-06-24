@@ -147,6 +147,10 @@ section {
     color: #9b59b6;
 }
 
+.title-section-2{
+    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
+}
+
 /* css section3 */
 #section3 {
     background: linear-gradient(to right, #211738, rgb(0, 0, 0));
@@ -157,7 +161,6 @@ section {
     margin-top: 100px;
     
 }
-
 
 /* css section4 */
 #section4 {

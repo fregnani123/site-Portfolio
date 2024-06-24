@@ -137,12 +137,27 @@ i{
 .p-social-info{
     display: flex;
     font-size: 25px;
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid transparent;
+    transition:border-bottom .6s ease ;
+}
+.a-email{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
     cursor: pointer;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
+.p-social-info:hover{
+   border-bottom: 1px solid white;
+}
 
-.img-whatsap{
+.img-whatsap, .img-email{
     width: 35px;
     height: 35px;
     font-family: 'Roboto', sans-serif;
