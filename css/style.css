@@ -159,6 +159,7 @@ section {
    display: flex;
    text-align: end;
    margin-top: 90px;
+   margin-bottom: 20px;
 }
 #section3 {
     background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
@@ -166,9 +167,7 @@ section {
     margin: 0;
     height: auto;
 }
-.div-portfolio{
 
-}
 
 /* css section4 about*/
 #section4 {
