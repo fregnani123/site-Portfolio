@@ -8,7 +8,7 @@ window.onscroll = () => {
 
       
         if (top >= offset - height * 0.5 && top < offset + height * 0.5) {
-            sec.classList.add('show-animate');
+           sec.classList.add('show-animate');
         }
     });
 };
@@ -30,7 +30,12 @@ for (let i = 0; i < hexRows; i++) {
 
     hexContainer.appendChild(hexRow);
 }
+const btnArrow = document.querySelector('#btn-arrow');
 
+setTimeout(() => {
+    btnArrow.style.display = 'block';
+    btnArrow.style.opacity = '1';
+}, 5000);
 
 
 

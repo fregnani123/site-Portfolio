@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('./fonnts.com-Lastica.ttf') format('truetype');
+}
 :root {
     --primary-color: black;
     --secondary-color: #2C1E4A;
@@ -11,13 +15,53 @@
    --font-size-mobile:30px;
 
 }
- 
+@keyframes up-text {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
 
-@font-face {
-    font-family: 'MinhaFonte';
-    src: url('./fonnts.com-Lastica.ttf') format('truetype');
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
+@keyframes show-text {
+    from {
+        opacity: 0;
+        /* Totalmente invisível */
+    }
+
+    to {
+        opacity: 2;
+        /* Totalmente visível */
+    }
+}
+
+@keyframes up-text-img {
+    from {
+        transform: translatex(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes show-text-img {
+    from {
+        opacity: 0;
+        /* Totalmente invisível */
+    }
+
+    to {
+        opacity: 2;
+        /* Totalmente visível */
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -51,15 +95,11 @@ body {
     margin: 0;
     overflow: hidden;
 } 
-
-
-
 main {
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-
 section {
     color: #fff;
     text-align: center;
@@ -69,7 +109,6 @@ section {
 }
 
 /* css section2 */
-
 #section2 {
     display: flex;
     flex-direction: column;
@@ -85,9 +124,14 @@ section {
     /* background-color: red; */
     height: 90vh;
 }
-.img-about{
+.section.show-animate .animacao-text-about{
+   animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
+}
+
+.section.show-animate .img-about{
     width: 300px;
     display: flex;
+    animation: up-text-img 2s ease-out forwards, show-text-img 2s ease-out forwards;
 }
 .img-about-mobile{
     width: 50px;
@@ -104,7 +148,6 @@ section {
 }
 
 /* css section3 */
-
 #section3 {
     background: linear-gradient(to right, #211738, rgb(0, 0, 0));
     width: 100%;
@@ -112,6 +155,7 @@ section {
 }
 .div-portfolio{
     margin-top: 100px;
+    
 }
 
 
