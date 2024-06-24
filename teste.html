@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            /* background: linear-gradient(to right, #211738, rgb(0, 0, 0)); */
+            background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+        }
+
+        .hex-grid {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 60px;
+        }
+
+        .hex-grid h1,
+        .hex-grid h3 {
+            color: white;
+            margin: 5px 0;
+        }
+
+        .hex {
+            background-color: #6f0091;
+            width: 90px;
+            height: 90px;
+            margin: 3px;
+            margin-right: 0;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: background-color 1s ease, background-color 2s ease 1s;
+            cursor: pointer;
+        }
+
+        /* .hex:hover {
+            background-color: #6f0091;
+            transition: background-color 1s ease;
+        } */
+
+        .hex.transparent {
+            opacity: 0;
+        }
+
+        .hex-row {
+            display: flex;
+            justify-content: center;
+            margin-top: -26px;
+        }
+    </style>
+    <title>Hexagonal Grid</title>
+</head>
+
+<body>
+    <div id="hex-container" class="hex-grid">
+    </div>
+
+    <script>
+        const hexContainer = document.getElementById('hex-container');
+
+        const hexRows = 16;
+        const hexPerRow = [24, 23, 24, 23, 24, 23, 24, 23, 24, 23, 24, 23, 24, 23];
+
+        for (let i = 0; i < hexRows; i++) {
+            const hexRow = document.createElement('div');
+            hexRow.classList.add('hex-row');
+
+            for (let j = 0; j < hexPerRow[i]; j++) {
+                const hex = document.createElement('div');
+                hex.classList.add('hex');
+                hexRow.appendChild(hex);
+
+                // Adicionar evento de clique para tornar o hexágono transparente
+                hex.addEventListener('click', function () {
+                    this.classList.toggle('transparent');
+                });
+            }
+
+            hexContainer.appendChild(hexRow);
+        }
+    </script>
+</body>
+
+</html>

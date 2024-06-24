@@ -47,13 +47,13 @@ header {
     padding: 1rem;
     z-index: 1000;
     justify-content: flex-end;
-    background: linear-gradient(to right, #6f0091, rgb(0, 0, 0));
+    background: #15001b;
     transition: height 0.3s ease;
 }
 
 .scrolled{
  height: 70px;
- background: linear-gradient(to right, #6f0091, rgb(0, 0, 0));
+ background:#15001b;
 }
 
 #menu {

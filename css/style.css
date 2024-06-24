@@ -6,7 +6,8 @@
     --primary-color: black;
     --secondary-color: #2C1E4A;
     --text-color:white;
-    --color-line-qualification:#5E366E;
+    --color-line-qualification:#6f0091;
+    --footer:#15001b;
     --bg: linear-gradient(to right, #211738, rgb(0, 0, 0));
 
 /* medidas Title-sections */
@@ -144,7 +145,7 @@ section {
 }
 .word-highlighting{
     font-size:26px;
-    color: #9b59b6;
+    color: #6f0091;
 }
 
 .title-section-2{
@@ -183,7 +184,7 @@ section {
 .service-1,.service-2,.service-3{
   width: 200px;
   height: 200px;
-  background-color: rgb(31, 29, 63);
+  background-color: #6f0091;
   margin: 10px;
 }
 .div-squad{
@@ -194,7 +195,7 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    background: rgb(20, 20, 20);
+    background: var(--footer);
     color: white;
     font-size: 13px;
     padding: 2px;
@@ -203,7 +204,10 @@ footer{
 
 /* css section5*/
 #section5 {
-    background: linear-gradient(to right, #211738, rgb(0, 0, 0));
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #211738, rgb(0, 0, 0)); */
+    background-color: transparent;
     width: 100%;
     margin: 0;
     height: auto;
@@ -212,6 +216,12 @@ footer{
 .size {
     font-size: 40px;
     margin-bottom: -20px;
+}
+.my-bg{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
 }
 
 /* Estilos Responsivos */
