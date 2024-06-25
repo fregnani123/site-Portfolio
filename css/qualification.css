@@ -118,6 +118,13 @@ margin-top: -5px;
     justify-content: center;
     margin-top:0px ;
 }
+.box-skills-2{
+    /* background-color: rgb(207, 25, 25); */
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+    margin-left: 110px;
+}
 
 
 @media (max-width: 600px) {
