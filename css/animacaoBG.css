@@ -30,3 +30,8 @@
     justify-content: center;
     margin-top: -26px;
 }
+@media (max-width: 900px) {
+
+    .hex-grid{display: none;}
+
+}

@@ -274,7 +274,7 @@ footer {
      display: flex;
      margin-left: 10px;
  }
- .img-about {
+.section.show-animate .img-about{
      width: 300px;
      display: none;
  }

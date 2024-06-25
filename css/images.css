@@ -100,6 +100,7 @@ padding-top: 30px;
 position: absolute;
 z-index: 2;
 }
+
 #text-full-stack{
     margin-left: 90px;
 }
@@ -196,8 +197,9 @@ i{
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
-
-
+.li-contact:hover{
+    background-color: #6f0091;
+}
 
 @media (max-width: 600px) {
    
@@ -283,6 +285,13 @@ i{
         margin-left: 0px;
     }
     
-  
+        .section1-diplay {
+            position: static;
+            /* Posição padrão */
+            z-index: auto;
+            /* Z-index padrão */
+            margin-top: 250px;
+        }
 
+ 
     }
