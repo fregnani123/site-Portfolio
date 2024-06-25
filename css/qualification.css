@@ -78,6 +78,43 @@ margin-top: -5px;
     margin-right: -50px;
     margin-bottom: 40px;
 }
+.img-skills{
+    width:200px;
+    height: auto;
+    margin-right: 50px;
+}
+.container-skills {
+    margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tecnologias-title{
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.ul-skills{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+.li-skill{
+    background-color:white;
+    width: 110px;
+    height: 110px;
+    margin: 3px;
+    margin-right: 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.box-skills{
+    /* background-color: rgb(207, 25, 25); */
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+}
+
 
 @media (max-width: 600px) {
     .img-livro {
