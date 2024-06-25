@@ -119,13 +119,14 @@ section {
     width: 100%;
     height: auto;
     margin: 0;
-    
 }
 .content-about{
+    margin-top: 180px;
     display: flex;
     align-items: center;
     /* background-color: red; */
-    height: 90vh;
+    height: auto;
+    margin-bottom: 0px;
 }
 .section.show-animate .animacao-text-about{
    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
