@@ -285,13 +285,18 @@ i{
         margin-left: 0px;
     }
     
-        .section1-diplay {
-            position: static;
-            /* Posição padrão */
-            z-index: auto;
-            /* Z-index padrão */
-            margin-top: 250px;
-        }
+   .tecnologias-title{
+    margin-top: 90px;
+   
+   }
 
- 
+    .my-bg{
+        display: none;
+    }
+  .section1-diplay {
+    position: static;
+    z-index: auto;
+     margin-top:300px;
+    animation: subir 2s ease-out forwards, aparecer 2s ease-out forwards;
+  }
     }

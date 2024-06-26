@@ -259,7 +259,7 @@ footer {
 /* Altura menor para telas menores que 800px */
 @media (max-width: 800px) {
     #section1 {
-        height: 80vh;
+        height: 70vh;
     }
         .bg-video {
             position: absolute;
