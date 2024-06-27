@@ -37,6 +37,8 @@ document.addEventListener('scroll', function () {
     }
 });
 
+
+
 imgFlexa.addEventListener('click', function () {
     window.scrollBy({
         top: window.innerHeight + 100,  // Descer a altura da janela mais 100 pixels
@@ -66,6 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const sobreLink = document.querySelectorAll('a[href="#sobre"]');
+    sobreLink.forEach(link => {
+        link.addEventListener('click', function (event) {
+            scrollToSection(event, 'about');
+        });
+    });
+    
     sobreLink.forEach(link => {
         link.addEventListener('click', function (event) {
             scrollToSection(event, 'about');

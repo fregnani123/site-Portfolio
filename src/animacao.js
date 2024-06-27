@@ -38,4 +38,28 @@ setTimeout(() => {
 }, 5000);
 
 
+document.addEventListener('scroll', function () {
+    const section1 = document.getElementById('section1');
+    const section2 = document.getElementById('section2');
+    const section3 = document.getElementById('section3');
+    const section4 = document.getElementById('section4');
+    const section5 = document.getElementById('section5');
 
+    const linkHome = document.getElementById('link-home');
+    const linkSobre = document.getElementById('link-sobre');
+    const linkPortfolio = document.getElementById('link-portfolio');
+    const linkService = document.getElementById('link-service');
+    const linkContacto = document.getElementById('link-contacto');
+
+    const sections = [section1, section2, section3, section4, section5];
+    const links = [linkHome, linkSobre, linkPortfolio, linkService, linkContacto];
+
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            links[index].classList.add('active-link');
+        } else {
+            links[index].classList.remove('active-link');
+        }
+    });
+});

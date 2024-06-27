@@ -20,7 +20,7 @@
 }
 
 a {
-    color: black;
+   
     text-decoration: none;
     font-family: sans-serif;
     border-bottom: 1px solid transparent;
@@ -30,13 +30,20 @@ a:hover {
    border-bottom:1px solid var(--cor3);
 }
 
+
+a{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+a.active-link {
+    border: 1px solid white;
+}
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 header {
-    color: #fff;
     display: flex;
     position: fixed;
     width: 100%;
@@ -63,13 +70,13 @@ header {
 }
 
 #menu a {
-    color: var(--cor3);
     display: block;
     padding: .5rem;
     font-weight: 100;
     /* Thinner weight */
     font-family: 'Roboto', sans-serif;
 }
+
 
 /* fim da estrutura do Menu e cabeçalho quando a tela está sem responsividade */
 
@@ -129,6 +136,7 @@ header {
         background-color: rgba(42, 0, 53, 0.301);
     }
 
+  
     #btn-mobile {
         /*estilizando o button */
         display: flex;
