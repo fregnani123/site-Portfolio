@@ -2,6 +2,9 @@
     font-family: 'MinhaFonte';
     src: url('./fonnts.com-Lastica.ttf') format('truetype');
 }
+.bg-mobile {
+    display: none;
+}
 .logo{
     display: flex;
     text-align: center;
@@ -335,5 +338,13 @@ i{
 
   #projetos{
     display: block;
+  }
+
+  .bg-mobile{
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
   }
     }
