@@ -33,5 +33,20 @@
 @media (max-width: 900px) {
 
     .hex-grid{display: none;}
-
+    .img-portfolio{
+        display: none;
+    }
+  .div-squad{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .div-squad-display {
+      display: block;
+  }
+  .div-projetos {
+      margin-top: 100px;
+      display: block;
+  }
+    
 }

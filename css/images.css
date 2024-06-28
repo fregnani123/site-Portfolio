@@ -200,8 +200,37 @@ i{
 .li-contact:hover{
     background-color: #6f0091;
 }
+.img-portfolio {
+    width: 400px;
+    margin-right: 30px;
+}
 
-@media (max-width: 600px) {
+.div-projetos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: left;
+    margin-top: 0px;
+}
+
+.li-projeto-1 {
+    width: 300px;
+    margin-top: -1px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-line-qualification);
+}
+#projetos{
+    display: flex;
+    justify-content: center;
+}
+ #div-projetos {
+     display: flex;
+     justify-content: center;
+ }
+
+@media (max-width: 900px) {
    
 .logo {
         display: flex;
@@ -298,5 +327,13 @@ i{
     z-index: auto;
      margin-top:300px;
     animation: subir 2s ease-out forwards, aparecer 2s ease-out forwards;
+  }
+ #div-projetos{
+   display: flex;
+   justify-content: center;
+}
+
+  #projetos{
+    display: block;
   }
     }

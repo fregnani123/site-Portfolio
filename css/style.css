@@ -170,34 +170,31 @@ section {
 }
 
 
-/* css section4 about*/
+/* css section4 */
 #section4 {
     background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
-    height: 90vh;
-    margin: 0;
+    height: 100vh;
+    margin-bottom: 50px;
 }
+
 .div-service{
     margin-top: 100px;
 }
 
-.img-service{
-    width: 100px;
-    height: auto;
-    margin-top: 40px;
-    padding: 10px;
-}
-.service-1,.service-2,.service-3{
-  width: 200px;
-  height: 200px;
-  background-color: #6f0091;
-  margin: 10px;
-}
 .div-squad{
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
 }
-
+.div-squad-display{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+   
+}
 
 /* css section5*/
 #section5 {
@@ -210,6 +207,18 @@ section {
     width: 100%;
     margin: 0;
     height: auto;
+}
+.img-service{
+    width: 100px;
+    height: auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+.service-1,.service-2,.service-3{
+  width: 200px;
+  height: 200px;
+  background-color: #6f0091;
+  margin: 10px;
 }
 
 .size {
@@ -246,6 +255,7 @@ footer {
         margin: 5px;
         /* Pequena margem para espaçamento */
     }
+      
 }
 
 @media (min-width: 1200px) {
