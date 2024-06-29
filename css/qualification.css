@@ -8,6 +8,7 @@
 }
 .container-qualificacao{
     margin-top: 100px;
+    box-sizing: border-box;
 }
 .title-section-1{
   margin-bottom: 20px;
@@ -84,6 +85,7 @@ margin-top: -5px;
 
 .container-skils {
    margin-top: -50px;
+   box-sizing: border-box;
 }
 .tecnologias-title{
     font-weight: 100;
@@ -94,12 +96,17 @@ margin-top: -5px;
 .ul-skills {
     list-style: none;
     display: flex;
+    box-sizing: border-box;
+
 }
 .ul-skills2{
+    height: 100px;
     list-style: none;
-    display: flex;   
+    display: flex; 
+    box-sizing: border-box; 
 }
 .li-skill{
+    box-sizing: border-box;
     background-color:white;
     width: 80px;
     height: 80px;
@@ -110,12 +117,15 @@ margin-top: -5px;
     justify-content:center;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
 .img-skills {
     width: 60px;
     height: auto;
 }
 
 .box-skills{
+    box-sizing: border-box;
+    width: 100%;
     /* border: 1px solid #6f0091; */
     display: flex;
     justify-content: center;
