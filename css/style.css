@@ -270,7 +270,9 @@ footer {
 /* Altura menor para telas menores que 800px */
 @media (max-width: 900px) {
     #section1 {
-        height: 50vh;
+        height: 60vh;
+        background: rgba(255, 0, 0, 0);
+        padding-bottom: 200px;
     }
      
  .img-about-mobile {
@@ -293,8 +295,23 @@ footer {
      height: auto;
      margin: 0;
  }
- #link-home{
 
+ #section2 {
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
+     width: 100%;
+     height: auto;
+     margin: 0;
  }
- 
+
+ .content-about {
+     margin-top: 0px;
+     display: flex;
+     align-items: center;
+     /* background-color: red; */
+     height: auto;
+     margin-bottom: 0px;
+ }
 }

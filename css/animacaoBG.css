@@ -32,7 +32,10 @@
 }
 @media (max-width: 900px) {
 
-    .hex-grid{display: none;}
+    .hex-grid{
+    position: fixed;
+    z-index: -1;}
+
     .img-portfolio{
         display: none;
     }
