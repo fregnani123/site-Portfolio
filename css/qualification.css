@@ -84,12 +84,12 @@ margin-top: -5px;
 }
 
 .container-skils {
-   margin-top: -50px;
+   margin-top: 0px;
    box-sizing: border-box;
 }
 .tecnologias-title{
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
 }
@@ -129,7 +129,7 @@ margin-top: -5px;
     /* border: 1px solid #6f0091; */
     display: flex;
     justify-content: center;
-    margin-top:0px;
+    margin-top:-9px;
     padding: 10px;
 }
 .div-skills{

@@ -153,6 +153,8 @@ section {
 }
 
 .title-section-2{
+    margin-bottom: 25px;
+    margin-top: 0px;
     animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
 }
 
@@ -160,7 +162,7 @@ section {
 .title-portfolio{
    display: flex;
    text-align: end;
-   margin-top: 90px;
+   margin-top:0px;
    margin-bottom: 20px;
 }
 #section3 {
