@@ -6,7 +6,7 @@
     --primary-color: black;
     --secondary-color: #2C1E4A;
     --text-color:white;
-    --color-line-qualification:#6f0091;
+    --color-line-qualification:#8850FF;
     --footer:#15001b;
     --bg: linear-gradient(to right, #211738, rgb(0, 0, 0));
 
@@ -149,7 +149,7 @@ section {
 }
 .word-highlighting{
     font-size:26px;
-    color: #8850FF;;
+    color: #8850FF;
 }
 
 .title-section-2{
@@ -218,7 +218,7 @@ section {
 .service-1,.service-2,.service-3{
   width: 200px;
   height: 200px;
-  background-color: #6f0091;
+  background-color:var(--color-line-qualification);
   margin: 10px;
 }
 
