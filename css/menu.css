@@ -33,7 +33,7 @@ a:hover {
 
 a{
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0);
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 a.active-link {
     border: 1px solid white;
@@ -128,7 +128,8 @@ header {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        /* border-bottom: 1px solid rgb(255, 255, 255); */
+    
     }
     a:hover {
         padding: 1rem 0;

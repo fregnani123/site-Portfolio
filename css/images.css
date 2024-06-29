@@ -247,18 +247,18 @@ i{
         width: 100px;
         height: auto;
     }
-
+/* 
     .name-logo {
         font-family: MinhaFonte;
         letter-spacing: 2px;
         font-size: 13px;
         margin-left: 15px;
-    }
+    } */
 
-    .text-logo {
+    /* .text-logo {
         font-size: 10px;
         margin-top: -3px;
-    }
+    } */
 
     .p-down-arrow {
        display: none;
@@ -285,7 +285,7 @@ i{
         font-family: MinhaFonte;
         font-weight: 1000;
         text-align: left;
-        margin-top: 70px;
+        margin-top: -120px;
         font-size: 25px;
         letter-spacing: 5px;
     }
@@ -307,6 +307,7 @@ i{
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
+        color: rgb(183, 112, 250);
     }
 
     #text-slogan {
@@ -327,6 +328,7 @@ i{
     }
   .section1-diplay {
     position: static;
+    height: auto;
     z-index: auto;
      margin-top:300px;
     animation: subir 2s ease-out forwards, aparecer 2s ease-out forwards;
@@ -340,11 +342,27 @@ i{
     display: block;
   }
 
-  .bg-mobile{
-    display: flex;
-    position: absolute;
-    top: 0;
+.img-logo {
+    width: 60px;
+    height: auto;
+}
+
+.name-logo {
+    font-family: MinhaFonte;
+    letter-spacing: 2px;
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+.text-logo {
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+.section1-diplay{
+    margin-top: 350px;
+    /* background-color: red; */
     height: 100%;
-    left: 0;
-  }
+}
+
     }
