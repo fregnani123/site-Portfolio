@@ -13,6 +13,7 @@
     margin-left: 90px;
     position:absolute;
     z-index: 2;
+    animation: subirLogo 2s ease-out forwards, aparecer 2s ease-out forwards;
 }
 /* controla texto do todo texto incluindo slogan para animaçao */
 .section1-diplay {
@@ -46,19 +47,46 @@
     }
 }
 
+@keyframes up-text {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes show-text {
+    from {
+        opacity: 0;
+        /* Totalmente invisível */
+    }
+
+    to {
+        opacity: 2;
+        /* Totalmente visível */
+    }
+}
+
 .img-logo{
     width: 100px;
     height: auto;
+    animation: show-text 3s ease-out forwards;
 }
 .name-logo {
     font-family: MinhaFonte;
     letter-spacing: 2px;
     font-size: 13px;
     margin-left: 15px;
+    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
 }
 .text-logo{
     font-size: 10px;
     margin-top: -3px;
+    
 }
 .p-down-arrow{
 width: 100%;
@@ -215,8 +243,8 @@ i{
 }
 
 .li-projeto-1 {
-    width: 300px;
-    margin-top: -1px;
+    width: 600px;
+    /* margin-top: -1px; */
     height: 400px;
     display: flex;
     align-items: center;
@@ -337,7 +365,7 @@ i{
     height: auto;
     z-index: auto;
      margin-top:300px;
-    animation: subir 2s ease-out forwards, aparecer 2s ease-out forwards;
+    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
   }
  #div-projetos{
    display: flex;

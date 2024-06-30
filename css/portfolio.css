@@ -1,0 +1,22 @@
+.carousel{
+    display: flex;
+}
+.btn-seta {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.setas{
+    cursor: pointer;
+    width: 25px;
+}
+.setas:hover{
+    cursor: pointer;
+    width: 22px;
+}
+
+.radio{
+    margin-top: 10px;
+}

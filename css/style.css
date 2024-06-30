@@ -169,6 +169,7 @@ section {
     /* background-color: red; */
     width: 100%;
     height: auto;
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
 }
 
 
