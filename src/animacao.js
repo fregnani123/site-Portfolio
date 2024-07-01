@@ -63,3 +63,10 @@ document.addEventListener('scroll', function () {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('meuVideo');
+
+    video.addEventListener('ended', () => {
+        video.currentTime = 0;
+    });
+});

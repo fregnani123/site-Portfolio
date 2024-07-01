@@ -1,10 +1,10 @@
-.section.show-animate .div-qualification{
+.div-qualification{
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: red; */
     padding: 5px;
-    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
+
 }
 .container-qualificacao{
     margin-top: 100px;
