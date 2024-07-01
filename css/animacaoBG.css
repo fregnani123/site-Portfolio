@@ -21,7 +21,8 @@
 }
 
 .hex:hover {
-    background-color: #6f0091;
+    /* background-color: #6f0091; */
+    background-color: #8850FF;
     transition: background-color 1s ease;
 }
 

@@ -13,25 +13,24 @@
     margin-left: 90px;
     position:absolute;
     z-index: 2;
-    animation: subirLogo 2s ease-out forwards, aparecer 2s ease-out forwards;
 }
 /* controla texto do todo texto incluindo slogan para animaçao */
 .section1-diplay {
     top: 250px;
     position: absolute;
     z-index: 2;
-    animation: subir 2s ease-out forwards, aparecer 2s ease-out forwards;
+    animation: descer 2s ease-out forwards, aparecer 2s ease-out forwards;
 }
 
-@keyframes subir {
+@keyframes descer {
     from {
-        top: 350px;
-        /* Posição inicial, abaixo da posição original */
+        top: 180px;
+        /* Posição inicial, no topo */
     }
 
     to {
         top: 250px;
-        /* Posição final, posição original */
+        /* Posição final, na parte inferior */
     }
 }
 
@@ -81,7 +80,7 @@
     letter-spacing: 2px;
     font-size: 13px;
     margin-left: 15px;
-    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
+    animation:show-text 3s ease-out forwards;
 }
 .text-logo{
     font-size: 10px;
@@ -235,33 +234,6 @@ i{
     width: 400px;
     margin-right: 30px;
 }
-
-.div-projetos {
-    display: flex;
-    justify-content: left;
-    margin-top: 0px;
-}
-
-.li-projeto-1 {
-    width: 600px;
-    /* margin-top: -1px; */
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--color-line-qualification);
-}
-#projetos{
-    display: flex;
-    justify-content: center;
-}
- #div-projetos {
-     display: flex;
-     justify-content: center;
- }
- .container-projetos{
-  margin-top: 70px;
- }
 
 
   .tecnologias-title {

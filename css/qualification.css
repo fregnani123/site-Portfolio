@@ -1,4 +1,4 @@
-.div-qualification{
+.section.show-animate .div-qualification{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,6 @@
     list-style: none;
     position: relative;
 }
-
 
 .line-1{
     font-size: 20px;
@@ -83,9 +82,10 @@ margin-top: -5px;
     margin-bottom: 40px;
 }
 
-.container-skils {
+.section.show-animate .container-skils {
    margin-top: 0px;
    box-sizing: border-box;
+   animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
 }
 .tecnologias-title{
     font-weight: 100;
@@ -108,8 +108,8 @@ margin-top: -5px;
 .li-skill{
     box-sizing: border-box;
     background-color:white;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin: 3px;
     margin-right: 0;
     display: flex;
@@ -119,8 +119,9 @@ margin-top: -5px;
 }
 
 .img-skills {
-    width: 60px;
+    width: 50px;
     height: auto;
+    
 }
 
 .box-skills{
@@ -131,6 +132,7 @@ margin-top: -5px;
     justify-content: center;
     margin-top:-9px;
     padding: 10px;
+
 }
 .div-skills{
     display: flex;
