@@ -4,7 +4,6 @@
     align-items: center;
     /* background-color: red; */
     padding: 5px;
-
 }
 .container-qualificacao{
     margin-top: 100px;
@@ -87,12 +86,7 @@ margin-top: -5px;
    box-sizing: border-box;
    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
 }
-.tecnologias-title{
-    font-weight: 100;
-    font-size: 25px;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-}
+
 .ul-skills {
     list-style: none;
     display: flex;
@@ -123,16 +117,22 @@ margin-top: -5px;
     height: auto;
     
 }
-
+.tecnologias-title {
+    font-weight: 100;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 200px;
+}
 .box-skills{
     box-sizing: border-box;
     width: 100%;
     /* border: 1px solid #6f0091; */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top:-9px;
     padding: 10px;
-
+    margin-left: 50px;
 }
 .div-skills{
     display: flex;
@@ -141,6 +141,12 @@ margin-top: -5px;
 
 
 @media (max-width: 900px) {
+
+    .tecnologias-title{
+     display: flex;
+     margin: 0;
+     text-align: center;
+    }
     .img-livro {
             display: none;
         }
