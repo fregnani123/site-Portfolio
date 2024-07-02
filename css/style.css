@@ -7,7 +7,7 @@
     --secondary-color: #2C1E4A;
     --text-color:white;
     --color-line-qualification:#8850FF;
-    --footer:#15001b;
+    --footer: #08040f;;
   
 
 /* medidas Title-sections */
@@ -218,7 +218,7 @@ section {
 .service-1,.service-2,.service-3{
   width: 20vw;
   height: 35vh;
-  background-color:var(--color-line-qualification);
+  background-color:#502f9652;
   margin: 10px;
 }
 
