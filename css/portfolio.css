@@ -4,8 +4,6 @@
     margin-top: 0px;
 }
 
-
-
 #projetos {
     display: flex;
     justify-content: center;
@@ -24,7 +22,7 @@
     display: flex;
     /* background-color: red; */
     box-sizing: border-box;
-    height: 420px;
+    height: 65vh;
     overflow: hidden;
   
 }
@@ -37,18 +35,18 @@
 }
 .setas{
     cursor: pointer;
-    width: 25px;
+    width: 2vw;
 }
 .setas:hover{
     cursor: pointer;
-    width: 22px;
+    width: 1.8vw;
 }
 
 .radio{
     margin-top: 10px;
 }
 .li-projeto-1 {
-    width:950px;
+    width:70vw;
     height: auto;
     display: flex;
     align-items: center;
@@ -58,37 +56,38 @@
     padding-top: 10px;
 }
 .div-img{
-    width: 300px;
+    width: 35vw;
     height: 100%;
-  
 }
 
 .img-projeto{
-    width:250px;
+    width:18vw;
     border-radius: 3px;
-    height: 270px;
+    height: auto;
     margin-top: -35px;
 }
 .img-projeto-1{
-    width: 300px;
+    width: 21vw;
     height: auto;
     border-radius: 3px;
 }
-.img-projeto-2{
-    width: 300px;
-    height: 180px;
+/* .img-projeto-2{
+    width: 20vw;
+    height: auto;
     border-radius: 3px;
-}
+} */
 
 .div-descricao {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
     box-sizing: border-box;
     font-weight: 300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: .5px;
+  
 }
 
 .div-video {
@@ -101,20 +100,30 @@
 }
 .title-video{
   width: 100%;
-  font-size: 13px;
+  font-size: 1vw;
   font-weight: 300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: .5px;
 }
-.descricao-texto{
-    margin-top: 10px;
+.title-descricao{
+    font-size: 1.3vw;
 }
-.p-dest-2{
-color: green;
+.descricao-texto{
+    font-size: 1.2vw;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
 }
 .p-dest{
- 
+font-size: 1.2vw;
+font-weight: 700;
+text-align: left;
+margin-top: 10px;
 }
+.p-dest-2{
+font-size: 1.2vw;
+}
+
 .div-video video {
     width: 100%;
     height: auto;

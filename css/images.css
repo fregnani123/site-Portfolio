@@ -71,21 +71,20 @@
 }
 
 .img-logo{
-    width: 100px;
+    width: 8vw;
     height: auto;
     animation: show-text 3s ease-out forwards;
 }
 .name-logo {
     font-family: MinhaFonte;
     letter-spacing: 2px;
-    font-size: 13px;
+    font-size: 1vw;
     margin-left: 15px;
     animation:show-text 3s ease-out forwards;
 }
 .text-logo{
     font-size: 10px;
-    margin-top: -3px;
-    
+    margin-top: -3px;   
 }
 .p-down-arrow{
 width: 100%;
@@ -100,7 +99,7 @@ background: rgba(255, 255, 255, 0);
 border: none;
 /* height: 50px; */
 margin-top: 35px;
-margin-left: 290px;
+margin-left: 30vw;
 cursor: pointer;
 color: rgb(150, 150, 150);
 letter-spacing: 5px;
@@ -121,8 +120,8 @@ padding-top: 30px;
     font-weight: 1000;
     text-align: left;
     margin-top: 70px;
-    font-size: 60px;
-    letter-spacing: 5px;
+    font-size: 5vw;
+    letter-spacing: 10px;
 }
 
 /* controla texto do todo texto incluindo slogan para animaçao */
@@ -152,7 +151,7 @@ i{
     /* font-family: 'Roboto', sans-serif; */
     font-family: MinhaFonte;
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 90px;
 }
 .div-contacto-itens {
@@ -162,12 +161,12 @@ i{
     text-align: left;
 }
 .img-social{
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: auto;
 }
 .p-social-info{
     display: flex;
-    font-size: 25px;
+    font-size: 2vw;
     color: white;
     cursor: pointer;
     font-weight: 100;
@@ -179,7 +178,7 @@ i{
     color: white;
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 2vw;
     cursor: pointer;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
@@ -189,8 +188,8 @@ i{
 }
 
 .img-whatsap, .img-email{
-    width: 35px;
-    height: 35px;
+    width: 2vw;
+    height: 4vh;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -213,9 +212,9 @@ i{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 1px solid white;
-    padding: 5px;  
-    width: 240px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px; 
+    width: 21vw; 
 }
 .li-contact{
     display: flex;
@@ -231,7 +230,8 @@ i{
     background-color: #6f0091;
 }
 .img-portfolio {
-    width: 400px;
+    width: 30vw;
+    height: auto;
     margin-right: 30px;
 }
 
@@ -327,6 +327,7 @@ i{
     
    .tecnologias-title{
     margin-top: 0px;
+    
    }
 
     .my-bg{

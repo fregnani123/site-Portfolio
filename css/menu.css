@@ -20,7 +20,6 @@
 }
 
 a {
-   
     text-decoration: none;
     font-family: sans-serif;
     border-bottom: 1px solid transparent;
@@ -49,18 +48,19 @@ header {
     width: 100%;
     top: 0;
     box-sizing: border-box;
-    height: 50px;
+    height: 7vh;
     align-items: center;
     padding: 1rem;
     z-index: 1000;
     justify-content: flex-end;
-    background: #15001b;
+    /* background: linear-gradient(to right, #42277c, rgb(0, 0, 0)); */
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     transition: height 0.3s ease;
 }
 
 .scrolled{
- height: 70px;
- background:#15001b;
+    height: 10vh;
+    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
 }
 
 #menu {
@@ -73,6 +73,7 @@ header {
     display: block;
     padding: .5rem;
     font-weight: 100;
+    font-size: 1.2vw;
     /* Thinner weight */
     font-family: 'Roboto', sans-serif;
 }

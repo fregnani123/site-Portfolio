@@ -24,15 +24,15 @@
 }
 
 .line-1{
-    font-size: 20px;
-    height: 140px;
-    width: 250px;
+    font-size: 1.5vw;
+    width: 28vw;
+    height: auto;
     border-right: 1px solid var(--color-line-qualification);
 }
 .line-2 {
-    font-size: 20px;
-    height: 130px;
-    width: 250px;
+    font-size: 1.5vw;
+    width: 28vw;
+    height:auto;
 }
 li.line-1 p {
     font-weight: 300;
@@ -76,9 +76,8 @@ margin-top: -5px;
     right: -10px;
 }
 .img-livro {
-    width: 400px;
-    margin-right: -50px;
-    margin-bottom: 40px;
+    width: 30vw;
+    height: auto;
 }
 
 .section.show-animate .container-skils {
@@ -102,9 +101,9 @@ margin-top: -5px;
 .li-skill{
     box-sizing: border-box;
     background-color:white;
-    width: 70px;
-    height: 70px;
-    margin: 3px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     margin-right: 0;
     display: flex;
     align-items: center;
@@ -113,26 +112,24 @@ margin-top: -5px;
 }
 
 .img-skills {
-    width: 50px;
+    width: 75px;
     height: auto;
-    
 }
 .tecnologias-title {
+    margin-top: 20px;
     font-weight: 100;
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
-    text-align: left;
-    margin-left: 200px;
+    text-align: center;
+    font-size: var(--title-secundario);
 }
 .box-skills{
     box-sizing: border-box;
     width: 100%;
-    /* border: 1px solid #6f0091; */
     display: flex;
-    justify-content: left;
-    margin-top:-9px;
+    justify-content: center;
     padding: 10px;
-    margin-left: 50px;
+    margin-top: -10px;
 }
 .div-skills{
     display: flex;

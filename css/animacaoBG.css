@@ -1,5 +1,7 @@
 .hex-grid {
     display: flex;
+    height: 105vh;
+    width: 100vw;
     position: absolute;
     z-index: 1;
     flex-direction: column;
@@ -7,11 +9,10 @@
     padding: 10px;
     box-sizing: border-box;
     margin-top: 0px;
-    margin-left: -70px;
     overflow: hidden;
 }
 .hex {
-    background-color: #0E0012;
+    background-color: #08040f;
     width: 90px;
     height: 90px;
     margin: 3px;

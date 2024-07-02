@@ -8,11 +8,14 @@
     --text-color:white;
     --color-line-qualification:#8850FF;
     --footer:#15001b;
-    --bg: linear-gradient(to right, #211738, rgb(0, 0, 0));
+  
 
 /* medidas Title-sections */
 
-   --font-size-fullScreen:50px;
+   --font-size-fullScreen:4vw;
+   --font-size-text:2vw;
+   --font-size-dest:3vw;
+   --title-secundario:2vw;
    --font-size-mobile:30px;
 
 }
@@ -87,7 +90,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: var(--font-size-fullScreen);
-
 }
 
 #section1 {
@@ -134,7 +136,7 @@ section {
 }
 
 .section.show-animate .img-about{
-    width: 300px;
+    width: 25vw;
     display: flex;
     animation: up-text-img 2s ease-out forwards, show-text-img 2s ease-out forwards;
 }
@@ -143,12 +145,12 @@ section {
     display: none;
 }
 .text-about{
-    font-size: 20px;
+    font-size: var(--font-size-text);
     font-weight: 300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .word-highlighting{
-    font-size:26px;
+    font-size:var(--font-size-dest);
     color: #8850FF;
 }
 
@@ -162,22 +164,21 @@ section {
 .title-portfolio{
    display: flex;
    text-align: end;
-   margin-top:0px;
+   margin-top:6vh;
    margin-bottom: 20px;
 }
 #section3 {
-    /* background-color: red; */
+    margin-top: 10vh;
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
+    /* background: linear-gradient(to right, #150f24, rgb(0, 0, 0)); */
 }
-
 
 /* css section4 */
 #section4 {
     background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-bottom: 50px;
 }
 
@@ -201,38 +202,38 @@ section {
 
 /* css section5*/
 #section5 {
-    /* background: linear-gradient(to right, #150f24, rgb(0, 0, 0)); */
     position: relative;
     padding-top: 10px;
-    padding-bottom: 30px;
     overflow: hidden;
-    background-color: transparent;
     width: 100%;
+    height: 100vh;
     margin: 0;
-    height: auto;
 }
 .img-service{
-    width: 100px;
+    width: 9vw;
     height: auto;
-    margin-top: 40px;
+    margin-top: 5px;
     padding: 10px;
 }
 .service-1,.service-2,.service-3{
-  width: 200px;
-  height: 200px;
+  width: 20vw;
+  height: 35vh;
   background-color:var(--color-line-qualification);
   margin: 10px;
 }
 
 .size {
-    font-size: 40px;
-    margin-bottom: -20px;
+    font-size: 2.8vw;
+    margin-top: 13vh;
 }
 .my-bg{
     position: absolute;
     z-index: -1;
     left: 0;
-    top: 0;
+    bottom: 0px;
+    width: 100vw;
+    width: 100vw;
+
 }
 
 footer {
@@ -241,8 +242,8 @@ footer {
     text-align: center;
     background: var(--footer);
     color: white;
-    font-size: 13px;
-    padding: 2px;
+    font-size: 1vw;
+    padding: 10px;
 }
 
 /* Estilos Responsivos */
