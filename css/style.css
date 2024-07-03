@@ -413,7 +413,7 @@ li.line-2 p {
 /* css section3 portfolio */
 
 #section3 {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .title-section-portfolio {
@@ -446,20 +446,12 @@ margin-bottom: 13px;
     align-items: center;
 }
 
-#projetos {
-    display: flex;
-    justify-content: center;
-}
-
-.container-projetos {
-    margin-top: 70px;
-}
 
 .carousel {
     display: block;
     box-sizing: border-box;
     height: auto;
-    width: auto;
+    width: 1000px;
     overflow: hidden;
     background-color: #502f9652;
     padding: 20px;
@@ -468,37 +460,52 @@ margin-bottom: 13px;
     /* background-color:antiquewhite; */
     overflow: hidden;
     height: auto;
-    width:900px;
+    width:auto;
+    margin-left: -20px;
     display: flex;
+
 }
 .div-img-portfolio{
     height:auto; 
-    width: 400px;
+    width: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-   
+   justify-content: center;
+   margin: 0;
 }
 .img-p{
 margin-top: 10px;
+margin-left: 50px;
 border-radius: 5px;
+width: 400px;
+height: auto;
+}
+.img-p2{
+margin-top: 10px;
+border-radius: 5px;
+width: 500px;
 }
 .div-video {
     display: flex;
     flex-direction: column;
-    /* background-color: #8850FF; */
     align-items: center;
     text-align: center;
-    margin-left: 10px;
+    width: auto;
+    /* background-color: red; */
 }
 .video-1{
-width: 300px;
+width: 350px;
 }
 
 .div-video h4,
 .div-video p
-{
+{  
+     /* background-color: darkblue; */
     box-sizing: border-box;
+    width: auto;
+    margin-left: 30px;
+
 }
 .btn-seta {
     background-color: transparent;
@@ -521,48 +528,6 @@ width: 300px;
 .radio {
     margin-top: 10px;
 }
-
-.li-projeto-1 {
-    width: 70vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: #502f9652;
-    border-radius: 3px;
-    padding-top: 10px;
-}
-
-.div-img {
-    width: 35vw;
-    height: 100%;
-}
-
-.img-projeto {
-    width: 18vw;
-    border-radius: 3px;
-    height: auto;
-    margin-top: -35px;
-}
-
-.img-projeto-1 {
-    width: 21vw;
-    height: auto;
-    border-radius: 3px;
-}
-
-.div-descricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    font-weight: 300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: .5px;
-}
-
 
 .bg-mobile {
     display: none;
