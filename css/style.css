@@ -456,7 +456,7 @@ li.line-2 p {
 /* css section3 portfolio */
 
 #section3 {
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
 .title-section-portfolio {
@@ -498,6 +498,7 @@ margin-bottom: 13px;
     overflow: hidden;
     background-color: #502f9652;
     padding: 20px;
+    border-radius: 5px;
 }
 .projeto-1{
     /* background-color:antiquewhite; */
@@ -521,13 +522,13 @@ margin-bottom: 13px;
 margin-top: 10px;
 margin-left: 50px;
 border-radius: 5px;
-width: 400px;
+width: 300px;
 height: auto;
 }
 .img-p2{
 margin-top: 10px;
 border-radius: 5px;
-width: 500px;
+width: 400px;
 }
 .div-video {
     display: flex;
@@ -536,6 +537,7 @@ width: 500px;
     text-align: center;
     width: auto;
     /* background-color: red; */
+  
 }
 .video-1{
 width: 350px;
@@ -765,7 +767,7 @@ i {
 }
 
 .li-contact:hover {
-    background-color: #6f0091;
+    background-color: #8850FF;
 }
 
 .img-portfolio {
