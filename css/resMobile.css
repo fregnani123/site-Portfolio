@@ -7,8 +7,8 @@
 
    .logo{
     margin-left: 10px;
-    
    }
+
    .name-logo,.text-logo{
     font-size: .9rem;
    }
@@ -22,6 +22,7 @@
     font-size: 1.1rem;
     margin-top: 20px;
    }
+
   #text-full-stack,.text-full-stack{
     margin-left: 5px;
   }
@@ -44,7 +45,7 @@
 font-size: 1.5rem;
 }
 .content-about{
-    margin-top: 30px;
+    margin-top: 46px;
 }
 .section1-diplay {
     animation: descer 3s, aparecer 7s ease-out forwards;
@@ -86,4 +87,116 @@ font-size: 1.5rem;
 .img-portfolio{
   display: none;
 }
+.title-section-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.btn-seta{
+  display: none;
+}
+.carousel {
+  display: block;
+  box-sizing: border-box;
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  background-color: #502f9600;
+  justify-content: center;
+}
+.projeto-1 {
+  /* background-color:antiquewhite; */
+  overflow: hidden;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+}
+  
+.div-img-portfolio{
+display: flex;
+justify-content: center;
+/* background-color: red; */
+margin-left: -15px;
+}
+
+.img-p {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+}
+.img-p2 {
+  margin-top: 15px;
+  border-radius: 5px;
+  width:350px;
+  margin-left: 20px;
+}
+.div-video {
+  display: flex;
+  margin-left: -20px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descricao-texto{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.div-service{
+  margin: 0;
+  margin-top:45px;
+
+}
+.div-contacto{
+  background-color: red;
+  margin: 0;
+  height: auto;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--footer);
+  color: white;
+  font-size: .8rem;
+  font-weight: 300;
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.div-contacto-itens {
+  padding-top: 0px;
+  margin-bottom: 100px;
+  width: 100vw;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(0, 4, 255);
+}
+.p-social-info{
+  margin-left: 5px;
+  font-size: 1.4rem;
+}
+.p-social-title{
+margin-left: 5px;
+}
+.a-email {
+
+}
+
+ .a-email:hover  {
+  padding: 0;
+  width: 100vw;
+  border: 1px solid transparent;
+  background-color: transparent;
+  margin-left: 0;
+}
+
 }

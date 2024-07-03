@@ -34,8 +34,6 @@
 
    --font-size-fullScreen:5rem;
    --font-size-text:2rem;
-   --font-size-dest:3vw;
-   --title-secundario:2vw;
    /* --font-size-mobile:30px; */
 
 }
@@ -252,19 +250,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: left;
-    text-align: center;
-   
+    text-align: center; 
 }
 
 /* css section5*/
-#section5 {
-    position: relative;
-    padding-top: 10px;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-}
+
 .img-service{
     width: 200px;
     height: auto;
@@ -278,17 +268,13 @@ section {
   margin: 10px;
 }
 
-.size {
-    font-size: 2.8vw;
-    margin-top: 13vh;
-}
 .my-bg{
     position: absolute;
     z-index: -1;
     left: 0;
-    bottom: 0px;
+    bottom: -150px;
     width: 100vw;
-    width: 100vw;
+    height:auto;
 }
 
 footer {
@@ -297,8 +283,11 @@ footer {
     text-align: center;
     background: var(--footer);
     color: white;
-    font-size: 1vw;
-    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .div-qualification {
@@ -694,16 +683,30 @@ i {
     margin-left: 90px;
 }
 
+#section5 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
 .div-contacto-itens {
-    padding-top: 13px;
+    padding-top: 30px;
+    padding: 5px;
+    margin-bottom: 100px;
     margin: 0 auto;
     width: fit-content;
     text-align: left;
+    background-color: rgb(0, 4, 255);
+}
+.title-social {
+    margin-top: 0px;
+    font-size: 3rem;
+    margin-bottom: 50px;
 }
 
 .img-social {
-    width: 4vw;
-    height: auto;
+    width: 90px;
+    height: 100px;
 }
 
 .p-social-info {
@@ -721,7 +724,7 @@ i {
     color: white;
     display: flex;
     align-items: center;
-    font-size: 2vw;
+    font-size: 2rem;
     cursor: pointer;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
@@ -733,8 +736,8 @@ i {
 
 .img-whatsap,
 .img-email {
-    width: 2vw;
-    height: 4vh;
+    width: 50px;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -756,12 +759,11 @@ i {
     margin-top: 20px;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 10px;
-    border: 1px solid rgb(255, 255, 255);
     padding: 5px;
-    width: 21vw;
+    width: auto;
 }
 
 .li-contact {
