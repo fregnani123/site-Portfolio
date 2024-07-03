@@ -511,18 +511,18 @@ width: 350px;
     background-color: transparent;
     border: none;
     width: 32px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-left: 10px;
 }
 
 .setas {
     cursor: pointer;
-    width: 2vw;
+    width: 2.5rem;
 }
 
 .setas:hover {
     cursor: pointer;
-    width: 1.8vw;
+    width: 2.3rem;
 }
 
 .radio {
