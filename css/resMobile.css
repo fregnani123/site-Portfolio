@@ -1,0 +1,36 @@
+@media(max-width:600px){
+   .img-logo{
+    width: 100px;
+   }
+
+   .logo{
+    margin-left: 10px;
+    
+   }
+   .name-logo,.text-logo{
+    font-size: .9rem;
+   }
+   .hex:hover{
+    background-color: #08040f;
+   }
+   .title-home{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+   }
+  #text-full-stack,.text-full-stack{
+    margin-left: 5px;
+  }
+  #text-slogan{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    margin-top: 70px;
+  }
+  
+.p-down-arrow{
+    margin-top: 30px;
+}
+
+}
