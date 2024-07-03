@@ -1,4 +1,6 @@
 @media(max-width:600px){
+  
+
    .img-logo{
     width: 100px;
    }
@@ -30,6 +32,18 @@
   }
   
 .p-down-arrow{
+    margin-top: 30px;
+}
+#img-about{
+    display: none;
+}
+.title-section{
+    font-size: 2.5rem;
+}
+.text-about,.word-highlighting{
+font-size: 1.5rem;
+}
+.content-about{
     margin-top: 30px;
 }
 
