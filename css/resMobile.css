@@ -46,5 +46,8 @@ font-size: 1.5rem;
 .content-about{
     margin-top: 30px;
 }
+.section1-diplay {
+    animation: descer 3s, aparecer 7s ease-out forwards;
+}
 
 }

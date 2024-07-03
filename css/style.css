@@ -1,6 +1,7 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -37,6 +38,53 @@
    --title-secundario:2vw;
    /* --font-size-mobile:30px; */
 
+}
+@keyframes descer {
+    from {
+        top: 230px;
+        /* Posição inicial, no topo */
+    }
+
+    to {
+        top: 250px;
+        /* Posição final, na parte inferior */
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        /* Totalmente invisível */
+    }
+
+    to {
+        opacity: 2;
+        /* Totalmente visível */
+    }
+}
+
+@keyframes up-text {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes show-text {
+    from {
+        opacity: 0;
+        /* Totalmente invisível */
+    }
+
+    to {
+        opacity: 2;
+        /* Totalmente visível */
+    }
 }
 @font-face {
     font-family: 'MinhaFonte';
@@ -90,11 +138,7 @@
         /* Totalmente visível */
     }
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 html,
 body {
     overflow-x: hidden;
@@ -151,7 +195,7 @@ section {
     margin-top: 180px;
     display: flex;
     align-items: center;
-    /* background-color: red; */
+
     height: auto;
     margin-bottom: 0px;
 }
@@ -244,7 +288,6 @@ section {
     bottom: 0px;
     width: 100vw;
     width: 100vw;
-
 }
 
 footer {
@@ -548,56 +591,10 @@ width: 350px;
     top: 250px;
     position: absolute;
     z-index: 2;
-    animation: descer 2s ease-out forwards, aparecer 2s ease-out forwards;
+    animation: descer 2s ease-out forwards, aparecer 5s ease-out forwards;
 }
 
-@keyframes descer {
-    from {
-        top: 180px;
-        /* Posição inicial, no topo */
-    }
 
-    to {
-        top: 250px;
-        /* Posição final, na parte inferior */
-    }
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        /* Totalmente invisível */
-    }
-
-    to {
-        opacity: 1;
-        /* Totalmente visível */
-    }
-}
-
-@keyframes up-text {
-    from {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes show-text {
-    from {
-        opacity: 0;
-        /* Totalmente invisível */
-    }
-
-    to {
-        opacity: 2;
-        /* Totalmente visível */
-    }
-}
 
 .img-logo {
     width: 8vw;
