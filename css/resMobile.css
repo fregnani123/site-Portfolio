@@ -178,17 +178,17 @@ footer {
   width: 100vw;
   align-items: center;
   text-align: left;
-  background-color: rgb(0, 4, 255);
 }
 .p-social-info{
   margin-left: 5px;
   font-size: 1.4rem;
+
 }
 .p-social-title{
 margin-left: 5px;
 }
 .a-email {
-
+font-size: 1.3rem;
 }
 
  .a-email:hover  {
@@ -198,5 +198,8 @@ margin-left: 5px;
   background-color: transparent;
   margin-left: 0;
 }
-
+.whatsap{
+  margin-top: 30px;
+  border: none;
+}
 }
