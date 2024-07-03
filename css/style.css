@@ -308,7 +308,9 @@ footer {
     padding: 5px;
     padding-bottom: 100px;
 }
-
+.imgMobile{
+    display: none;
+}
 .container-qualificacao {
     margin-top: 100px;
     box-sizing: border-box;
@@ -321,7 +323,6 @@ footer {
 .ul-line-1 {
     list-style: none;
     position: relative;
-
 }
 
 .ul-line-2 {
@@ -331,16 +332,17 @@ footer {
 }
 
 .line-1 {
-    font-size: 1.5vw;
-    width: 28vw;
-    height: auto;
+    font-size: 1.5rem;
+    width: auto;
+    height: 200px;
     border-right: 5px solid var(--color-line-qualification);
 }
 
 .line-2 {
-    font-size: 1.5vw;
-    width: 28vw;
-    height: auto;
+    font-size: 1.5rem;
+    width: auto;
+    height: 200px;
+    margin-left: 15px;
 }
 
 li.line-1 p {
@@ -350,7 +352,7 @@ li.line-1 p {
     /* Ajuste o valor conforme necessário */
 }
 
-li.line-2 p {
+li.line-2  {
     font-weight: 300;
     text-wrap: nowrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -358,7 +360,6 @@ li.line-2 p {
 }
 
 .line-1-3 {
-    font-size: 13px;
     color: rgb(163, 163, 163);
 }
 
@@ -371,7 +372,11 @@ li.line-2 p {
 .line-1-2 {
     margin-top: -5px;
 }
-
+.line-1-1,
+.line-1-2,
+.line-1-3 {
+    margin-right: 10px;
+}
 .end {
     list-style: none;
     background-color: rgba(255, 0, 0, 0);
