@@ -72,7 +72,8 @@ font-size: 1.5rem;
   display: none;
 }
 
-.div-squad-display{
+.div-squad{
+  margin-top: 25px;
   display: block;
 }
 .service-1,
@@ -80,6 +81,7 @@ font-size: 1.5rem;
 .service-3{
   width: 300px;
   height: auto;
+  margin-bottom:20px ;
 }
 .img-service{
   width: 150px;
@@ -130,13 +132,14 @@ font-size: 1.5rem;
 .div-img-portfolio{
 display: flex;
 justify-content: center;
-background-color: rebeccapurple;
+background-color: rgba(102, 51, 153, 0.009);
  align-items: center;
 /* background-color: red; */
 }
 
 .img-p {
   margin-top: 10px;
+  margin: 0;
   border-radius: 5px;
   width: 300px;
   height: auto;
@@ -145,7 +148,6 @@ background-color: rebeccapurple;
   margin-top: 15px;
   border-radius: 5px;
   width:350px;
-  margin-left: 20px;
 }
 .div-video {
   display: flex;
@@ -214,4 +216,5 @@ font-size: 1.3rem;
   margin-top: 30px;
   border: none;
 }
+
 }

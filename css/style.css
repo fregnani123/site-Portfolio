@@ -392,10 +392,12 @@ li.line-2  {
     height: auto;
 }
 
-.section.show-animate .container-skils {
+.container-skils {
     margin-top: 0px;
+    margin: 0;
     box-sizing: border-box;
-    animation: up-text 2s ease-out forwards, show-text 2s ease-out forwards;
+    background-color: red;
+    width: 100vw;
 }
 
 .ul-skills {
