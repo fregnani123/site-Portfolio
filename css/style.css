@@ -386,39 +386,66 @@ li.line-2  {
     position: absolute;
     right: -9px;
 }
-
-.img-livro {
-    width: 30vw;
+.img-tech{
+    width:auto;
     height: auto;
 }
-
 .container-skils {
-    margin-top: 0px;
-    margin: 0;
+    margin-top: -70px;
+    margin-bottom: 150px;
     box-sizing: border-box;
-    background-color: red;
-    width: 100vw;
-}
+    /* background-color: red; */
+    height:auto;
 
-.ul-skills {
+}
+.box-skills {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    gap: 100px;
+}
+.box-img{
+    margin-top: 20px;
+    height: 100%;
+}
+.ul-skills1 {
     list-style: none;
     display: flex;
     box-sizing: border-box;
-
+    margin-left: -40px;
 }
-
 .ul-skills2 {
-    height: 100px;
+    margin-left: 35px;
+    margin-top: -40px;
     list-style: none;
     display: flex;
     box-sizing: border-box;
+    
+}
+.ul-skills3 {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.ul-skills4 {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 35px;
+    margin-top: -40px;
 }
 
 .li-skill {
     box-sizing: border-box;
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 5px;
     margin-right: 0;
     display: flex;
@@ -433,22 +460,15 @@ li.line-2  {
 }
 
 .tecnologias-title {
+    font-size:3rem;
     margin-top: 20px;
-    font-weight: 100;
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: var(--title-secundario);
+    
 }
 
-.box-skills {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-top: -10px;
-}
+
 
 .div-skills {
     display: flex;
@@ -788,11 +808,6 @@ i {
     width: 400px;
     height: auto;
     margin-right: 30px;
-}
-
-
-.tecnologias-title {
-    margin-top: -70px;
 }
 
 .hex-grid {
