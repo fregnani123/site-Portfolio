@@ -239,9 +239,10 @@ section {
 
 .div-service{
     margin-top: 100px;
-    background-color: red;
     display: flex;
     height: 100vh;
+    display: block;
+    text-align: center;
 }
 
 .div-squad{
@@ -249,13 +250,8 @@ section {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 50%;
     /* background-color: red; */
-}
-.div-squad-display{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: center; 
 }
 
 /* css section5*/
