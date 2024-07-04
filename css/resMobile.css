@@ -130,6 +130,8 @@ font-size: 1.5rem;
 .div-img-portfolio{
 display: flex;
 justify-content: center;
+background-color: rebeccapurple;
+ align-items: center;
 /* background-color: red; */
 }
 
@@ -148,6 +150,7 @@ justify-content: center;
 .div-video {
   display: flex;
   justify-content: center;
+
   align-items: center;
   text-align: center;
   width: auto;

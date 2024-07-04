@@ -232,11 +232,16 @@ section {
     background: linear-gradient(to right, #150f24, rgb(0, 0, 0));
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 50px; */
 }
 
 .div-service{
     margin-top: 100px;
+    background-color: red;
+    display: flex;
+    height: 100vh;
 }
 
 .div-squad{
