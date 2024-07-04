@@ -94,9 +94,9 @@ font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.btn-seta{
+.btn-seta,.setas{
   display: none;
 }
 .carousel {
@@ -110,7 +110,7 @@ font-size: 1.5rem;
   justify-content: center;
   text-align: center;
   padding: 0;
-
+  box-shadow: none;
 }
 .projeto-1 {
   /* background-color:antiquewhite; */
@@ -170,7 +170,6 @@ background-color: rgba(102, 51, 153, 0.009);
 
 }
 .div-contacto{
-  background-color: red;
   margin: 0;
   height: auto;
 }
@@ -186,6 +185,7 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
 .div-contacto-itens {
   padding-top: 0px;
   margin-bottom: 100px;
@@ -215,6 +215,32 @@ font-size: 1.3rem;
 .whatsap{
   margin-top: 30px;
   border: none;
+}
+.tecnologias-title{
+ font-size: 2rem;
+}
+.img-tech,#ul-skills{
+  display: none;
+}
+
+.box-skills{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgTech-mobile {
+  width: 350px;
+  margin:15px;
+  box-shadow: 0 0 10px rgba(80, 47, 150, 0.8), 0 0 20px rgba(80, 47, 150, 0.6), 0 0 30px rgba(80, 47, 150, 0.4);
+}
+.img-social{
+  width: 40px;
+  height: auto;
+}
+.li-contact{
+  width: 60px;
+  height: 60px;
 }
 
 }
