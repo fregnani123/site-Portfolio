@@ -784,6 +784,15 @@ i {
     width: 70px;
     height: 70px;
 }
+.a-social{
+    width: 70px;
+    height: 70px;
+
+}
+.a-social:hover{
+  border: none;
+
+}
 
 .p-social-info {
     display: flex;
