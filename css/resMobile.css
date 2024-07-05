@@ -80,7 +80,7 @@ font-size: 1.5rem;
 .service-2,
 .service-3{
   width: 300px;
-  height: auto;
+  height: 300px;
   margin-bottom:20px ;
 }
 .img-service{
@@ -230,8 +230,9 @@ font-size: 1.3rem;
   justify-content: center;
 }
 .imgTech-mobile {
+  display: flex;
   width: 350px;
-  margin:15px;
+  margin:0px;
   box-shadow: 0 0 10px rgba(80, 47, 150, 0.8), 0 0 20px rgba(80, 47, 150, 0.6), 0 0 30px rgba(80, 47, 150, 0.4);
 }
 .img-social{
@@ -241,6 +242,18 @@ font-size: 1.3rem;
 .li-contact{
   width: 60px;
   height: 60px;
+}
+.title-social {
+  margin-top: 130px;
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.img-social {
+  width: 70px;
+  height: 70px;
 }
 
 }
