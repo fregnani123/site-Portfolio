@@ -539,7 +539,7 @@ padding: 15px;
     min-width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
-    
+    background-color:rgba(90, 56, 163, 0.475);
 }
 
 #projeto-1{
