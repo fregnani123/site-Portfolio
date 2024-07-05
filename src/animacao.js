@@ -71,3 +71,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+const carousel = document.querySelector('.carousel');
+const projects = document.querySelectorAll('.projeto');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const radioButtons = document.querySelectorAll('.project-change input[type="radio"]');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    radioButtons.forEach((radio, index) => {
+        radio.checked = index === currentIndex;
+    });
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+    updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+    updateCarousel();
+});
+
+radioButtons.forEach((radio, index) => {
+    radio.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+    });
+});
+
+updateCarousel(); // Inicializa o carrossel
+
+

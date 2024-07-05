@@ -168,7 +168,7 @@
                     diariamente.
                 </h3>
                 <div class="box-skills">
-                    <img class="img-tech" src="./img/img-assets/tecnologia.png" alt="">
+                    <!-- <img class="img-tech" src="./img/img-assets/tecnologia.png" alt=""> -->
                     <div class="box-img">
                         <img class="imgTech-mobile" src="./img/img-service/tech.png" alt="">
                         <ul id="ul-skills" class="ul-skills1">
@@ -205,37 +205,59 @@
             </div>
 
         </section>
+
+
+
+
         <span id="portfolio"></span>
         <section id="section3" class="section">
 
             <h2 class="title-section-portfolio"> Projetos <i class="fas fa-briefcase"></i></h2>
 
-            <div class="container-portfolio">
 
-                <button class="btn-seta"><img class="setas" src="./img/img-assets/seta_esquerda.png" alt=""></button>
-                <div class="carousel">
-                    <div class="projeto-1">
-                        <div class="div-img-portfolio"><img class="img-p" src="./img/img-portfolio/instalação.png"
-                                alt=""><img class="img-p2" src="./img/img-portfolio/gl.png" alt=""></div>
+<div class="carousel-container">
 
-                        <div class="div-video">
-                            <h4 class="title-descricao">Aplicativo Desktop para Gestão de Estoque e
-                                Pedidos</h4>
-                            <p class="descricao-texto">
-                                Aplicativo desktop para gestão de estoque e pedidos utilizando Node.js
-                                no backend, MongoDB para o banco de
-                                dados e ElectronJS no front-end. O servidor e a API são executados em
-                                uma VM na Oracle, garantindo performance e
-                                segurança.</p>
-                            <video class="video-1" src="./video/videoMidia.mp4" controls muted></video>
-                            <p class="title-video">Video do aplicativo desktop em produção, sendo utilizado
-                                no cliente.</p>
-                        </div>
-
-                    </div>
+    <div class="carousel">
+        <div class="projeto" id="projeto-1">
+            <div class="content">
+            <div class="div-img-portfolio">
+            <div> <img class="img-p" src="./img/img-portfolio/instalação.png" alt=""></div>
+            <div> <img class="img-p2"
+                    src="./img/img-portfolio/gl.png" alt=""></div>
                 </div>
-                <button class="btn-seta"><img class="setas" src="./img/img-assets/seta_direita.png" alt=""></button>
+            
+            <div class="div-video">
+                <h4 class="title-descricao">Aplicativo Desktop para Gestão de Estoque e
+                    Pedidos</h4>
+                <p class="descricao-texto">
+                    Aplicativo desktop para gestão de estoque e pedidos utilizando Node.js
+                    no backend, MongoDB para o banco de
+                    dados e ElectronJS no front-end. O servidor e a API são executados em
+                    uma VM na Oracle, garantindo performance e
+                    segurança.</p>
+                <video class="video-1" src="./video/videoMidia.mp4" controls muted></video>
+                <p class="title-video">Video do aplicativo desktop em produção, sendo utilizado
+                    no cliente.</p>
             </div>
+</div>
+        </div>
+        <div class="projeto" id="projeto-2">
+            <!-- Conteúdo do projeto 2 -->
+        </div>
+        <div class="projeto" id="projeto-3">
+            <!-- Conteúdo do projeto 3 -->
+        </div>
+    </div>
+    <!-- <button class="btn-seta" id="prev"><img class="setas" src="./img/img-assets/seta_esquerda.png" alt=""></button>
+   <button class="btn-seta" id="next"><img class="setas" src="./img/img-assets/seta_direita.png" alt=""></button> -->
+</div>
+
+<p class="project-change">
+    <input type="radio" name="carousel" id="radio-1">
+    <input type="radio" name="carousel" id="radio-2">
+    <input type="radio" name="carousel" id="radio-3">
+</p>
+
         </section>
 
         <section id="section4">
