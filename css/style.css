@@ -389,8 +389,8 @@ li.line-2  {
     right: -9px;
 }
 .img-tech{
-    width:auto;
-    height: auto;
+    width:400px;
+    height: 400px;
 }
 .container-skils {
     margin-top: -70px;
@@ -407,12 +407,19 @@ li.line-2  {
     height: auto;
     display: flex;
     justify-content:center;
+    align-items: center;
     padding: 10px;
-    gap: 100px;
+    gap:20px;
 }
 .box-img{
     margin-top: 20px;
     height: 100%;
+    background-color: #2C1E4A;
+    box-shadow: 0 0 20px rgba(80, 47, 150, 0.8), 0 0 40px rgba(80, 47, 150, 0.6), 0 0 60px rgba(80, 47, 150, 0.4);
+    padding-right: 20px;
+    padding-left: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .ul-skills1 {
     list-style: none;
