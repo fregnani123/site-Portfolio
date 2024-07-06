@@ -217,7 +217,20 @@ margin-left: 5px;
 .a-email {
 font-size: 1.3rem;
 }
+.a-social{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.a-social:hover, .li-contact:hover{
+  background-color:rgba(80, 47, 150, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
  .a-email:hover  {
   padding: 0;
   width: 100vw;
