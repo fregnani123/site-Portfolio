@@ -589,7 +589,13 @@ padding: 15px;
 #projeto-3{
     width: 1000px;
     height: 650px;
+    align-items:start;
+    display: flex;
 /* background-color: aliceblue; */
+}
+.img-git{
+    width: 100%;
+    height: auto;
 }
 
 .btn-seta {
