@@ -267,7 +267,7 @@ section {
 .service-1,.service-2,.service-3{
   width: 250px;
   height: 250px;
-  background-color:#502f96;
+  background-color:#502f9600;
  box-shadow: 0 0 10px rgba(80, 47, 150, 0.8), 0 0 20px rgba(80, 47, 150, 0.6), 0 0 30px rgba(80, 47, 150, 0.4);
   
 }
@@ -533,9 +533,7 @@ padding: 15px;
     margin-top: 20px;
     box-shadow:
         0 0 15px 5px rgba(80, 47, 150, 0.8),
-        /* Sombra principal mais forte */
         0 0 30px 10px rgba(80, 47, 150, 1);
-    /* Sombra neon mais forte */
 }
 
 .carousel {
