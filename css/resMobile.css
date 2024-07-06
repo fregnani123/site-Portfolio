@@ -139,7 +139,9 @@ align-items: center;
   width: 100vw;
   height: auto;
 }
-
+.btn-seta{
+  display: none;
+}
 
 .img-p {
   margin-top: 10px;
