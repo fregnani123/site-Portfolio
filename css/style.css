@@ -531,7 +531,11 @@ padding: 15px;
     overflow: hidden;
     margin: 0 auto;
     margin-top: 20px;
-    box-shadow: 0 0 30px rgba(80, 47, 150, 0.8), 0 0 50px rgba(80, 47, 150, 0.6), 0 0 70px rgba(80, 47, 150, 0.4);
+    box-shadow:
+        0 0 15px 5px rgba(80, 47, 150, 0.8),
+        /* Sombra principal mais forte */
+        0 0 30px 10px rgba(80, 47, 150, 1);
+    /* Sombra neon mais forte */
 }
 
 .carousel {
@@ -543,7 +547,7 @@ padding: 15px;
     min-width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
-    background-color:rgba(90, 56, 163, 0.475);
+    background-color:rgba(90, 56, 163, 0);
 }
 
 #projeto-1{
