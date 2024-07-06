@@ -135,6 +135,13 @@ align-items: center;
   width: 100vw;
   height: auto;
 }
+.img-site{
+
+}
+.img-git,#radio-3 {
+display: none;
+}
+
 #projeto-3{
   padding-top: 20px;
   background-color: #08040f;

@@ -596,6 +596,7 @@ padding: 15px;
 .img-git{
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .btn-seta {
