@@ -269,7 +269,11 @@ section {
   height: 250px;
   background-color:#502f9600;
  box-shadow: 0 0 10px rgba(80, 47, 150, 0.8), 0 0 20px rgba(80, 47, 150, 0.6), 0 0 30px rgba(80, 47, 150, 0.4);
-  
+}
+.service-1:hover,
+.service-2:hover,
+.service-3:hover {
+    background-color: #502f967a;
 }
 
 .my-bg{
