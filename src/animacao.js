@@ -15,8 +15,8 @@ window.onscroll = () => {
 
 const hexContainer = document.getElementById('hex-container');
 
-const hexRows = 14;
-const hexPerRow = [24, 23, 24, 23, 24, 23, 24, 23, 24, 23, 24, 23,24,23];
+const hexRows = 20;
+const hexPerRow = [24, 23, 24, 23, 24, 23, 24, 23, 24, 23, 24, 23,24,23,24,23,24,23,24,23,24,23,24];
 
 for (let i = 0; i < hexRows; i++) {
     const hexRow = document.createElement('div');

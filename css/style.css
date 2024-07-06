@@ -414,7 +414,6 @@ li.line-2  {
 .box-img{
     margin-top: 20px;
     height: 100%;
-    background-color: #2C1E4A;
     box-shadow: 0 0 20px rgba(80, 47, 150, 0.8), 0 0 40px rgba(80, 47, 150, 0.6), 0 0 60px rgba(80, 47, 150, 0.4);
     padding-right: 20px;
     padding-left: 55px;
@@ -475,6 +474,11 @@ li.line-2  {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     
+}
+.tecnologias{
+
+max-width: 450px;
+ margin-left: 50px;
 }
 
 .div-skills {

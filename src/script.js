@@ -74,11 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     
-    sobreLink.forEach(link => {
-        link.addEventListener('click', function (event) {
-            scrollToSection(event, 'about');
-        });
-    });
+
 
     const portfolioLink = document.querySelectorAll('a[href="#portfolio"]');
     portfolioLink.forEach(link => {
