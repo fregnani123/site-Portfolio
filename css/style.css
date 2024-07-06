@@ -509,6 +509,14 @@ font-family: 'Roboto', sans-serif;
 text-align: center;
 padding: 5px;
 }
+.title-descricao-2{
+font-size:1.9rem ;
+margin-top: 100px;
+margin-bottom: 12px;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+padding: 5px;
+}
 .descricao-texto{
 font-family: 'Roboto', sans-serif;
 text-align: center;
@@ -561,7 +569,22 @@ padding: 15px;
 #projeto-2{
     width: 1000px;
     height: 650px;
+    display: flex;
   /* background-color: red; */
+}
+.img-site{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    height: 650px;
+    
+}
+.descricao-texto-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 #projeto-3{
     width: 1000px;
@@ -625,6 +648,13 @@ border-radius: 5px;
 width: 450px;
 }
 .div-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.div-video-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
