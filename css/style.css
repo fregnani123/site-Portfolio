@@ -574,10 +574,10 @@ padding: 15px;
   /* background-color: red; */
 }
 .img-site{
-    margin: 10px;
+    margin: 0px;
     display: flex;
     align-items: center;
-    height: 650px;
+    height: 400px;
     
 }
 .descricao-texto-2{
@@ -599,7 +599,18 @@ padding: 15px;
     height: auto;
     cursor: pointer;
 }
-
+.title-projeto-3{
+    width: 100%;
+    font-size:1.7rem;
+}
+.a-portfolio{
+margin-top: 20px;
+border-bottom: 3px solid rgba(80, 47, 150, 0);
+}
+.a-portfolio:hover{
+margin-top: 20px;
+border-bottom: 3px solid rgba(80, 47, 150, 0.8);
+}
 .btn-seta {
     position: absolute;
     top: 50%;

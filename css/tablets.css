@@ -141,7 +141,9 @@ align-items: center;
 .img-git,#radio-3 {
 display: none;
 }
-
+.btn-seta {
+  display: none;
+}
 #projeto-3{
   padding-top: 20px;
   background-color: #08040f;
