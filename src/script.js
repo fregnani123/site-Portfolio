@@ -38,7 +38,6 @@ document.addEventListener('scroll', function () {
 });
 
 
-
 imgFlexa.addEventListener('click', function () {
     window.scrollBy({
         top: window.innerHeight + 100,  // Descer a altura da janela mais 100 pixels
